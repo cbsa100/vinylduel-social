@@ -524,7 +524,7 @@
   },
   {
    "id": "yt-tt-b2-tiermake-guts",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "notification",
@@ -546,7 +546,8 @@
       "madeForKids": false
      }
     }
-   }
+   },
+   "bufferId": "6adb696c6fe59a6ed2799571"
   },
   {
    "id": "compare",
@@ -852,7 +853,7 @@
   },
   {
    "id": "yt-ttv-tt-st-revivals",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
@@ -871,7 +872,8 @@
       "title": "5 old songs that TV and TikTok brought back"
      }
     }
-   }
+   },
+   "bufferId": "6adb696e7af932dee4e32a7e"
   },
   {
    "id": "yt-reel-ig-st-revivals",
