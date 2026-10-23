@@ -1,0 +1,2889 @@
+{
+ "about": "VinylDuel Buffer backlog. Each item is a Buffer create_post payload (schedulingType must stay 'notification'). 'scheduled': true once it is in Buffer.",
+ "items": [
+  {
+   "id": "yt-tt-st-heroes",
+   "scheduled": true,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-23T17:38:00+03:00",
+    "text": "“heroes” was written beside the berlin wall. bowie recorded it in berlin at hansa studios, which stood close to the berlin wall. best bowie song?\n\nphotos: Boris Yaro (CC BY 4.0), LuisFer Dominguez Serra (CC BY-SA 4.0), Tony Barnard / Los Angeles Times (CC BY 4.0), ABC Television (public domain), all via Wikimedia Commons\n\nFollow @vinylduel for a music story every day.\n\n#davidbowie #heroes #berlin #bowie #songmeaning #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-st-heroes.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "\"Heroes\" was written beside the Berlin Wall",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-b2-tier-royalblood",
+   "scheduled": true,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-23T19:14:00+03:00",
+    "text": "royal blood's debut, as a tier list. what would you move?\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#royalblood #rock #mikekerr #britishrock #tierlist #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-tier-royalblood.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "Royal Blood tier list, ranked by the community",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-b2-songs-okc",
+   "scheduled": true,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-23T20:06:00+03:00",
+    "text": "the stories behind 5 songs on ok computer. and how vinylduel ranks the whole album.\n\nphotos: Alterna2 (CC BY 2.0), Raph_PH (CC BY 2.0), Raph_PH (CC BY 4.0), aon (CC BY 2.0), all via Wikimedia Commons\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#radiohead #okcomputer #thomyorke #90smusic #musicfacts #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-songs-okc.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "The stories behind 5 songs on OK Computer",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-b2-tier-scaled",
+   "scheduled": true,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-23T21:49:00+03:00",
+    "text": "scaled and icy tier list. shy away isn't S tier. what would you move?\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#twentyonepilots #scaledandicy #shyaway #alternative #tierlist #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-tier-scaled.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "Scaled And Icy tier list, ranked by the community",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-st-anon",
+   "scheduled": true,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-23T23:02:00+03:00",
+    "text": "nobody knew what the weeknd looked like. in 2010 a few songs appeared on youtube under the name the weeknd. no photos, no interviews, just the music. best weeknd album?\n\nphotos: Picikepocok22 (CC0), Fred von Lohmann (CC BY 2.0), Salandco (CC BY-SA 4.0), Pedro Mora (CC BY 3.0), Nicolas Padovani (CC BY 2.0), all via Wikimedia Commons\n\nFollow @vinylduel for a music story every day.\n\n#theweeknd #blindinglights #houseofballoons #rnb #musichistory #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-st-anon.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "Nobody knew what The Weeknd looked like",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-st-coversongs",
+   "scheduled": true,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-24T10:37:00+03:00",
+    "text": "5 songs you didn't know were covers. hurt, prince wrote it, dolly wrote it first… which one surprised you?\n\nphotos: CBS Television (public domain), PH1 GARY RICE, USN (public domain), Self Scanned (public domain), all via Wikimedia Commons\n\nFollow @vinylduel for a music story every day.\n\n#coversongs #johnnycash #whitneyhouston #aretha #musicfacts #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-st-coversongs.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "5 songs you didn't know were covers",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-st-longest",
+   "scheduled": true,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-24T12:11:00+03:00",
+    "text": "the longest songs to ever hit #1. 10:13 all too well, 8 min+ american pie, 7 min+ hey jude… would you listen to a 10-minute song?\n\nFollow @vinylduel for a music story every day.\n\n#musicfacts #taylorswift #americanpie #heyjude #hot100 #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-st-longest.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "The longest songs to ever hit #1",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-b2-tier-chromakopia",
+   "scheduled": true,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-24T13:43:00+03:00",
+    "text": "chromakopia tier list. st. chroma is A tier. what would you move?\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#tylerthecreator #chromakopia #hiphop #rap #tierlist #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-tier-chromakopia.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "CHROMAKOPIA tier list, ranked by the community",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-ttv-tt-st-longest",
+   "scheduled": true,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-24T16:16:00+03:00",
+    "text": "watch till the end 👀 the longest songs to ever hit #1. 10:13 all too well, 8 min+ american pie, 7 min+ hey jude… would you listen to a 10-minute song?\n\n#musicfacts #taylorswift #americanpie #heyjude #hot100 #fyp",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-st-longest.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "The longest songs to ever hit #1"
+     }
+    }
+   }
+  },
+  {
+   "id": "ig-nevermind",
+   "scheduled": true,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-24T16:36:00+03:00",
+    "text": "what do u think!? 😭\n.\n.\n.\nNevermind made Nirvana the biggest band in the world on the back of one song. When VinylDuel users rank the whole album, two songs at a time, that song lands 6th. Drain You takes #1, ahead of Lithium and Breed, with In Bloom and Come As You Are right behind.\n\nAt the bottom, Polly and the hidden track Endless, Nameless share last place.\n\nRank it yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\nphotos: David Lee (CC BY-SA 2.0), DoD News Features (CC BY 2.0), Alice Wheeler (public domain), all via Wikimedia Commons\n\n#nirvana #nevermind #kurtcobain #grunge #90smusic",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-nevermind/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-nevermind/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-nevermind/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-nevermind/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-nevermind/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-nevermind/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-nevermind/07.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "post",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-b2-duel-nevermind",
+   "scheduled": true,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-24T17:38:00+03:00",
+    "text": "pick one: nevermind edition. smells like teen spirit or come as you are, lithium or in bloom, drain you or breed… comment your picks\n\nphotos: David Lee (CC BY-SA 2.0), DoD News Features (CC BY 2.0), Alice Wheeler (public domain), all via Wikimedia Commons\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#nirvana #nevermind #kurtcobain #thisorthat #grunge #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-duel-nevermind.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "Pick one: Nevermind edition",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "tt-b2-tier-trench",
+   "scheduled": true,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-24T18:44:00+03:00",
+    "text": "trench tier list. chlorine is S tier. what would you move?\n\n#twentyonepilots #trench #dema #alternative #tierlist",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-tier-trench/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-tier-trench/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-tier-trench/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-tier-trench/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "Trench tier list, ranked by the community"
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-b2-grave",
+   "scheduled": true,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-24T19:34:00+03:00",
+    "text": "tell that mick he just made my list of things to do today is #1 on take this to your grave. the patron saint of liars and fakes second, grand theft autumn 5th, dead on arrival 10th.\n\nphotos: Drew de F Fawkes (CC BY 2.0), Fernando Loz (CC BY-SA 2.0), all via Wikimedia Commons\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#falloutboy #takethistoyourgrave #emo #poppunk #albumranking #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-grave.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "Tell That Mick He Just Made My List of Things to Do Today is #1 on Take This to Your Grave.",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "ig-st-heyjude",
+   "scheduled": true,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-24T20:48:00+03:00",
+    "text": "hey jude was written for john lennon's son\n.\n.\n.\nJohn was leaving his wife Cynthia. Paul drove out to see her and their five-year-old son Julian, and started writing a song to comfort him. It started as Hey Jules. Paul changed the name to Jude because it was easier to sing.\n\nAt more than seven minutes, it was one of the longest singles ever released at the time. Hey Jude spent nine weeks at #1 in the US, the longest run of any Beatles single.\n\nBest Beatles song? Follow @vinylduel for a music story every day.\n\nphotos: Harry Pot for Anefo (CC0), Poppe de Boer (CC0), United Press International (public domain), Dezo Hoffmann / Capitol Records (public domain), all via Wikimedia Commons\n\n#thebeatles #heyjude #paulmccartney #johnlennon #songmeaning",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-heyjude/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-heyjude/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-heyjude/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-heyjude/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-heyjude/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-heyjude/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "post",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-ttv-tt-st-anon",
+   "scheduled": true,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-24T21:38:00+03:00",
+    "text": "watch till the end 👀 nobody knew what the weeknd looked like. in 2010 a few songs appeared on youtube under the name the weeknd. no photos, no interviews, just the music. best weeknd album?\n\nphotos: Picikepocok22 (CC0), Fred von Lohmann (CC BY 2.0), Salandco (CC BY-SA 4.0), Pedro Mora (CC BY 3.0), Nicolas Padovani (CC BY 2.0), all via Wikimedia Commons\n\n#theweeknd #blindinglights #houseofballoons #rnb #musichistory #fyp",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-st-anon.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "Nobody knew what The Weeknd looked like"
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-ttv-tt-b2-tier-chromakopia",
+   "scheduled": true,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-25T09:45:00+02:00",
+    "text": "watch till the end 👀 chromakopia tier list. st. chroma is A tier. what would you move?\n\n#tylerthecreator #chromakopia #hiphop #rap #tierlist #fyp",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-tier-chromakopia.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "CHROMAKOPIA tier list, ranked by the community"
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-b2-tiermake-guts",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-25T09:49:00+02:00",
+    "text": "guts tier list. your turn. screenshot the empty tier list and comment your S tier\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#oliviarodrigo #guts #vampire #tierlist #albumranking #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-tiermake-guts.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "Make your GUTS tier list",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "compare",
+   "scheduled": true,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-25T10:33:00+02:00",
+    "text": "send this to the friend you always argue with\n.\n.\n.\nIf you and a friend both rank Graduation, this is where it gets loud. Flashing Lights is the most divisive song on the album: top three for some people, much further down for others. Everything I Am is someone's #1 and stuck in the bottom half for plenty of others. Stronger is the one you'll probably agree on, since almost everyone puts it around 4th.\n\nOn VinylDuel you can settle it: rank the album, tap Compare and send the link. Your friend ranks it too, and you both see your match % and every song you disagree on.\n\nTag the friend with the worst taste. Get the VinylDuel app free on iPhone and Android, link in bio.\n\nphotos: David Shankbone (public domain), Jason Lander (CC BY 2.0), Will (CC BY-SA 2.0), Alan Waite (CC BY-SA 2.0), all via Wikimedia Commons\n\n#kanyewest #graduation #albumranking #musictaste #bestfriend",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/compare/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/compare/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/compare/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/compare/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/compare/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/compare/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "post",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-b2-rcpt-meteora",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-25T12:08:00+02:00",
+    "text": "numb is 6th on the meteora receipt 🧾. what would you return?\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#linkinpark #meteora #numb #numetal #albumranking #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-rcpt-meteora.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "The Meteora receipt, ranked by the community",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-b2-rcpt-demondays",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-25T13:43:00+02:00",
+    "text": "the receipt for demon days 🧾. what would you return?\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#gorillaz #demondays #feelgoodinc #damonalbarn #albumranking #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-rcpt-demondays.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "The Demon Days receipt, ranked by the community",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-reel-ig-b2-tier-chromakopia",
+   "scheduled": true,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-25T14:45:00+02:00",
+    "text": "chromakopia: the tier list 🎧\n\nCHROMAKOPIA (2024) is the Tyler, the Creator album that opens with St. Chroma. Cut from the VinylDuel community ranking: Darling, I and Noid are S tier, and St. Chroma makes A.\n\nWhat would you move? Rank it yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\n#tylerthecreator #chromakopia #hiphop #rap #tierlist #reels",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-tier-chromakopia.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "reel",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "tt-st-daftname",
+   "scheduled": true,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-25T15:14:00+02:00",
+    "text": "daft punk got their name from a bad review. thomas bangalter and guy-manuel de homem-christo first played in a rock band called darlin', with laurent brancowitz, later of phoenix. discovery or random access memories?\n\nphotos: Papouten (CC BY-SA 4.0), LucaFazPhoto (CC BY-SA 4.0), Sony Music Entertainment (CC BY 4.0), all via Wikimedia Commons\n\n#daftpunk #discovery #frenchtouch #electronic #musichistory",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-daftname/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-daftname/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-daftname/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-daftname/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-daftname/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-daftname/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "Daft Punk got their name from a bad review"
+     }
+    }
+   }
+  },
+  {
+   "id": "ig-st-blackstar",
+   "scheduled": true,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-25T16:18:00+02:00",
+    "text": "he released his last album two days before he died\n.\n.\n.\nDavid Bowie had been treated for cancer for about 18 months, and kept it almost completely private. His album Blackstar came out on 8 January 2016, his 69th birthday. Fans heard it as a bold new chapter.\n\nHe died two days later. Songs like Lazarus suddenly sounded like a goodbye, and producer Tony Visconti called the album his parting gift. His first big hit, Space Oddity, came out days before the Apollo 11 launch, and the BBC played it during its moon-landing coverage.\n\nWhich Bowie era is the best? Follow @vinylduel for a music story every day.\n\nphotos: Boris Yaro (CC BY 4.0), Tony Barnard / Los Angeles Times (CC BY 4.0), ABC Television (public domain), LuisFer Dominguez Serra (CC BY-SA 4.0), all via Wikimedia Commons\n\n#davidbowie #blackstar #ziggystardust #musichistory #bowie",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-blackstar/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-blackstar/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-blackstar/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-blackstar/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-blackstar/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-blackstar/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "post",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-b2-infinity",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-25T16:31:00+02:00",
+    "text": "thnks fr th mmrs is only 8th on infinity on high. the carpal tunnel of love is #1, fame < infamy second, this ain't a scene 6th.\n\nphotos: Drew de F Fawkes (CC BY 2.0), Stefan Brending (2eight) (CC BY-SA 3.0), Fernando Loz (CC BY-SA 2.0), all via Wikimedia Commons\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#falloutboy #infinityonhigh #emo #2000s #albumranking #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-infinity.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "Thnks fr th Mmrs is only 8th on Infinity On High.",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-ttv-tt-st-revivals",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-25T18:19:00+02:00",
+    "text": "watch till the end 👀 5 old songs that tv and tiktok brought back. running up that hill, master of puppets, dreams… which song needs a comeback?\n\nphotos: Kreepin Deth (CC BY-SA 4.0), Columbia Records (public domain), aresauburn (CC BY-SA 2.0), Warner Bros. Records (public domain), Carl Lender (CC BY-SA 3.0), Saad Faruque (CC BY 2.0), all via Wikimedia Commons\n\n#strangerthings #tiktok #musicfacts #katebush #metallica #fyp",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-st-revivals.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "5 old songs that TV and TikTok brought back"
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-reel-ig-st-revivals",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-25T18:52:00+02:00",
+    "text": "5 old songs that tv and tiktok brought back 🎧\n\n1. Running Up That Hill: Stranger Things made the 1985 song a UK #1 in 2022.\n2. Master of Puppets: Eddie's guitar solo in Stranger Things sent the 1986 song onto the Billboard Hot 100 for the first time.\n3. Dreams: A 2020 TikTok of a man skateboarding with a bottle of cranberry juice sent Dreams back onto the charts, 43 years later.\n4. Bohemian Rhapsody: The head-banging car scene in Wayne's World (1992) took it back up the US charts, to #2.\n5. Saltburn: Sophie Ellis-Bextor's 2001 hit returned to the charts after the film's final scene.\n\nWhich song needs a comeback? Follow @vinylduel for a music story every day.\n\nphotos: Kreepin Deth (CC BY-SA 4.0), Columbia Records (public domain), Saad Faruque (CC BY 2.0), Warner Bros. Records (public domain), Carl Lender (CC BY-SA 3.0), 4TheWynne (CC BY-SA 4.0), all via Wikimedia Commons\n\n#strangerthings #tiktok #musicfacts #katebush #metallica #reels",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-st-revivals.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "reel",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-b2-duel-1989",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-25T20:18:00+02:00",
+    "text": "pick one: 1989 edition. blank space or style, shake it off or bad blood, wildest dreams or out of the woods… comment your picks\n\nphotos: Paolo V (CC BY 2.0), Ronald Woan (CC BY-SA 2.0), all via Wikimedia Commons\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#taylorswift #1989taylorsversion #swifties #thisorthat #pop #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-duel-1989.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "Pick one: 1989 edition",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "tt-st-r-nevermind",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-25T20:44:00+02:00",
+    "text": "nevermind, 35 years later. our verdict: 9.0/10, the record that kicked the door in. nevermind or in utero?\n\nphotos: David Lee (CC BY-SA 2.0), DoD News Features (CC BY 2.0), all via Wikimedia Commons\n\n#nirvana #nevermind #grunge #albumreview #90s",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-r-nevermind/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-r-nevermind/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-r-nevermind/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-r-nevermind/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-r-nevermind/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-r-nevermind/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "Nevermind, 35 years later: our review"
+     }
+    }
+   }
+  },
+  {
+   "id": "closest",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-25T20:58:00+02:00",
+    "text": "you can only pick one\n.\n.\n.\nOn VinylDuel you rank an album by picking between two songs, again and again, until the whole order is worked out. Most duels are easy. These ones aren't.\n\nThe community can barely separate Money and Time on The Dark Side of the Moon. Runaway and Power are exactly tied on My Beautiful Dark Twisted Fantasy, and so are R U Mine? and Why'd You Only Call Me When You're High? on AM. Let It Happen just beats New Person, Same Old Mistakes, and Just just beats Fake Plastic Trees.\n\nComment your picks, slide by slide. Then settle it on the VinylDuel app, link in bio.\n\nphotos: Live at Pompeii press kit (public domain), unknown photographer (public domain), David Shankbone (public domain), Christhian Ferenc (CC BY 2.0), Raph_PH (CC BY 2.0), Alterna2 (CC BY 2.0), all via Wikimedia Commons\n\n#albumranking #thisorthat #pinkfloyd #kanyewest #arcticmonkeys",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/closest/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/closest/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/closest/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/closest/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/closest/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/closest/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/closest/07.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "post",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "tt-rcpt-lonerism",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-25T22:40:00+02:00",
+    "text": "we printed the receipt for lonerism 🧾. what would you return?\n\n#tameimpala #lonerism #kevinparker #psychedelic #albumranking",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-rcpt-lonerism/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-rcpt-lonerism/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-rcpt-lonerism/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "The Lonerism Receipt"
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-st-oceaneyes",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-26T09:29:00+02:00",
+    "text": "her first song was uploaded for a dance class. her brother finneas wrote ocean eyes for his band. in 2015 billie sang it and they put it on soundcloud so her dance teacher could choreograph to it. what's her best song?\n\nphotos: Justin Higuchi (CC BY 2.0), crommelincklars (CC BY 2.0), all via Wikimedia Commons\n\nFollow @vinylduel for a music story every day.\n\n#billieeilish #finneas #oceaneyes #pop #musichistory #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-st-oceaneyes.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "Billie Eilish's first song was uploaded for a dance class",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-reel-ig-st-r-tpab",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-26T10:13:00+02:00",
+    "text": "to pimp a butterfly: rap's great jazz record 🎧\n\nOur take. Jazz, funk and spoken word, with Thundercat, Kamasi Washington and George Clinton. A dense album about race, fame and self-worth. Alright became a protest anthem, and King Kunta still knocks. It's long and demanding: an album you study, not one you put on in the background.\n\nVerdict: 9.5/10. A modern classic.\n\nBest Kendrick album? Follow @vinylduel for a music story every day.\n\nphotos: Jon Elbaz (CC BY 2.0), Kenny Sun (CC BY 2.0), Zfigueroa (CC BY-SA 3.0), all via Wikimedia Commons\n\n#kendricklamar #topimpabutterfly #albumreview #hiphop #jazz #reels",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-st-r-tpab.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "reel",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "tt-st-bandnames",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-26T10:41:00+02:00",
+    "text": "where 5 famous band names came from. radiohead, pink floyd, lead balloon… best band name ever?\n\nphotos: Alterna2 (CC BY 2.0), Live at Pompeii press kit (public domain), Raph_PH (CC BY 2.0), Kreepin Deth (CC BY-SA 4.0), Mint13green (CC BY-SA 4.0), all via Wikimedia Commons\n\n#bandnames #radiohead #pinkfloyd #metallica #musicfacts",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-bandnames/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-bandnames/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-bandnames/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-bandnames/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-bandnames/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-bandnames/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-bandnames/07.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "Where 5 famous band names came from"
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-st-revivals",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-26T11:30:00+02:00",
+    "text": "5 old songs that tv and tiktok brought back. running up that hill, master of puppets, dreams… which song needs a comeback?\n\nphotos: Kreepin Deth (CC BY-SA 4.0), Columbia Records (public domain), aresauburn (CC BY-SA 2.0), Warner Bros. Records (public domain), Carl Lender (CC BY-SA 3.0), Saad Faruque (CC BY 2.0), all via Wikimedia Commons\n\nFollow @vinylduel for a music story every day.\n\n#strangerthings #tiktok #musicfacts #katebush #metallica #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-st-revivals.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "5 old songs that TV and TikTok brought back",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-ttv-tt-st-r-tpab",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-26T12:49:00+02:00",
+    "text": "watch till the end 👀 to pimp a butterfly: rap's great jazz record. our verdict: 9.5/10, a modern classic. best kendrick album?\n\nphotos: Jon Elbaz (CC BY 2.0), Kenny Sun (CC BY 2.0), Connie Lodge (CC BY-SA 2.0), Eli Watson (CC BY 2.0), all via Wikimedia Commons\n\n#kendricklamar #topimpabutterfly #albumreview #hiphop #jazz #fyp",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-st-r-tpab.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "To Pimp a Butterfly: our review"
+     }
+    }
+   }
+  },
+  {
+   "id": "ig-st-r-blackparade",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-26T13:31:00+02:00",
+    "text": "the black parade turns 20\n.\n.\n.\nOur take. A concept album about a dying man called The Patient, framed as a marching band's parade. Huge, theatrical, and unlike anything around it. Welcome to the Black Parade is still a perfect rock song, and Famous Last Words is still the ending everyone screams along to. The story gets lost in the middle, and a couple of songs feel more like costume than feeling.\n\nVerdict: 9.0/10. Still the best emo album ever made.\n\nWhat would you give it? Follow @vinylduel for a music story every day.\n\nphotos: Mint13green (CC BY-SA 4.0), Michael Spencer (CC BY 2.0), all via Wikimedia Commons\n\n#mychemicalromance #theblackparade #emo #albumreview #mcr",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-r-blackparade/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-r-blackparade/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-r-blackparade/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-r-blackparade/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-r-blackparade/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-r-blackparade/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "post",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "tt-b2-tiermake-folklore",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-26T14:44:00+02:00",
+    "text": "folklore tier list but you make it. screenshot the empty tier list and comment your S tier\n\n#taylorswift #folklore #swifties #tierlist #albumranking",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-tiermake-folklore/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-tiermake-folklore/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-tiermake-folklore/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "Make your folklore tier list"
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-reel-ig-b2-rcpt-demondays",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-26T14:52:00+02:00",
+    "text": "the demon days receipt 🎧\n\nDemon Days (2005) by Gorillaz, every song in the order VinylDuel users ranked it. El Mañana is the #1 pick, just ahead of Feel Good Inc., and Kids with Guns is the most divisive line.\n\nWhat would you return? Rank it yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\n#gorillaz #demondays #feelgoodinc #damonalbarn #albumranking #reels",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-rcpt-demondays.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "reel",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-b2-songs-am",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-26T15:21:00+02:00",
+    "text": "the stories behind 5 songs on am. and how vinylduel ranks the whole album.\n\nphotos: Steven Anthony (CC BY 2.0), Raph_PH (CC BY 2.0), Christhian Ferenc (CC BY 2.0), Jeremy Perez Photos (CC BY-SA 2.0), all via Wikimedia Commons\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#arcticmonkeys #am #alexturner #indierock #musicfacts #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-songs-am.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "The stories behind 5 songs on AM",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-b2-tiermake-hmhas",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-26T17:31:00+02:00",
+    "text": "hit me hard and soft tier list. go. screenshot the empty tier list and comment your S tier\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#billieeilish #hitmehardandsoft #birdsofafeather #tierlist #albumranking #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-tiermake-hmhas.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "Make your HIT ME HARD AND SOFT tier list",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-ttv-tt-b2-rcpt-demondays",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-26T18:13:00+02:00",
+    "text": "watch till the end 👀 the receipt for demon days 🧾. what would you return?\n\n#gorillaz #demondays #feelgoodinc #damonalbarn #albumranking #fyp",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-rcpt-demondays.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "The Demon Days receipt, ranked by the community"
+     }
+    }
+   }
+  },
+  {
+   "id": "ig-okcomputer",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-26T20:16:00+02:00",
+    "text": "do you agree with the community list?\n.\n.\n.\nOK Computer is the album people point to when they call Radiohead the most important band of the 90s. On VinylDuel, Paranoid Android is #1, Exit Music (For a Film) is second and No Surprises third. Karma Police, the one everyone knows, is only 5th.\n\nAnd Fitter Happier, the robotic spoken-word track in the middle, is last in every single ranking.\n\nRank it yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\nphotos: Alterna2 (CC BY 2.0), Raph_PH (CC BY 4.0), Raph_PH (CC BY 2.0), all via Wikimedia Commons\n\n#radiohead #okcomputer #thomyorke #90smusic #albumranking",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-okcomputer/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-okcomputer/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-okcomputer/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-okcomputer/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-okcomputer/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-okcomputer/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "post",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-b2-tiermake-shortnsweet",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-26T20:16:00+02:00",
+    "text": "short n' sweet tier list. espresso is ___ tier. screenshot the empty tier list and comment your S tier\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#sabrinacarpenter #shortnsweet #espresso #tierlist #albumranking #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-tiermake-shortnsweet.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "Make your Short n' Sweet tier list",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "tt-b2-songs-dsotm",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-26T22:33:00+02:00",
+    "text": "the stories behind 5 songs on the dark side of the moon. and how vinylduel ranks the whole album.\n\nphotos: unknown photographer (public domain), Live at Pompeii press kit (public domain), Hit Parader magazine (public domain), Capitol Records (public domain), all via Wikimedia Commons\n\n#pinkfloyd #darksideofthemoon #davidgilmour #classicrock #musicfacts",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-songs-dsotm/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-songs-dsotm/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-songs-dsotm/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-songs-dsotm/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-songs-dsotm/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-songs-dsotm/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-songs-dsotm/07.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-songs-dsotm/08.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "The stories behind 5 songs on The Dark Side of the Moon"
+     }
+    }
+   }
+  },
+  {
+   "id": "ig-blonde",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-26T22:42:00+02:00",
+    "text": "not my rankings! what do u think!?\n.\n.\n.\nBlonde is ten years old and still the album people argue about most. Ivy is #1, near the top for almost everyone, with Nikes second and Nights third.\n\nSelf Control got more #1 votes than any other song and still sits 4th: it splits people more than anything else on the record. Be Yourself, the voicemail interlude, is last.\n\nRank it yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\nphotos: RJ photos UK (CC BY 2.0), Andras Ladocsi (CC BY-SA 4.0), Dave Gold (CC BY-SA 2.0), all via Wikimedia Commons\n\n#frankocean #blonde #blond #rnb #albumranking",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-blonde/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-blonde/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-blonde/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-blonde/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-blonde/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-blonde/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-blonde/07.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "post",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-ttv-tt-st-coversongs",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-27T09:01:00+02:00",
+    "text": "watch till the end 👀 5 songs you didn't know were covers. hurt, prince wrote it, dolly wrote it first… which one surprised you?\n\nphotos: CBS Television (public domain), PH1 GARY RICE, USN (public domain), Self Scanned (public domain), all via Wikimedia Commons\n\n#coversongs #johnnycash #whitneyhouston #aretha #musicfacts #fyp",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-st-coversongs.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "5 songs you didn't know were covers"
+     }
+    }
+   }
+  },
+  {
+   "id": "ig-abbeyroad",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-27T09:41:00+02:00",
+    "text": "the beatles part 1 !\n.\n.\n.\nAbbey Road was the last album the Beatles recorded together. On VinylDuel, Come Together is #1, Oh! Darling second and Something third. Here Comes the Sun, their most streamed song, is 4th.\n\nThe medley on side two falls apart once its songs have to fight one by one: every part of it lands in the bottom half. Her Majesty, all 23 seconds of it, is last.\n\nRank it yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\nphotos: Dezo Hoffmann / Capitol Records (public domain), Harry Pot for Anefo (CC0), all via Wikimedia Commons\n\n#thebeatles #abbeyroad #beatles #classicrock #albumranking",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-abbeyroad/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-abbeyroad/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-abbeyroad/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-abbeyroad/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-abbeyroad/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-abbeyroad/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-abbeyroad/07.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "post",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-st-r-tpab",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-27T12:15:00+02:00",
+    "text": "to pimp a butterfly: rap's great jazz record. our verdict: 9.5/10, a modern classic. best kendrick album?\n\nphotos: Jon Elbaz (CC BY 2.0), Kenny Sun (CC BY 2.0), Connie Lodge (CC BY-SA 2.0), Eli Watson (CC BY 2.0), all via Wikimedia Commons\n\nFollow @vinylduel for a music story every day.\n\n#kendricklamar #topimpabutterfly #albumreview #hiphop #jazz #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-st-r-tpab.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "To Pimp a Butterfly: our review",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "radiohead",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-27T13:36:00+02:00",
+    "text": "jigsaw supremacy\n.\n.\n.\nRadiohead has three albums with enough rankings on VinylDuel to call a winner. On The Bends it's Just, with most people putting it first, ahead of Fake Plastic Trees. On OK Computer, Paranoid Android edges out Exit Music (For a Film). On In Rainbows, Jigsaw Falling Into Place beats Weird Fishes for the top spot.\n\nKid A is next. Rank it on the VinylDuel app and we'll post the results. Link in bio.\n\nphotos: Alterna2 (CC BY 2.0), Raph_PH (CC BY 2.0), Raph_PH (CC BY 4.0), all via Wikimedia Commons\n\n#radiohead #thomyorke #inrainbows #okcomputer #thebends",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/radiohead/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/radiohead/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/radiohead/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/radiohead/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/radiohead/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "post",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "tt-st-underpressure",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-27T13:56:00+02:00",
+    "text": "under pressure came out of one jam session. bowie dropped by while queen were recording at mountain studios in montreux, and they started jamming together. best duet of all time?\n\nphotos: Carl Lender (CC BY 2.0), Carl Lender (CC BY-SA 3.0), all via Wikimedia Commons\n\n#queen #davidbowie #underpressure #freddiemercury #songmeaning",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-underpressure/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-underpressure/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-underpressure/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-underpressure/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-underpressure/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-underpressure/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "Under Pressure came out of one jam session"
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-reel-ig-st-coversongs",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-27T15:42:00+02:00",
+    "text": "5 songs you didn't know were covers 🎧\n\n1. Hurt: Johnny Cash's most famous late song was first recorded by Nine Inch Nails in 1994.\n2. Nothing Compares 2 U: Sinéad O'Connor's 1990 hit was written by Prince years earlier, for a side project.\n3. I Will Always Love You: Whitney Houston's 1992 smash was written and first recorded by Dolly Parton in the 1970s.\n4. Respect: Otis Redding released Respect in 1965. Aretha Franklin's 1967 version made it an anthem.\n5. Tainted Love: Soft Cell's 1981 hit was a cover of a 1964 soul song by Gloria Jones.\n\nWhich one surprised you? Follow @vinylduel for a music story every day.\n\nphotos: Self Scanned (public domain), PH1 GARY RICE, USN (public domain), CBS Television (public domain), all via Wikimedia Commons\n\n#coversongs #johnnycash #whitneyhouston #aretha #musicfacts #reels",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-st-coversongs.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "reel",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-ttv-tt-b2-duel-1989",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-27T15:52:00+02:00",
+    "text": "watch till the end 👀 pick one: 1989 edition. blank space or style, shake it off or bad blood, wildest dreams or out of the woods… comment your picks\n\nphotos: Paolo V (CC BY 2.0), Ronald Woan (CC BY-SA 2.0), all via Wikimedia Commons\n\n#taylorswift #1989taylorsversion #swifties #thisorthat #pop #fyp",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-duel-1989.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "Pick one: 1989 edition"
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-b2-saverock",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-27T16:06:00+02:00",
+    "text": "my songs know what you did in the dark (light em up) is only 6th on save rock and roll. where did the party go is #1, rat a tat second, the phoenix 7th.\n\nphotos: Drew de F Fawkes (CC BY 2.0), Fernando Loz (CC BY-SA 2.0), Arturo Pardavila III (CC BY 2.0), Stefan Brending (2eight) (CC BY-SA 3.0), all via Wikimedia Commons\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#falloutboy #saverockandroll #lightemup #poppunk #albumranking #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-saverock.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "Light Em Up is only 6th on Save Rock and Roll.",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-st-r-thriller",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-27T18:37:00+02:00",
+    "text": "thriller: still the greatest pop album?. our verdict: 9.5/10, pop doesn't get better. thriller or off the wall?\n\nphotos: Matthew Rolston / Epic Records (public domain), Goldin (public domain), White House Photographic Office (public domain), Larry Davis / Los Angeles Times (CC BY 4.0), all via Wikimedia Commons\n\nFollow @vinylduel for a music story every day.\n\n#michaeljackson #thriller #albumreview #pop #80s #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-st-r-thriller.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "Thriller: still the greatest pop album?",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "tt-b2-folie",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-27T19:01:00+02:00",
+    "text": "i don't care is only 9th on folie à deux. 27 is #1, headfirst slide into cooperstown on a bad bet second, america's suitehearts 7th. tiffany blews is last.\n\nphotos: Drew de F Fawkes (CC BY 2.0), Arturo Pardavila III (CC BY 2.0), Stefan Brending (2eight) (CC BY-SA 3.0), Fernando Loz (CC BY-SA 2.0), all via Wikimedia Commons\n\n#falloutboy #folieadeux #emo #2000s #albumranking",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-folie/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-folie/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-folie/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-folie/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-folie/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-folie/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-folie/07.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "I Don't Care is only 9th on Folie à Deux."
+     }
+    }
+   }
+  },
+  {
+   "id": "ig-st-turneddown",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-27T19:38:00+02:00",
+    "text": "5 hits that other artists turned down\n.\n.\n.\n1. Hit 01: Her team passed. Rihanna's 2007 version spent ten weeks at #1 in the UK.\n2. Hit 02: Kylie said no. Britney Spears recorded it and won her first Grammy for it.\n3. Hit 03: His label passed, so Pharrell recorded it himself. It became one of the biggest songs of 2014.\n4. Hit 04: TLC passed. It became Britney Spears' debut single and a #1 around the world.\n5. Hit 05: His label felt it wasn't right for him. Leona Lewis made it a worldwide #1.\n\nWhich one would you have kept? Follow @vinylduel for a music story every day.\n\n#musicfacts #rihanna #britneyspears #pharrell #popmusic",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-turneddown/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-turneddown/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-turneddown/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-turneddown/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-turneddown/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-turneddown/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-st-turneddown/07.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "post",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-st-alltoowell",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-27T19:58:00+02:00",
+    "text": "the 10-minute song that went to #1. all too well first appeared on red in 2012. it was never a single, but fans called it her best song. original or 10-minute version?\n\nphotos: Paolo V (CC BY 2.0), Ronald Woan (CC BY-SA 2.0), all via Wikimedia Commons\n\nFollow @vinylduel for a music story every day.\n\n#taylorswift #alltoowell #red #swifties #songmeaning #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-st-alltoowell.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "The 10-minute song that went to #1",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "tt-st-knebworth",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-27T21:58:00+02:00",
+    "text": "2.5 million people tried to see oasis in one weekend. in august 1996 oasis played two nights at knebworth park, to about 125,000 people each night. wonderwall or don't look back in anger?\n\nphotos: Roger Woolman (CC BY 3.0), Anirudh Koul (CC BY 2.0), GiacomoSonweed (CC BY-SA 4.0), Freddyballo (CC BY-SA 4.0), all via Wikimedia Commons\n\n#oasis #knebworth #britpop #liamgallagher #noelgallagher",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-knebworth/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-knebworth/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-knebworth/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-knebworth/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-knebworth/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-st-knebworth/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "2.5 million people tried to see Oasis in one weekend"
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-reel-ig-b2-duel-1989",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-27T22:21:00+02:00",
+    "text": "pick one: 1989 edition 🎧\n\nFive duels from 1989:\nBlank Space or Style?\nShake It Off or Bad Blood?\nWildest Dreams or Out Of The Woods?\nClean or New Romantics?\nIs It Over Now? or Say Don't Go?\n\nThis is how VinylDuel works: two songs, pick the one you like more, until your whole ranking is done. Comment your five picks, then rank the full album on the VinylDuel app, free on iPhone and Android. Link in bio.\n\nphotos: Paolo V (CC BY 2.0), Ronald Woan (CC BY-SA 2.0), all via Wikimedia Commons\n\n#taylorswift #1989taylorsversion #swifties #thisorthat #pop #reels",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-duel-1989.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "reel",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-tt-st-sevennation",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-27T22:57:00+02:00",
+    "text": "stadiums chant a riff that isn't played on a bass. jack white came up with the riff during a soundcheck in melbourne, australia. best stadium song?\n\nphotos: Masao Nakagami (CC BY-SA 2.0), Michael Morel (CC BY 2.0), Fabio Venni (CC BY-SA 2.0), all via Wikimedia Commons\n\nFollow @vinylduel for a music story every day.\n\n#thewhitestripes #sevennationarmy #jackwhite #rock #songmeaning #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-st-sevennation.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "Seven Nation Army isn't played on a bass",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "ig-thriller",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-28T10:14:00+02:00",
+    "text": "billie jean won without a single first place??\n.\n.\n.\nThriller is still the best-selling album of all time, and nine songs is not a lot of room to hide. Billie Jean comes out #1 without a single first-place vote: P.Y.T. got the most of those, but Billie Jean was near the top of every list. Beat It is third, the title track only 6th.\n\nThe Girl Is Mine, the duet with Paul McCartney, is second to last, just above The Lady in My Life.\n\nRank it yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\nphotos: Matthew Rolston / Epic Records (public domain), Larry Davis / Los Angeles Times (CC BY 4.0), Epic Records (public domain), all via Wikimedia Commons\n\n#michaeljackson #thriller #billiejean #80smusic #albumranking",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-thriller/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-thriller/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-thriller/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-thriller/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-thriller/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-thriller/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "post",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-ttv-tt-b2-grave",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-28T10:19:00+02:00",
+    "text": "watch till the end 👀 tell that mick he just made my list of things to do today is #1 on take this to your grave. the patron saint of liars and fakes second, grand theft autumn 5th, dead on arrival 10th.\n\nphotos: Drew de F Fawkes (CC BY 2.0), Fernando Loz (CC BY-SA 2.0), all via Wikimedia Commons\n\n#falloutboy #takethistoyourgrave #emo #poppunk #albumranking #fyp",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-grave.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "Tell That Mick He Just Made My List of Things to Do Today is #1 on Take This to Your Grave"
+     }
+    }
+   }
+  },
+  {
+   "id": "ig-currents",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-28T11:40:00+02:00",
+    "text": "kevin parker cooked on this one\n.\n.\n.\nCurrents is where Kevin Parker swapped guitars for synths and made a breakup album you can dance to. On VinylDuel, the almost eight-minute opener Let It Happen is #1, New Person, Same Old Mistakes second, and The Less I Know the Better, by far the most streamed song on it, third.\n\nDisciples is last.\n\nRank it yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\nphotos: Abby Gillardi (CC BY 2.0), all via Wikimedia Commons\n\n#tameimpala #currents #kevinparker #psychedelic #albumranking",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-currents/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-currents/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-currents/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-currents/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-currents/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-currents/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-currents/07.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "post",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "tt-b2-tier-ratm",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-28T13:21:00+02:00",
+    "text": "killing in the name is B tier?? on rage's debut. what would you move?\n\n#rageagainstthemachine #ratm #killinginthename #90smusic #tierlist",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-tier-ratm/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-tier-ratm/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-tier-ratm/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-tier-ratm/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "Rage Against the Machine tier list, ranked by the community"
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-reel-ig-b2-grave",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-28T13:35:00+02:00",
+    "text": "every song on take this to your grave, ranked by you 🎧\n\nTake This to Your Grave (2003) is where Fall Out Boy started. On VinylDuel, Tell That Mick He Just Made My List of Things to Do Today is #1, and The Patron Saint of Liars and Fakes is second. Grand Theft Autumn / Where Is Your Boy lands 5th, Dead on Arrival 10th, and Homesick at Space Camp comes last.\n\nWhere would you put them? Rank it yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\nphotos: Drew de F Fawkes (CC BY 2.0), Fernando Loz (CC BY-SA 2.0), all via Wikimedia Commons\n\n#falloutboy #takethistoyourgrave #emo #poppunk #albumranking #reels",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-grave.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "reel",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "tt-b2-songs-thriller",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-28T15:07:00+02:00",
+    "text": "the stories behind 5 songs on thriller. and how vinylduel ranks the whole album.\n\nphotos: Larry Davis / Los Angeles Times (CC BY 4.0), United Press International (public domain), Goldin (public domain), White House Photographic Office (public domain), Matthew Rolston / Epic Records (public domain), Epic Records (public domain), all via Wikimedia Commons\n\n#michaeljackson #thriller #billiejean #80smusic #musicfacts",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-songs-thriller/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-songs-thriller/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-songs-thriller/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-songs-thriller/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-songs-thriller/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-songs-thriller/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-songs-thriller/07.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-songs-thriller/08.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "The stories behind 5 songs on Thriller"
+     }
+    }
+   }
+  },
+  {
+   "id": "ig-graduation",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-28T15:58:00+02:00",
+    "text": "homecoming supremacy or nah?\n.\n.\n.\nGraduation is the album where Kanye went stadium-sized, and its biggest single was built on Daft Punk. On VinylDuel, Stronger misses the top 3. Homecoming is #1 and got the most first-place votes, I Wonder is second and Flashing Lights third.\n\nBarry Bonds is last.\n\nRank it yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\nphotos: Jason Lander (CC BY 2.0), Will (CC BY-SA 2.0), Alan Waite (CC BY-SA 2.0), all via Wikimedia Commons\n\n#kanyewest #graduation #ye #hiphop #albumranking",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-graduation/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-graduation/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-graduation/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-graduation/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-graduation/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-graduation/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/instagram/ig-graduation/07.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "post",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-ttv-tt-b2-tier-royalblood",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-28T17:01:00+02:00",
+    "text": "watch till the end 👀 royal blood's debut, as a tier list. what would you move?\n\n#royalblood #rock #mikekerr #britishrock #tierlist #fyp",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-tier-royalblood.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "Royal Blood tier list, ranked by the community"
+     }
+    }
+   }
+  },
+  {
+   "id": "tt-b2-inutero",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-28T22:59:00+02:00",
+    "text": "heart-shaped box is the #1 song on in utero. all apologies second, pennyroyal tea third, rape me 6th. tourette's is last.\n\nphotos: Alice Wheeler (public domain), David Lee (CC BY-SA 2.0), DoD News Features (CC BY 2.0), all via Wikimedia Commons\n\n#nirvana #inutero #kurtcobain #grunge #albumranking",
+    "assets": [
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-inutero/01.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-inutero/02.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-inutero/03.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-inutero/04.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-inutero/05.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     },
+     {
+      "image": {
+       "url": "https://cbsa100.github.io/vinylduel-social/tiktok/tt-b2-inutero/06.jpg",
+       "metadata": {
+        "altText": "VinylDuel slide"
+       }
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "Heart-Shaped Box is the #1 song on In Utero."
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-reel-ig-b2-tier-royalblood",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "notification",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-28T23:14:00+02:00",
+    "text": "royal blood: the tier list 🎧\n\nRoyal Blood's 2014 debut is two people, bass and drums, and a lot of noise. Cut from the VinylDuel community ranking: Little Monster and Figure It Out are S tier.\n\nWhat would you move? Rank it yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\n#royalblood #rock #mikekerr #britishrock #tierlist #reels",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/tt-b2-tier-royalblood.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "reel",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  }
+ ]
+}
