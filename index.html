@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VinylDuel Post Pack</title>
+<meta name="description" content="Every VinylDuel social post, read live from backlog.json: what Buffer will send next, what is waiting, and what has gone out.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+/* The Post Pack, live: one card per post in backlog.json, grouped by the day it goes out. */
+:root{
+  --bg:#f6f5fb; --surface:#ffffff; --fg:#17142b; --muted:#625d7a; --line:#e3e0f0;
+  --violet:#4a35e8; --violet-soft:#ece9ff; --ok:#1f8a5b; --ok-soft:#e3f4ec; --warn:#a15c00; --warn-soft:#fff1d6;
+  --yt:#d4141c; --bad:#c0262d;
+  --display:"DM Serif Display", Georgia, "Times New Roman", serif;
+  --body:"Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"Geist Mono", ui-monospace, Menlo, monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0e0c1a; --surface:#171428; --fg:#ece9fb; --muted:#a29dbd; --line:#2a2642;
+  --violet:#8f7dff; --violet-soft:#241f45; --ok:#2fa874; --ok-soft:#14301f; --warn:#f0b45a; --warn-soft:#3a2a10;
+  --yt:#ff4e45; --bad:#ff6b6b; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#0e0c1a; --surface:#171428; --fg:#ece9fb; --muted:#a29dbd; --line:#2a2642;
+  --violet:#8f7dff; --violet-soft:#241f45; --ok:#2fa874; --ok-soft:#14301f; --warn:#f0b45a; --warn-soft:#3a2a10;
+  --yt:#ff4e45; --bad:#ff6b6b; color-scheme:dark }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.55}
+.wrap{max-width:1120px;margin:0 auto;padding-block:40px 80px;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));
+  display:flex;flex-direction:column;gap:28px}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(2.2rem,6vw,3.6rem);line-height:1;margin:0;text-wrap:balance}
+.lede{color:var(--muted);max-width:66ch;margin:12px 0 0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px}
+.stats div{border-top:2px solid var(--fg);padding-top:10px;min-width:0}
+.stats b{display:block;font-family:var(--display);font-weight:400;font-size:2rem;line-height:1.1}
+.stats span{color:var(--muted);font-size:.86rem}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;position:sticky;top:0;z-index:5;background:var(--bg);padding-block:10px;border-bottom:1px solid var(--line)}
+.frow{display:flex;flex-wrap:wrap;gap:6px}
+.frow+.frow{padding-left:8px;border-left:1px solid var(--line)}
+.bar button{font:inherit;font-size:.88rem;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:999px;padding:6px 14px;cursor:pointer}
+.bar button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.bar .c{font-family:var(--mono);font-size:.75rem;opacity:.7;margin-left:3px}
+.bar .count{margin-left:auto;color:var(--muted);font-family:var(--mono);font-size:.8rem}
+.bar button{white-space:nowrap}
+@media (max-width:640px){.bar{flex-wrap:nowrap;overflow-x:auto}.frow{flex-wrap:nowrap}.bar .count{display:none}}
+.lede a{color:var(--violet)}
+button:focus-visible,a:focus-visible,video:focus-visible{outline:2px solid var(--violet);outline-offset:2px}
+.day{display:flex;flex-direction:column;gap:18px}
+.day h2{font-family:var(--display);font-weight:400;font-size:1.6rem;margin:8px 0 0;display:flex;align-items:baseline;gap:12px}
+.day h2 small{font-family:var(--mono);font-size:.8rem;color:var(--muted)}
+.post{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.post.sent{opacity:.62}.post.sent:hover,.post.sent:focus-within{opacity:1}
+.post header{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.post h3{font-family:var(--display);font-weight:400;font-size:1.4rem;line-height:1.15;margin:0;text-wrap:balance;flex:1 1 320px;min-width:0;overflow-wrap:anywhere}
+.meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:.8rem}
+.chip{font-weight:600;padding:3px 10px;border-radius:999px;background:var(--violet-soft);color:var(--violet);white-space:nowrap}
+.chip.instagram{background:linear-gradient(90deg,#f58529,#dd2a7b 50%,#8134af);color:#fff}
+.chip.tiktok{background:var(--fg);color:var(--bg)}
+.chip.youtube{background:var(--yt);color:#fff}
+.chip.kind{background:var(--bg);color:var(--fg);border:1px solid var(--line)}
+.chip.st-buffer{background:var(--ok-soft);color:var(--ok)}
+.chip.st-waiting{background:var(--warn-soft);color:var(--warn)}
+.chip.st-sent{background:var(--bg);color:var(--muted);border:1px solid var(--line)}
+.time{font-family:var(--mono);color:var(--muted)}
+.strip{display:flex;gap:10px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x proximity}
+.strip figure{margin:0;display:flex;flex-direction:column;gap:4px;scroll-snap-align:start;flex:none}
+.strip figcaption{font-family:var(--mono);font-size:.72rem;color:var(--muted)}
+.strip img,.strip video{display:block;border-radius:8px;background:var(--line)}
+.strip img.ig{width:236px;aspect-ratio:4/5;height:auto}
+.strip img.tt{width:190px;aspect-ratio:9/16;height:auto}
+.strip video{width:220px;aspect-ratio:9/16;background:#08070f}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,250px);gap:16px}
+@media (max-width:720px){.cols{grid-template-columns:minmax(0,1fr)}}
+.capbar{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px}
+.label{font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0}
+pre.cap{margin:0;white-space:pre-wrap;word-break:break-word;font-family:var(--body);font-size:.9rem;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:14px;max-height:260px;overflow:auto}
+.ttl{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 14px;font-weight:600;margin-bottom:10px}
+.ttl .t{flex:1 1 200px;min-width:0;overflow-wrap:anywhere}
+.copy{font:inherit;font-size:.8rem;font-weight:600;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;padding:4px 12px;cursor:pointer}
+.copy.done{background:var(--violet);border-color:var(--violet);color:#fff}
+.side{display:flex;flex-direction:column;gap:8px;font-size:.84rem;color:var(--muted)}
+.side .mono{font-family:var(--mono);font-size:.76rem;overflow-wrap:anywhere}
+.side a{color:var(--violet)}
+.err{color:var(--bad);font-weight:600}
+.empty,.loading{color:var(--muted);text-align:center;padding-block:40px;margin:0}
+.note{border-left:3px solid #ffc233;padding:4px 0 4px 14px;color:var(--muted);font-size:.92rem;max-width:74ch;margin:0}
+footer{color:var(--muted);font-size:.84rem}
+footer a{color:var(--violet)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>VinylDuel Post Pack</h1>
+    <p class="lede">Every post for Instagram, TikTok and YouTube, read live from <a href="backlog.json">backlog.json</a>. Buffer holds the next ten per channel and pings a phone at each time, so the audio can be added by hand. A daily routine moves the next posts from here into Buffer.</p>
+  </header>
+
+  <section class="stats" id="stats" aria-label="Totals"></section>
+
+  <nav class="bar" aria-label="Filters">
+    <div class="frow" id="f-status"></div>
+    <div class="frow" id="f-channel"></div>
+    <span class="count" id="count" aria-live="polite"></span>
+  </nav>
+
+  <main id="list"><p class="loading">Loading the backlog…</p></main>
+
+  <footer>
+    <p id="updated"></p>
+    <p>Times are Israel time. "In Buffer" means Buffer will ping at that time; "Waiting" means the daily top-up has not moved it into Buffer yet; "Sent" means its time has passed.</p>
+  </footer>
+</div>
+
+<script>
+(() => {
+  const TZ = 'Asia/Jerusalem';
+  const CHANNELS = {
+    '6adb5ec6778b240e2f9d4ea5': { key: 'instagram', name: 'Instagram' },
+    '6adb5f07778b240e2f9d51b0': { key: 'tiktok', name: 'TikTok' },
+    '6adb5f1d778b240e2f9d52af': { key: 'youtube', name: 'YouTube' },
+  };
+  const STATUSES = [
+    { key: 'upcoming', name: 'Coming up' },
+    { key: 'buffer', name: 'In Buffer' },
+    { key: 'waiting', name: 'Waiting' },
+    { key: 'sent', name: 'Sent' },
+    { key: 'all', name: 'All' },
+  ];
+  const state = { status: 'upcoming', channel: 'all', items: [] };
+  try { const s = JSON.parse(localStorage.getItem('pp-filters') || '{}'); Object.assign(state, { status: s.status || state.status, channel: s.channel || state.channel }); } catch (e) {}
+
+  const el = (tag, attrs = {}, ...kids) => {
+    const n = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) {
+      if (v == null || v === false) continue;
+      if (k === 'class') n.className = v; else if (k === 'text') n.textContent = v; else n.setAttribute(k, v === true ? '' : v);
+    }
+    for (const k of kids.flat()) if (k != null) n.append(k);
+    return n;
+  };
+  const fmtDay = d => new Intl.DateTimeFormat('en-GB', { timeZone: TZ, weekday: 'short', day: 'numeric', month: 'short' }).format(d);
+  const fmtTime = d => new Intl.DateTimeFormat('en-GB', { timeZone: TZ, hour: '2-digit', minute: '2-digit' }).format(d);
+  const dayKey = d => new Intl.DateTimeFormat('en-CA', { timeZone: TZ, year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
+
+  function statusOf(it, now) {
+    const due = new Date(it.post.dueAt);
+    if (due <= now) return 'sent';
+    return it.scheduled ? 'buffer' : 'waiting';
+  }
+  function kindOf(p) {
+    const ch = CHANNELS[p.channelId]?.key, video = !!p.assets?.[0]?.video;
+    if (ch === 'youtube') return 'Short';
+    if (ch === 'instagram') return p.metadata?.instagram?.type === 'reel' ? 'Reel' : 'Carousel';
+    return video ? 'Video' : 'Slideshow';
+  }
+  function titleOf(p) {
+    const meta = Object.values(p.metadata || {})[0] || {};
+    return { platformTitle: meta.title || '', hook: (p.text || '').split('\n')[0].trim() };
+  }
+  function copyBtn(getText, label = 'Copy') {
+    const b = el('button', { class: 'copy', type: 'button', text: label });
+    b.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(getText()); b.textContent = 'Copied'; b.classList.add('done'); }
+      catch (e) { b.textContent = 'Copy failed'; }
+      setTimeout(() => { b.textContent = label; b.classList.remove('done'); }, 1600);
+    });
+    return b;
+  }
+
+  function card(it, now) {
+    const p = it.post, ch = CHANNELS[p.channelId] || { key: 'other', name: 'Other' };
+    const due = new Date(p.dueAt), st = statusOf(it, now);
+    const { platformTitle, hook } = titleOf(p);
+    const stName = { buffer: 'In Buffer', waiting: 'Waiting', sent: 'Sent' }[st];
+
+    const media = el('div', { class: 'strip' });
+    (p.assets || []).forEach((a, i) => {
+      if (a.video) {
+        media.append(el('figure', {}, el('video', { src: a.video.url, controls: true, preload: 'metadata', playsinline: true, muted: true, 'aria-label': 'Video for ' + hook }), el('figcaption', { text: 'video' })));
+      } else if (a.image) {
+        media.append(el('figure', {}, el('img', { src: a.image.url, alt: `Slide ${i + 1}: ${hook}`, loading: 'lazy', decoding: 'async', class: ch.key === 'instagram' ? 'ig' : 'tt' }), el('figcaption', { text: String(i + 1).padStart(2, '0') })));
+      }
+    });
+
+    const capCol = el('div', {});
+    if (platformTitle) capCol.append(el('div', { class: 'ttl' }, el('p', { class: 'label', text: ch.key === 'youtube' ? 'YouTube title' : 'Title' }), el('span', { class: 't', text: platformTitle }), copyBtn(() => platformTitle)));
+    capCol.append(el('div', { class: 'capbar' }, el('p', { class: 'label', text: ch.key === 'youtube' ? 'Description' : 'Caption' }), copyBtn(() => p.text)));
+    capCol.append(el('pre', { class: 'cap', text: p.text }));
+
+    const side = el('div', { class: 'side' },
+      el('span', { text: `${fmtDay(due)}, ${fmtTime(due)} Israel time` }),
+      el('span', { text: `${(p.assets || []).length} ${p.assets?.[0]?.video ? 'video' : 'slides'} · ${p.schedulingType === 'notification' ? 'Buffer pings you' : 'Buffer posts it automatically'}` }),
+      el('span', { class: 'mono', text: it.id }),
+      it.bufferId ? el('span', { class: 'mono', text: 'Buffer ' + it.bufferId }) : null,
+      it.error ? el('span', { class: 'err', text: 'Last top-up failed: ' + it.error }) : null,
+    );
+    for (const a of p.assets || []) if (a.video) side.append(el('a', { href: a.video.url, download: '', text: 'Download the video' }));
+
+    return el('article', { class: 'post' + (st === 'sent' ? ' sent' : ''), 'data-status': st, 'data-channel': ch.key },
+      el('header', {},
+        el('h3', { text: platformTitle || hook }),
+        el('div', { class: 'meta' },
+          el('span', { class: 'chip ' + ch.key, text: ch.name }),
+          el('span', { class: 'chip kind', text: kindOf(p) }),
+          el('span', { class: 'chip st-' + st, text: stName }),
+          el('span', { class: 'time', text: fmtTime(due) }))),
+      media,
+      el('div', { class: 'cols' }, capCol, side));
+  }
+
+  function matches(it, now) {
+    const st = statusOf(it, now), ch = CHANNELS[it.post.channelId]?.key;
+    const okSt = state.status === 'all' || st === state.status || (state.status === 'upcoming' && st !== 'sent');
+    return okSt && (state.channel === 'all' || ch === state.channel);
+  }
+
+  function renderFilters(now) {
+    const counts = { upcoming: 0, buffer: 0, waiting: 0, sent: 0, all: 0 };
+    const chCounts = { all: 0 };
+    for (const it of state.items) {
+      const st = statusOf(it, now); counts[st]++; counts.all++; if (st !== 'sent') counts.upcoming++;
+      const okSt = state.status === 'all' || st === state.status || (state.status === 'upcoming' && st !== 'sent');
+      if (okSt) { const k = CHANNELS[it.post.channelId]?.key; chCounts[k] = (chCounts[k] || 0) + 1; chCounts.all++; }
+    }
+    const row = (host, list, cur, cnt, set) => {
+      host.replaceChildren(...list.map(o => {
+        const b = el('button', { type: 'button', 'aria-pressed': String(cur === o.key) }, o.name, el('span', { class: 'c', text: String(cnt[o.key] || 0) }));
+        b.addEventListener('click', () => { set(o.key); save(); render(); });
+        return b;
+      }));
+    };
+    row(document.getElementById('f-status'), STATUSES, state.status, counts, k => state.status = k);
+    row(document.getElementById('f-channel'), [{ key: 'all', name: 'All apps' }, ...Object.values(CHANNELS)], state.channel, chCounts, k => state.channel = k);
+
+    const stats = document.getElementById('stats');
+    const next = state.items.filter(it => statusOf(it, now) !== 'sent').sort((a, b) => new Date(a.post.dueAt) - new Date(b.post.dueAt))[0];
+    const last = state.items.reduce((m, it) => Math.max(m, +new Date(it.post.dueAt)), 0);
+    stats.replaceChildren(
+      el('div', {}, el('b', { text: String(counts.buffer) }), el('span', { text: 'in Buffer now' })),
+      el('div', {}, el('b', { text: String(counts.waiting) }), el('span', { text: 'waiting in the backlog' })),
+      el('div', {}, el('b', { text: String(counts.sent) }), el('span', { text: 'already sent' })),
+      el('div', {}, el('b', { text: next ? fmtTime(new Date(next.post.dueAt)) : '–' }), el('span', { text: next ? 'next: ' + fmtDay(new Date(next.post.dueAt)) + ', ' + (CHANNELS[next.post.channelId]?.name || '') : 'nothing coming up' })),
+      el('div', {}, el('b', { text: last ? fmtDay(new Date(last)) : '–' }), el('span', { text: 'last planned post' })),
+    );
+  }
+
+  function render() {
+    const now = new Date();
+    renderFilters(now);
+    const shown = state.items.filter(it => matches(it, now));
+    const sentFirstDesc = state.status === 'sent';
+    shown.sort((a, b) => (new Date(a.post.dueAt) - new Date(b.post.dueAt)) * (sentFirstDesc ? -1 : 1));
+    document.getElementById('count').textContent = `${shown.length} post${shown.length === 1 ? '' : 's'}`;
+    const list = document.getElementById('list');
+    if (!shown.length) { list.replaceChildren(el('p', { class: 'empty', text: 'No posts match these filters.' })); return; }
+    const groups = new Map();
+    for (const it of shown) { const d = new Date(it.post.dueAt), k = dayKey(d); if (!groups.has(k)) groups.set(k, { d, items: [] }); groups.get(k).items.push(it); }
+    const today = dayKey(now);
+    list.replaceChildren(...[...groups.entries()].map(([k, g]) => el('section', { class: 'day', 'aria-label': fmtDay(g.d) },
+      el('h2', {}, k === today ? 'Today' : fmtDay(g.d), el('small', { text: `${g.items.length} post${g.items.length === 1 ? '' : 's'}` })),
+      g.items.map(it => card(it, now)))));
+  }
+  function save() { try { localStorage.setItem('pp-filters', JSON.stringify({ status: state.status, channel: state.channel })); } catch (e) {} }
+
+  async function load() {
+    try {
+      const r = await fetch('backlog.json?t=' + Date.now(), { cache: 'no-store' });
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      const data = await r.json();
+      state.items = Array.isArray(data.items) ? data.items : [];
+      render();
+    } catch (e) {
+      document.getElementById('list').replaceChildren(el('p', { class: 'empty', text: 'Could not load backlog.json (' + e.message + '). Reload to try again.' }));
+    }
+    // When was the backlog last changed? Best effort: the GitHub API allows 60 calls an hour without a token.
+    try {
+      const r = await fetch('https://api.github.com/repos/cbsa100/vinylduel-social/commits?path=backlog.json&per_page=1');
+      const c = (await r.json())[0];
+      if (c) document.getElementById('updated').textContent = `Backlog last changed ${fmtDay(new Date(c.commit.committer.date))}, ${fmtTime(new Date(c.commit.committer.date))}: “${c.commit.message.split('\n')[0]}”`;
+    } catch (e) {}
+  }
+  load();
+  // Statuses move with the clock: re-sort every minute, re-read the backlog every 10 minutes.
+  // (only when a status actually changed, so a playing video isn't reset)
+  let sig = '';
+  setInterval(() => { const now = new Date(), s = state.items.map(it => statusOf(it, now)).join(); if (s !== sig) { sig = s; render(); } }, 60 * 1000);
+  setInterval(load, 10 * 60 * 1000);
+})();
+</script>
+</body>
+</html>
