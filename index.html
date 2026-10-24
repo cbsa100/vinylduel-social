@@ -91,27 +91,47 @@ pre.cap{margin:0;white-space:pre-wrap;word-break:break-word;font-family:var(--bo
 footer{color:var(--muted);font-size:.84rem}
 footer a{color:var(--violet)}
 </style>
+<style>
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line)}
+.tabs button{font:inherit;font-weight:700;font-size:1rem;background:none;border:0;border-bottom:3px solid transparent;color:var(--muted);padding:12px 16px;cursor:pointer;margin-bottom:-1px}
+.tabs button[aria-selected="true"]{color:var(--fg);border-bottom-color:var(--violet)}
+.tabs .c{font-family:var(--mono);font-size:.75rem;opacity:.7;margin-left:4px}
+.outlets{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.outlets li{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.outlets b{font-weight:600;color:var(--fg)}
+.chip.st-posted{background:var(--ok);color:#fff}
+.chip.st-none{background:var(--bg);color:var(--muted);border:1px solid var(--line)}
+.chip.coll{background:var(--bg);color:var(--fg);border:1px solid var(--line)}
+.post.posted{opacity:.7}.post.posted:hover,.post.posted:focus-within{opacity:1}
+.more{font:inherit;font-weight:600;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:999px;padding:9px 20px;cursor:pointer;align-self:center}
+</style>
 </head>
 <body>
 <div class="wrap">
   <header>
     <h1>VinylDuel Post Pack</h1>
-    <p class="lede">Every post for Instagram, TikTok and YouTube, read live from <a href="backlog.json">backlog.json</a>. Buffer holds the next ten per channel and pings a phone at each time, so the audio can be added by hand. A daily routine moves the next posts from here into Buffer.</p>
+    <p class="lede">Every post written for Instagram, TikTok and YouTube, and where each one has gone. Read live from <a href="pack.json">pack.json</a> (the posts) and <a href="backlog.json">backlog.json</a> (what Buffer sends next). Buffer holds the next ten per channel and pings a phone at each time, so the audio can be added by hand.</p>
   </header>
+
+  <div class="tabs" role="tablist" aria-label="Views">
+    <button role="tab" id="t-pack" aria-controls="view" aria-selected="true">Post Pack<span class="c" id="c-pack"></span></button>
+    <button role="tab" id="t-sched" aria-controls="view" aria-selected="false">Schedule<span class="c" id="c-sched"></span></button>
+  </div>
 
   <section class="stats" id="stats" aria-label="Totals"></section>
 
   <nav class="bar" aria-label="Filters">
-    <div class="frow" id="f-status"></div>
-    <div class="frow" id="f-channel"></div>
+    <div class="frow" id="f1"></div>
+    <div class="frow" id="f2"></div>
+    <div class="frow" id="f3"></div>
     <span class="count" id="count" aria-live="polite"></span>
   </nav>
 
-  <main id="list"><p class="loading">Loading the backlog…</p></main>
+  <main id="view" role="tabpanel"><p class="loading">Loading…</p></main>
 
   <footer>
     <p id="updated"></p>
-    <p>Times are Israel time. "In Buffer" means Buffer will ping at that time; "Waiting" means the daily top-up has not moved it into Buffer yet; "Sent" means its time has passed.</p>
+    <p>Times are Israel time. In Buffer: Buffer will ping at that time. Waiting: the daily top-up has not moved it into Buffer yet. Sent: its time has passed and Buffer pinged. Posted: marked posted in the Post Pack before Buffer took over.</p>
   </footer>
 </div>
 
@@ -123,15 +143,12 @@ footer a{color:var(--violet)}
     '6adb5f07778b240e2f9d51b0': { key: 'tiktok', name: 'TikTok' },
     '6adb5f1d778b240e2f9d52af': { key: 'youtube', name: 'YouTube' },
   };
-  const STATUSES = [
-    { key: 'upcoming', name: 'Coming up' },
-    { key: 'buffer', name: 'In Buffer' },
-    { key: 'waiting', name: 'Waiting' },
-    { key: 'sent', name: 'Sent' },
-    { key: 'all', name: 'All' },
-  ];
-  const state = { status: 'upcoming', channel: 'all', items: [] };
-  try { const s = JSON.parse(localStorage.getItem('pp-filters') || '{}'); Object.assign(state, { status: s.status || state.status, channel: s.channel || state.channel }); } catch (e) {}
+  const PAGE = 40;
+  const state = { tab: 'pack', items: [], pack: { posts: [], posted: {} }, shown: PAGE,
+    sched: { status: 'upcoming', channel: 'all' },
+    packf: { status: 'all', platform: 'all', coll: 'all' } };
+  try { const s = JSON.parse(localStorage.getItem('pp-v2') || '{}'); if (s.tab) state.tab = s.tab; Object.assign(state.sched, s.sched || {}); Object.assign(state.packf, s.packf || {}); } catch (e) {}
+  const save = () => { try { localStorage.setItem('pp-v2', JSON.stringify({ tab: state.tab, sched: state.sched, packf: state.packf })); } catch (e) {} };
 
   const el = (tag, attrs = {}, ...kids) => {
     const n = document.createElement(tag);
@@ -145,22 +162,8 @@ footer a{color:var(--violet)}
   const fmtDay = d => new Intl.DateTimeFormat('en-GB', { timeZone: TZ, weekday: 'short', day: 'numeric', month: 'short' }).format(d);
   const fmtTime = d => new Intl.DateTimeFormat('en-GB', { timeZone: TZ, hour: '2-digit', minute: '2-digit' }).format(d);
   const dayKey = d => new Intl.DateTimeFormat('en-CA', { timeZone: TZ, year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
+  const when = d => `${fmtDay(d)}, ${fmtTime(d)}`;
 
-  function statusOf(it, now) {
-    const due = new Date(it.post.dueAt);
-    if (due <= now) return 'sent';
-    return it.scheduled ? 'buffer' : 'waiting';
-  }
-  function kindOf(p) {
-    const ch = CHANNELS[p.channelId]?.key, video = !!p.assets?.[0]?.video;
-    if (ch === 'youtube') return 'Short';
-    if (ch === 'instagram') return p.metadata?.instagram?.type === 'reel' ? 'Reel' : 'Carousel';
-    return video ? 'Video' : 'Slideshow';
-  }
-  function titleOf(p) {
-    const meta = Object.values(p.metadata || {})[0] || {};
-    return { platformTitle: meta.title || '', hook: (p.text || '').split('\n')[0].trim() };
-  }
   function copyBtn(getText, label = 'Copy') {
     const b = el('button', { class: 'copy', type: 'button', text: label });
     b.addEventListener('click', async () => {
@@ -170,124 +173,178 @@ footer a{color:var(--violet)}
     });
     return b;
   }
+  function strip(urls, kind, alt) {
+    return el('div', { class: 'strip' }, urls.map((u, i) => u.video
+      ? el('figure', {}, el('video', { src: u.video, controls: true, preload: 'metadata', playsinline: true, muted: true, 'aria-label': 'Video: ' + alt }), el('figcaption', { text: 'video' }))
+      : el('figure', {}, el('img', { src: u, alt: `Slide ${i + 1}: ${alt}`, loading: 'lazy', decoding: 'async', class: kind }), el('figcaption', { text: String(i + 1).padStart(2, '0') }))));
+  }
+  function captionCol(text, title, titleLabel, capLabel) {
+    const c = el('div', {});
+    if (title) c.append(el('div', { class: 'ttl' }, el('p', { class: 'label', text: titleLabel }), el('span', { class: 't', text: title }), copyBtn(() => title)));
+    c.append(el('div', { class: 'capbar' }, el('p', { class: 'label', text: capLabel }), copyBtn(() => text)));
+    c.append(el('pre', { class: 'cap', text }));
+    return c;
+  }
+  function filterRow(host, list, cur, counts, set) {
+    host.replaceChildren(...list.map(o => {
+      const b = el('button', { type: 'button', 'aria-pressed': String(cur === o.key) }, o.name, counts ? el('span', { class: 'c', text: String(counts[o.key] || 0) }) : null);
+      b.addEventListener('click', () => { set(o.key); state.shown = PAGE; save(); render(); });
+      return b;
+    }));
+    host.hidden = !list.length;
+  }
 
-  function card(it, now) {
+  // ---------- Schedule (backlog.json) ----------
+  const schedStatus = (it, now) => new Date(it.post.dueAt) <= now ? 'sent' : it.scheduled ? 'buffer' : 'waiting';
+  const ST_NAME = { buffer: 'In Buffer', waiting: 'Waiting', sent: 'Sent', posted: 'Posted', none: 'Not scheduled' };
+  function kindOf(p) {
+    const ch = CHANNELS[p.channelId]?.key, video = !!p.assets?.[0]?.video;
+    if (ch === 'youtube') return 'Short';
+    if (ch === 'instagram') return p.metadata?.instagram?.type === 'reel' ? 'Reel' : 'Carousel';
+    return video ? 'Video' : 'Slideshow';
+  }
+  function schedCard(it, now) {
     const p = it.post, ch = CHANNELS[p.channelId] || { key: 'other', name: 'Other' };
-    const due = new Date(p.dueAt), st = statusOf(it, now);
-    const { platformTitle, hook } = titleOf(p);
-    const stName = { buffer: 'In Buffer', waiting: 'Waiting', sent: 'Sent' }[st];
-
-    const media = el('div', { class: 'strip' });
-    (p.assets || []).forEach((a, i) => {
-      if (a.video) {
-        media.append(el('figure', {}, el('video', { src: a.video.url, controls: true, preload: 'metadata', playsinline: true, muted: true, 'aria-label': 'Video for ' + hook }), el('figcaption', { text: 'video' })));
-      } else if (a.image) {
-        media.append(el('figure', {}, el('img', { src: a.image.url, alt: `Slide ${i + 1}: ${hook}`, loading: 'lazy', decoding: 'async', class: ch.key === 'instagram' ? 'ig' : 'tt' }), el('figcaption', { text: String(i + 1).padStart(2, '0') })));
-      }
-    });
-
-    const capCol = el('div', {});
-    if (platformTitle) capCol.append(el('div', { class: 'ttl' }, el('p', { class: 'label', text: ch.key === 'youtube' ? 'YouTube title' : 'Title' }), el('span', { class: 't', text: platformTitle }), copyBtn(() => platformTitle)));
-    capCol.append(el('div', { class: 'capbar' }, el('p', { class: 'label', text: ch.key === 'youtube' ? 'Description' : 'Caption' }), copyBtn(() => p.text)));
-    capCol.append(el('pre', { class: 'cap', text: p.text }));
-
+    const due = new Date(p.dueAt), st = schedStatus(it, now);
+    const meta = Object.values(p.metadata || {})[0] || {}, hook = (p.text || '').split('\n')[0].trim();
+    const media = (p.assets || []).map(a => a.video ? { video: a.video.url } : a.image?.url).filter(Boolean);
     const side = el('div', { class: 'side' },
-      el('span', { text: `${fmtDay(due)}, ${fmtTime(due)} Israel time` }),
-      el('span', { text: `${(p.assets || []).length} ${p.assets?.[0]?.video ? 'video' : 'slides'} · ${p.schedulingType === 'notification' ? 'Buffer pings you' : 'Buffer posts it automatically'}` }),
+      el('span', { text: `${when(due)} Israel time` }),
+      el('span', { text: `${media.length} ${p.assets?.[0]?.video ? 'video' : 'slides'} · ${p.schedulingType === 'notification' ? 'Buffer pings you' : 'Buffer posts it automatically'}` }),
       el('span', { class: 'mono', text: it.id }),
-      it.bufferId ? el('span', { class: 'mono', text: 'Buffer ' + it.bufferId }) : null,
       it.error ? el('span', { class: 'err', text: 'Last top-up failed: ' + it.error }) : null,
-    );
-    for (const a of p.assets || []) if (a.video) side.append(el('a', { href: a.video.url, download: '', text: 'Download the video' }));
-
-    return el('article', { class: 'post' + (st === 'sent' ? ' sent' : ''), 'data-status': st, 'data-channel': ch.key },
-      el('header', {},
-        el('h3', { text: platformTitle || hook }),
-        el('div', { class: 'meta' },
-          el('span', { class: 'chip ' + ch.key, text: ch.name }),
-          el('span', { class: 'chip kind', text: kindOf(p) }),
-          el('span', { class: 'chip st-' + st, text: stName }),
-          el('span', { class: 'time', text: fmtTime(due) }))),
-      media,
-      el('div', { class: 'cols' }, capCol, side));
+      ...(p.assets || []).filter(a => a.video).map(a => el('a', { href: a.video.url, download: '', text: 'Download the video' })));
+    return el('article', { class: 'post' + (st === 'sent' ? ' sent' : '') },
+      el('header', {}, el('h3', { text: meta.title || hook }),
+        el('div', { class: 'meta' }, el('span', { class: 'chip ' + ch.key, text: ch.name }), el('span', { class: 'chip kind', text: kindOf(p) }),
+          el('span', { class: 'chip st-' + st, text: ST_NAME[st] }), el('span', { class: 'time', text: fmtTime(due) }))),
+      strip(media, ch.key === 'instagram' ? 'ig' : 'tt', hook),
+      el('div', { class: 'cols' }, captionCol(p.text, meta.title, ch.key === 'youtube' ? 'YouTube title' : 'Title', ch.key === 'youtube' ? 'Description' : 'Caption'), side));
   }
-
-  function matches(it, now) {
-    const st = statusOf(it, now), ch = CHANNELS[it.post.channelId]?.key;
-    const okSt = state.status === 'all' || st === state.status || (state.status === 'upcoming' && st !== 'sent');
-    return okSt && (state.channel === 'all' || ch === state.channel);
-  }
-
-  function renderFilters(now) {
-    const counts = { upcoming: 0, buffer: 0, waiting: 0, sent: 0, all: 0 };
-    const chCounts = { all: 0 };
-    for (const it of state.items) {
-      const st = statusOf(it, now); counts[st]++; counts.all++; if (st !== 'sent') counts.upcoming++;
-      const okSt = state.status === 'all' || st === state.status || (state.status === 'upcoming' && st !== 'sent');
-      if (okSt) { const k = CHANNELS[it.post.channelId]?.key; chCounts[k] = (chCounts[k] || 0) + 1; chCounts.all++; }
-    }
-    const row = (host, list, cur, cnt, set) => {
-      host.replaceChildren(...list.map(o => {
-        const b = el('button', { type: 'button', 'aria-pressed': String(cur === o.key) }, o.name, el('span', { class: 'c', text: String(cnt[o.key] || 0) }));
-        b.addEventListener('click', () => { set(o.key); save(); render(); });
-        return b;
-      }));
-    };
-    row(document.getElementById('f-status'), STATUSES, state.status, counts, k => state.status = k);
-    row(document.getElementById('f-channel'), [{ key: 'all', name: 'All apps' }, ...Object.values(CHANNELS)], state.channel, chCounts, k => state.channel = k);
-
-    const stats = document.getElementById('stats');
-    const next = state.items.filter(it => statusOf(it, now) !== 'sent').sort((a, b) => new Date(a.post.dueAt) - new Date(b.post.dueAt))[0];
+  function renderSchedule(now) {
+    const f = state.sched, counts = { upcoming: 0, buffer: 0, waiting: 0, sent: 0, all: 0 }, chc = { all: 0 };
+    const okSt = st => f.status === 'all' || st === f.status || (f.status === 'upcoming' && st !== 'sent');
+    for (const it of state.items) { const st = schedStatus(it, now); counts[st]++; counts.all++; if (st !== 'sent') counts.upcoming++;
+      if (okSt(st)) { const k = CHANNELS[it.post.channelId]?.key; chc[k] = (chc[k] || 0) + 1; chc.all++; } }
+    filterRow(document.getElementById('f1'), [{ key: 'upcoming', name: 'Coming up' }, { key: 'buffer', name: 'In Buffer' }, { key: 'waiting', name: 'Waiting' }, { key: 'sent', name: 'Sent' }, { key: 'all', name: 'All' }], f.status, counts, k => f.status = k);
+    filterRow(document.getElementById('f2'), [{ key: 'all', name: 'All apps' }, ...Object.values(CHANNELS)], f.channel, chc, k => f.channel = k);
+    filterRow(document.getElementById('f3'), [], null, null, () => {});
+    const next = state.items.filter(it => schedStatus(it, now) !== 'sent').sort((a, b) => new Date(a.post.dueAt) - new Date(b.post.dueAt))[0];
     const last = state.items.reduce((m, it) => Math.max(m, +new Date(it.post.dueAt)), 0);
-    stats.replaceChildren(
-      el('div', {}, el('b', { text: String(counts.buffer) }), el('span', { text: 'in Buffer now' })),
-      el('div', {}, el('b', { text: String(counts.waiting) }), el('span', { text: 'waiting in the backlog' })),
-      el('div', {}, el('b', { text: String(counts.sent) }), el('span', { text: 'already sent' })),
-      el('div', {}, el('b', { text: next ? fmtTime(new Date(next.post.dueAt)) : '–' }), el('span', { text: next ? 'next: ' + fmtDay(new Date(next.post.dueAt)) + ', ' + (CHANNELS[next.post.channelId]?.name || '') : 'nothing coming up' })),
-      el('div', {}, el('b', { text: last ? fmtDay(new Date(last)) : '–' }), el('span', { text: 'last planned post' })),
-    );
+    stats([[counts.buffer, 'in Buffer now'], [counts.waiting, 'waiting in the backlog'], [counts.sent, 'sent by Buffer'],
+      [next ? fmtTime(new Date(next.post.dueAt)) : '–', next ? 'next: ' + fmtDay(new Date(next.post.dueAt)) + ', ' + CHANNELS[next.post.channelId]?.name : 'nothing coming up'],
+      [last ? fmtDay(new Date(last)) : '–', 'last planned post']]);
+    const shown = state.items.filter(it => okSt(schedStatus(it, now)) && (f.channel === 'all' || CHANNELS[it.post.channelId]?.key === f.channel))
+      .sort((a, b) => (new Date(a.post.dueAt) - new Date(b.post.dueAt)) * (f.status === 'sent' ? -1 : 1));
+    document.getElementById('count').textContent = `${shown.length} post${shown.length === 1 ? '' : 's'}`;
+    if (!shown.length) return [el('p', { class: 'empty', text: 'No posts match these filters.' })];
+    const groups = new Map(), today = dayKey(now);
+    for (const it of shown) { const d = new Date(it.post.dueAt), k = dayKey(d); if (!groups.has(k)) groups.set(k, { d, items: [] }); groups.get(k).items.push(it); }
+    return [...groups.entries()].map(([k, g]) => el('section', { class: 'day', 'aria-label': fmtDay(g.d) },
+      el('h2', {}, k === today ? 'Today' : fmtDay(g.d), el('small', { text: `${g.items.length} post${g.items.length === 1 ? '' : 's'}` })),
+      g.items.map(it => schedCard(it, now))));
   }
 
+  // ---------- Post Pack (pack.json + backlog.json) ----------
+  // Each Post Pack post can go out in up to four places: as itself, and as a YouTube Short, an Instagram Reel or a TikTok video.
+  const OUTLETS = [['', null], ['yt-', 'YouTube Short'], ['yt-reel-', 'Instagram Reel'], ['yt-ttv-', 'TikTok video']];
+  function outletState(id, now) {
+    const it = state.byId.get(id);
+    if (it) { const d = new Date(it.post.dueAt); return { st: schedStatus(it, now), at: d }; }
+    const at = state.pack.posted[id];
+    if (at) { const d = new Date(at); return { st: d > now ? 'buffer' : 'posted', at: d }; }
+    return null;
+  }
+  function packInfo(p, now) {
+    const own = p.platform === 'Instagram' ? 'Instagram carousel' : 'TikTok slideshow';
+    const outs = OUTLETS.map(([pre, label]) => ({ label: label || own, s: outletState(pre + p.id, now) })).filter((o, i) => i === 0 || o.s);
+    const main = outs[0].s;
+    const st = main ? (main.st === 'sent' || main.st === 'posted' ? 'posted' : 'scheduled') : outs.some(o => o.s) ? 'scheduled' : 'none';
+    return { outs, st, main };
+  }
+  function packCard(p, info, now) {
+    const kind = p.platform === 'Instagram' ? 'ig' : 'tt';
+    const it = state.byId.get(p.id);
+    const text = it ? it.post.text : p.caption;              // the backlog holds the latest caption
+    const title = it ? (Object.values(it.post.metadata || {})[0] || {}).title : p.ttTitle;
+    const stChip = { posted: ['st-posted', 'Posted'], scheduled: ['st-buffer', 'Scheduled'], none: ['st-none', 'Not scheduled'] }[info.st];
+    const outs = el('ul', { class: 'outlets' }, info.outs.map(o => el('li', {}, el('b', { text: o.label }),
+      o.s ? el('span', { class: 'chip st-' + o.s.st, text: ST_NAME[o.s.st] }) : el('span', { class: 'chip st-none', text: 'Not scheduled' }),
+      o.s ? el('span', { class: 'time', text: when(o.s.at) }) : null)));
+    const side = el('div', { class: 'side' }, el('p', { class: 'label', text: 'Where it went' }), outs,
+      p.source ? el('span', { text: 'Source: ' + p.source }) : null, el('span', { class: 'mono', text: p.id }));
+    return el('article', { class: 'post' + (info.st === 'posted' ? ' posted' : '') },
+      el('header', {}, el('h3', { text: p.hook }),
+        el('div', { class: 'meta' }, el('span', { class: 'chip ' + (kind === 'ig' ? 'instagram' : 'tiktok'), text: p.platform }),
+          el('span', { class: 'chip coll', text: p.section === 'stories' ? 'Music story' : 'VinylDuel post' }),
+          el('span', { class: 'chip ' + stChip[0], text: stChip[1] }))),
+      strip(p.slides, kind, p.hook),
+      el('div', { class: 'cols' }, captionCol(text, title, 'TikTok title', 'Caption'), side));
+  }
+  function renderPack(now) {
+    const f = state.packf, all = state.pack.posts.map(p => ({ p, info: packInfo(p, now) }));
+    const okSt = x => f.status === 'all' || x.info.st === f.status;
+    const okPl = x => f.platform === 'all' || x.p.platform.toLowerCase() === f.platform;
+    const okCo = x => f.coll === 'all' || x.p.section === f.coll;
+    const cnt = (pred, key) => all.reduce((m, x) => { if (pred(x)) { const k = key(x); m[k] = (m[k] || 0) + 1; m.all = (m.all || 0) + 1; } return m; }, {});
+    filterRow(document.getElementById('f1'), [{ key: 'all', name: 'All' }, { key: 'none', name: 'Not scheduled' }, { key: 'scheduled', name: 'Scheduled' }, { key: 'posted', name: 'Posted' }], f.status, cnt(x => okPl(x) && okCo(x), x => x.info.st), k => f.status = k);
+    filterRow(document.getElementById('f2'), [{ key: 'all', name: 'Both apps' }, { key: 'instagram', name: 'Instagram' }, { key: 'tiktok', name: 'TikTok' }], f.platform, cnt(x => okSt(x) && okCo(x), x => x.p.platform.toLowerCase()), k => f.platform = k);
+    filterRow(document.getElementById('f3'), [{ key: 'all', name: 'Both collections' }, { key: 'main', name: 'VinylDuel posts' }, { key: 'stories', name: 'Music stories' }], f.coll, cnt(x => okSt(x) && okPl(x), x => x.p.section), k => f.coll = k);
+    const tot = cnt(() => true, x => x.info.st);
+    const outPosted = all.reduce((m, x) => m + x.info.outs.filter(o => o.s && (o.s.st === 'posted' || o.s.st === 'sent')).length, 0);
+    stats([[all.length, 'posts in the pack'], [tot.posted || 0, 'posted'], [tot.scheduled || 0, 'scheduled'], [tot.none || 0, 'not scheduled yet'], [outPosted, 'times sent, all apps']]);
+    // Not scheduled first (in pack order), then scheduled, then posted (newest first).
+    const rank = { none: 0, scheduled: 1, posted: 2 };
+    const shown = all.filter(x => okSt(x) && okPl(x) && okCo(x)).sort((a, b) => rank[a.info.st] - rank[b.info.st]
+      || (a.info.st === 'posted' ? (b.info.main?.at || 0) - (a.info.main?.at || 0) : a.info.st === 'scheduled' ? (a.info.main?.at || 0) - (b.info.main?.at || 0) : 0));
+    document.getElementById('count').textContent = `${shown.length} post${shown.length === 1 ? '' : 's'}`;
+    if (!shown.length) return [el('p', { class: 'empty', text: 'No posts match these filters.' })];
+    const out = [el('div', { class: 'posts', style: 'display:flex;flex-direction:column;gap:22px' }, shown.slice(0, state.shown).map(x => packCard(x.p, x.info, now)))];
+    if (shown.length > state.shown) {
+      const b = el('button', { class: 'more', type: 'button', text: `Show ${Math.min(PAGE, shown.length - state.shown)} more of ${shown.length - state.shown}` });
+      b.addEventListener('click', () => { state.shown += PAGE; render(); });
+      out.push(b);
+    }
+    return out;
+  }
+
+  function stats(rows) {
+    document.getElementById('stats').replaceChildren(...rows.map(([v, l]) => el('div', {}, el('b', { text: String(v) }), el('span', { text: l }))));
+  }
   function render() {
     const now = new Date();
-    renderFilters(now);
-    const shown = state.items.filter(it => matches(it, now));
-    const sentFirstDesc = state.status === 'sent';
-    shown.sort((a, b) => (new Date(a.post.dueAt) - new Date(b.post.dueAt)) * (sentFirstDesc ? -1 : 1));
-    document.getElementById('count').textContent = `${shown.length} post${shown.length === 1 ? '' : 's'}`;
-    const list = document.getElementById('list');
-    if (!shown.length) { list.replaceChildren(el('p', { class: 'empty', text: 'No posts match these filters.' })); return; }
-    const groups = new Map();
-    for (const it of shown) { const d = new Date(it.post.dueAt), k = dayKey(d); if (!groups.has(k)) groups.set(k, { d, items: [] }); groups.get(k).items.push(it); }
-    const today = dayKey(now);
-    list.replaceChildren(...[...groups.entries()].map(([k, g]) => el('section', { class: 'day', 'aria-label': fmtDay(g.d) },
-      el('h2', {}, k === today ? 'Today' : fmtDay(g.d), el('small', { text: `${g.items.length} post${g.items.length === 1 ? '' : 's'}` })),
-      g.items.map(it => card(it, now)))));
+    document.getElementById('t-pack').setAttribute('aria-selected', String(state.tab === 'pack'));
+    document.getElementById('t-sched').setAttribute('aria-selected', String(state.tab === 'sched'));
+    document.getElementById('c-pack').textContent = String(state.pack.posts.length);
+    document.getElementById('c-sched').textContent = String(state.items.filter(it => schedStatus(it, now) !== 'sent').length);
+    const y = window.scrollY;
+    document.getElementById('view').replaceChildren(...(state.tab === 'pack' ? renderPack(now) : renderSchedule(now)));
+    window.scrollTo(0, y);
   }
-  function save() { try { localStorage.setItem('pp-filters', JSON.stringify({ status: state.status, channel: state.channel })); } catch (e) {} }
+  for (const [id, tab] of [['t-pack', 'pack'], ['t-sched', 'sched']]) document.getElementById(id).addEventListener('click', () => { state.tab = tab; state.shown = PAGE; save(); render(); });
 
+  async function getJSON(u) { const r = await fetch(u + '?t=' + Date.now(), { cache: 'no-store' }); if (!r.ok) throw new Error(u + ': HTTP ' + r.status); return r.json(); }
   async function load() {
     try {
-      const r = await fetch('backlog.json?t=' + Date.now(), { cache: 'no-store' });
-      if (!r.ok) throw new Error('HTTP ' + r.status);
-      const data = await r.json();
-      state.items = Array.isArray(data.items) ? data.items : [];
+      const [b, pk] = await Promise.all([getJSON('backlog.json'), getJSON('pack.json')]);
+      state.items = Array.isArray(b.items) ? b.items : [];
+      state.byId = new Map(state.items.map(it => [it.id, it]));
+      state.pack = { posts: pk.posts || [], posted: pk.posted || {} };
       render();
     } catch (e) {
-      document.getElementById('list').replaceChildren(el('p', { class: 'empty', text: 'Could not load backlog.json (' + e.message + '). Reload to try again.' }));
+      document.getElementById('view').replaceChildren(el('p', { class: 'empty', text: 'Could not load the data (' + e.message + '). Reload to try again.' }));
     }
-    // When was the backlog last changed? Best effort: the GitHub API allows 60 calls an hour without a token.
     try {
       const r = await fetch('https://api.github.com/repos/cbsa100/vinylduel-social/commits?path=backlog.json&per_page=1');
       const c = (await r.json())[0];
-      if (c) document.getElementById('updated').textContent = `Backlog last changed ${fmtDay(new Date(c.commit.committer.date))}, ${fmtTime(new Date(c.commit.committer.date))}: “${c.commit.message.split('\n')[0]}”`;
+      if (c) document.getElementById('updated').textContent = `Backlog last changed ${when(new Date(c.commit.committer.date))}: “${c.commit.message.split('\n')[0]}”`;
     } catch (e) {}
   }
+  state.byId = new Map();
   load();
-  // Statuses move with the clock: re-sort every minute, re-read the backlog every 10 minutes.
-  // (only when a status actually changed, so a playing video isn't reset)
+  // Statuses move with the clock; re-render only when one changes (a playing video isn't reset), re-read every 10 minutes.
   let sig = '';
-  setInterval(() => { const now = new Date(), s = state.items.map(it => statusOf(it, now)).join(); if (s !== sig) { sig = s; render(); } }, 60 * 1000);
+  setInterval(() => { const now = new Date(), s = state.items.map(it => schedStatus(it, now)).join(); if (s !== sig) { sig = s; render(); } }, 60 * 1000);
   setInterval(load, 10 * 60 * 1000);
 })();
 </script>
