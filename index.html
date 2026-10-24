@@ -144,7 +144,7 @@ footer a{color:var(--violet)}
     '6adb5f1d778b240e2f9d52af': { key: 'youtube', name: 'YouTube' },
   };
   const PAGE = 40;
-  const state = { tab: 'pack', items: [], pack: { posts: [], posted: {} }, shown: PAGE,
+  const state = { tab: 'pack', items: [], pack: { posts: [], posted: {}, videos: new Set() }, shown: PAGE,
     sched: { status: 'upcoming', channel: 'all' },
     packf: { status: 'all', platform: 'all', coll: 'all' } };
   try { const s = JSON.parse(localStorage.getItem('pp-v2') || '{}'); if (s.tab) state.tab = s.tab; Object.assign(state.sched, s.sched || {}); Object.assign(state.packf, s.packf || {}); } catch (e) {}
@@ -262,44 +262,60 @@ footer a{color:var(--violet)}
     const st = main ? (main.st === 'sent' || main.st === 'posted' ? 'posted' : 'scheduled') : outs.some(o => o.s) ? 'scheduled' : 'none';
     return { outs, st, main };
   }
-  function packCard(p, info, now) {
-    const kind = p.platform === 'Instagram' ? 'ig' : 'tt';
-    const it = state.byId.get(p.id);
-    const text = it ? it.post.text : p.caption;              // the backlog holds the latest caption
-    const title = it ? (Object.values(it.post.metadata || {})[0] || {}).title : p.ttTitle;
+  function packCard(p, info, now, yt) {
+    const kind = yt || p.platform !== 'Instagram' ? 'tt' : 'ig';
+    const it = state.byId.get((yt ? 'yt-' : '') + p.id);
+    const meta = it ? (Object.values(it.post.metadata || {})[0] || {}) : {};
+    // the backlog holds the latest caption and title
+    const text = it ? it.post.text : yt ? (p.ytDesc || p.caption) : p.caption;
+    const title = it ? meta.title : yt ? p.ytTitle : p.ttTitle;
+    const vid = it?.post.assets?.find(a => a.video)?.video.url || (yt && state.pack.videos.has(p.id) ? `video/${p.id}-v2.mp4` : null);
+    const media = yt && vid ? [{ video: vid }] : p.slides;
     const stChip = { posted: ['st-posted', 'Posted'], scheduled: ['st-buffer', 'Scheduled'], none: ['st-none', 'Not scheduled'] }[info.st];
     const outs = el('ul', { class: 'outlets' }, info.outs.map(o => el('li', {}, el('b', { text: o.label }),
       o.s ? el('span', { class: 'chip st-' + o.s.st, text: ST_NAME[o.s.st] }) : el('span', { class: 'chip st-none', text: 'Not scheduled' }),
       o.s ? el('span', { class: 'time', text: when(o.s.at) }) : null)));
     const side = el('div', { class: 'side' }, el('p', { class: 'label', text: 'Where it went' }), outs,
-      p.source ? el('span', { text: 'Source: ' + p.source }) : null, el('span', { class: 'mono', text: p.id }));
+      yt && !vid ? el('span', { text: 'No video yet: the Short will be made from these slides.' }) : null,
+      vid ? el('a', { href: vid, download: '', text: 'Download the video' }) : null,
+      el('span', { class: 'mono', text: (yt ? 'yt-' : '') + p.id }));
     return el('article', { class: 'post' + (info.st === 'posted' ? ' posted' : '') },
-      el('header', {}, el('h3', { text: p.hook }),
-        el('div', { class: 'meta' }, el('span', { class: 'chip ' + (kind === 'ig' ? 'instagram' : 'tiktok'), text: p.platform }),
+      el('header', {}, el('h3', { text: yt ? (title || p.hook) : p.hook }),
+        el('div', { class: 'meta' }, el('span', { class: 'chip ' + (yt ? 'youtube' : kind === 'ig' ? 'instagram' : 'tiktok'), text: yt ? 'YouTube' : p.platform }),
           el('span', { class: 'chip coll', text: p.section === 'stories' ? 'Music story' : 'VinylDuel post' }),
           el('span', { class: 'chip ' + stChip[0], text: stChip[1] }))),
-      strip(p.slides, kind, p.hook),
-      el('div', { class: 'cols' }, captionCol(text, title, 'TikTok title', 'Caption'), side));
+      strip(media, kind, p.hook),
+      el('div', { class: 'cols' }, captionCol(text, title, yt ? 'YouTube title' : 'TikTok title', yt ? 'Description' : 'Caption'), side));
+  }
+  // A YouTube Short is made from a TikTok post's slides; every TikTok post in the pack has a YouTube title.
+  function ytInfo(p, now) {
+    const s = outletState('yt-' + p.id, now);
+    return { outs: [{ label: 'YouTube Short', s }], main: s, st: s ? (s.st === 'sent' || s.st === 'posted' ? 'posted' : 'scheduled') : 'none' };
   }
   function renderPack(now) {
-    const f = state.packf, all = state.pack.posts.map(p => ({ p, info: packInfo(p, now) }));
+    const f = state.packf;
+    const igtt = state.pack.posts.map(p => ({ p, info: packInfo(p, now), yt: false }));
+    const yts = state.pack.posts.filter(p => p.ytTitle).map(p => ({ p, info: ytInfo(p, now), yt: true }));
     const okSt = x => f.status === 'all' || x.info.st === f.status;
-    const okPl = x => f.platform === 'all' || x.p.platform.toLowerCase() === f.platform;
     const okCo = x => f.coll === 'all' || x.p.section === f.coll;
-    const cnt = (pred, key) => all.reduce((m, x) => { if (pred(x)) { const k = key(x); m[k] = (m[k] || 0) + 1; m.all = (m.all || 0) + 1; } return m; }, {});
-    filterRow(document.getElementById('f1'), [{ key: 'all', name: 'All' }, { key: 'none', name: 'Not scheduled' }, { key: 'scheduled', name: 'Scheduled' }, { key: 'posted', name: 'Posted' }], f.status, cnt(x => okPl(x) && okCo(x), x => x.info.st), k => f.status = k);
-    filterRow(document.getElementById('f2'), [{ key: 'all', name: 'Both apps' }, { key: 'instagram', name: 'Instagram' }, { key: 'tiktok', name: 'TikTok' }], f.platform, cnt(x => okSt(x) && okCo(x), x => x.p.platform.toLowerCase()), k => f.platform = k);
-    filterRow(document.getElementById('f3'), [{ key: 'all', name: 'Both collections' }, { key: 'main', name: 'VinylDuel posts' }, { key: 'stories', name: 'Music stories' }], f.coll, cnt(x => okSt(x) && okPl(x), x => x.p.section), k => f.coll = k);
-    const tot = cnt(() => true, x => x.info.st);
-    const outPosted = all.reduce((m, x) => m + x.info.outs.filter(o => o.s && (o.s.st === 'posted' || o.s.st === 'sent')).length, 0);
-    stats([[all.length, 'posts in the pack'], [tot.posted || 0, 'posted'], [tot.scheduled || 0, 'scheduled'], [tot.none || 0, 'not scheduled yet'], [outPosted, 'times sent, all apps']]);
-    // Not scheduled first (in pack order), then scheduled, then posted (newest first).
+    const plat = x => x.yt ? 'youtube' : x.p.platform.toLowerCase();
+    const pool = f.platform === 'youtube' ? yts : igtt.filter(x => f.platform === 'all' || plat(x) === f.platform);
+    const tally = (list, key) => list.reduce((m, x) => { const k = key(x); m[k] = (m[k] || 0) + 1; m.all = (m.all || 0) + 1; return m; }, {});
+    filterRow(document.getElementById('f1'), [{ key: 'all', name: 'All' }, { key: 'none', name: 'Not scheduled' }, { key: 'scheduled', name: 'Scheduled' }, { key: 'posted', name: 'Posted' }], f.status, tally(pool.filter(okCo), x => x.info.st), k => f.status = k);
+    const pc = tally([...igtt, ...yts].filter(x => okSt(x) && okCo(x)), plat);
+    pc.all = igtt.filter(x => okSt(x) && okCo(x)).length;
+    filterRow(document.getElementById('f2'), [{ key: 'all', name: 'Instagram + TikTok' }, { key: 'instagram', name: 'Instagram' }, { key: 'tiktok', name: 'TikTok' }, { key: 'youtube', name: 'YouTube' }], f.platform, pc, k => f.platform = k);
+    filterRow(document.getElementById('f3'), [{ key: 'all', name: 'Both collections' }, { key: 'main', name: 'VinylDuel posts' }, { key: 'stories', name: 'Music stories' }], f.coll, tally(pool.filter(okSt), x => x.p.section), k => f.coll = k);
+    const tot = tally(pool, x => x.info.st);
+    const outPosted = [...igtt, ...yts].reduce((m, x) => m + x.info.outs.filter(o => o.s && (o.s.st === 'posted' || o.s.st === 'sent')).length, 0) - yts.reduce((m, x) => m + (x.info.st === 'posted' ? 1 : 0), 0);
+    stats([[pool.length, f.platform === 'youtube' ? 'YouTube Shorts in the pack' : 'posts in the pack'], [tot.posted || 0, 'posted'], [tot.scheduled || 0, 'scheduled'], [tot.none || 0, 'not scheduled yet'], [outPosted, 'times sent, all apps']]);
+    // Not scheduled first (in pack order), then scheduled (soonest first), then posted (newest first).
     const rank = { none: 0, scheduled: 1, posted: 2 };
-    const shown = all.filter(x => okSt(x) && okPl(x) && okCo(x)).sort((a, b) => rank[a.info.st] - rank[b.info.st]
+    const shown = pool.filter(x => okSt(x) && okCo(x)).sort((a, b) => rank[a.info.st] - rank[b.info.st]
       || (a.info.st === 'posted' ? (b.info.main?.at || 0) - (a.info.main?.at || 0) : a.info.st === 'scheduled' ? (a.info.main?.at || 0) - (b.info.main?.at || 0) : 0));
     document.getElementById('count').textContent = `${shown.length} post${shown.length === 1 ? '' : 's'}`;
     if (!shown.length) return [el('p', { class: 'empty', text: 'No posts match these filters.' })];
-    const out = [el('div', { class: 'posts', style: 'display:flex;flex-direction:column;gap:22px' }, shown.slice(0, state.shown).map(x => packCard(x.p, x.info, now)))];
+    const out = [el('div', { class: 'posts', style: 'display:flex;flex-direction:column;gap:22px' }, shown.slice(0, state.shown).map(x => packCard(x.p, x.info, now, x.yt)))];
     if (shown.length > state.shown) {
       const b = el('button', { class: 'more', type: 'button', text: `Show ${Math.min(PAGE, shown.length - state.shown)} more of ${shown.length - state.shown}` });
       b.addEventListener('click', () => { state.shown += PAGE; render(); });
@@ -329,7 +345,7 @@ footer a{color:var(--violet)}
       const [b, pk] = await Promise.all([getJSON('backlog.json'), getJSON('pack.json')]);
       state.items = Array.isArray(b.items) ? b.items : [];
       state.byId = new Map(state.items.map(it => [it.id, it]));
-      state.pack = { posts: pk.posts || [], posted: pk.posted || {} };
+      state.pack = { posts: pk.posts || [], posted: pk.posted || {}, videos: new Set(pk.videos || []) };
       render();
     } catch (e) {
       document.getElementById('view').replaceChildren(el('p', { class: 'empty', text: 'Could not load the data (' + e.message + '). Reload to try again.' }));
