@@ -230,7 +230,8 @@
       "title": "The longest songs to ever hit #1"
      }
     }
-   }
+   },
+   "bufferId": "6adb63046bf37011a378c621"
   },
   {
    "id": "ig-nevermind",
@@ -305,7 +306,8 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6adb63056fe59a6ed2779af1"
   },
   {
    "id": "yt-tt-b2-duel-nevermind",
@@ -331,7 +333,8 @@
       "madeForKids": false
      }
     }
-   }
+   },
+   "bufferId": "6adb63076fe59a6ed2779b28"
   },
   {
    "id": "tt-b2-tier-trench",
@@ -381,7 +384,8 @@
       "title": "Trench tier list, ranked by the community"
      }
     }
-   }
+   },
+   "bufferId": "6adb63076bf37011a378c6cb"
   },
   {
    "id": "yt-tt-b2-grave",
@@ -407,7 +411,8 @@
       "madeForKids": false
      }
     }
-   }
+   },
+   "bufferId": "6adb6308ce9fbd2e3b4bde95"
   },
   {
    "id": "ig-st-heyjude",
@@ -474,7 +479,8 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6adb63096fe59a6ed2779bb2"
   },
   {
    "id": "yt-ttv-tt-st-anon",
@@ -483,7 +489,7 @@
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-24T21:38:00+03:00",
+    "dueAt": "2026-10-25T21:06:00+02:00",
     "text": "watch till the end 👀 nobody knew what the weeknd looked like. in 2010 a few songs appeared on youtube under the name the weeknd. no photos, no interviews, just the music. best weeknd album?\n\nphotos: Picikepocok22 (CC0), Fred von Lohmann (CC BY 2.0), Salandco (CC BY-SA 4.0), Pedro Mora (CC BY 3.0), Nicolas Padovani (CC BY 2.0), all via Wikimedia Commons\n\n#theweeknd #blindinglights #houseofballoons #rnb #musichistory #fyp",
     "assets": [
      {
@@ -497,7 +503,8 @@
       "title": "Nobody knew what The Weeknd looked like"
      }
     }
-   }
+   },
+   "bufferId": "6adb630a91ffb6bdb08731a9"
   },
   {
    "id": "yt-ttv-tt-b2-tier-chromakopia",
@@ -506,7 +513,7 @@
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-25T09:45:00+02:00",
+    "dueAt": "2026-10-26T13:37:00+02:00",
     "text": "watch till the end 👀 chromakopia tier list. st. chroma is A tier. what would you move?\n\n#tylerthecreator #chromakopia #hiphop #rap #tierlist #fyp",
     "assets": [
      {
@@ -520,7 +527,8 @@
       "title": "CHROMAKOPIA tier list, ranked by the community"
      }
     }
-   }
+   },
+   "bufferId": "6adb630b6fe59a6ed2779c56"
   },
   {
    "id": "yt-tt-b2-tiermake-guts",
@@ -529,7 +537,7 @@
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-25T09:49:00+02:00",
+    "dueAt": "2026-10-25T12:45:00+02:00",
     "text": "guts tier list. your turn. screenshot the empty tier list and comment your S tier\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#oliviarodrigo #guts #vampire #tierlist #albumranking #shorts",
     "assets": [
      {
@@ -556,7 +564,7 @@
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-25T10:33:00+02:00",
+    "dueAt": "2026-10-25T13:00:00+02:00",
     "text": "send this to the friend you always argue with\n.\n.\n.\nIf you and a friend both rank Graduation, this is where it gets loud. Flashing Lights is the most divisive song on the album: top three for some people, much further down for others. Everything I Am is someone's #1 and stuck in the bottom half for plenty of others. Stronger is the one you'll probably agree on, since almost everyone puts it around 4th.\n\nOn VinylDuel you can settle it: rank the album, tap Compare and send the link. Your friend ranks it too, and you both see your match % and every song you disagree on.\n\nTag the friend with the worst taste. Get the VinylDuel app free on iPhone and Android, link in bio.\n\nphotos: David Shankbone (public domain), Jason Lander (CC BY 2.0), Will (CC BY-SA 2.0), Alan Waite (CC BY-SA 2.0), all via Wikimedia Commons\n\n#kanyewest #graduation #albumranking #musictaste #bestfriend",
     "assets": [
      {
@@ -614,7 +622,8 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6adb630c91ffb6bdb0873234"
   },
   {
    "id": "yt-tt-b2-rcpt-meteora",
@@ -623,7 +632,7 @@
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-25T12:08:00+02:00",
+    "dueAt": "2026-10-25T18:14:00+02:00",
     "text": "numb is 6th on the meteora receipt 🧾. what would you return?\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#linkinpark #meteora #numb #numetal #albumranking #shorts",
     "assets": [
      {
@@ -650,7 +659,7 @@
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-25T13:43:00+02:00",
+    "dueAt": "2026-10-26T14:17:00+02:00",
     "text": "the receipt for demon days 🧾. what would you return?\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#gorillaz #demondays #feelgoodinc #damonalbarn #albumranking #shorts",
     "assets": [
      {
@@ -677,7 +686,7 @@
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-25T14:45:00+02:00",
+    "dueAt": "2026-10-25T18:46:00+02:00",
     "text": "chromakopia: the tier list 🎧\n\nCHROMAKOPIA (2024) is the Tyler, the Creator album that opens with St. Chroma. Cut from the VinylDuel community ranking: Darling, I and Noid are S tier, and St. Chroma makes A.\n\nWhat would you move? Rank it yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\n#tylerthecreator #chromakopia #hiphop #rap #tierlist #reels",
     "assets": [
      {
@@ -692,7 +701,8 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6adb630d6bf37011a378c7e0"
   },
   {
    "id": "tt-st-daftname",
@@ -701,7 +711,7 @@
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-25T15:14:00+02:00",
+    "dueAt": "2026-10-25T13:14:00+02:00",
     "text": "daft punk got their name from a bad review. thomas bangalter and guy-manuel de homem-christo first played in a rock band called darlin', with laurent brancowitz, later of phoenix. discovery or random access memories?\n\nphotos: Papouten (CC BY-SA 4.0), LucaFazPhoto (CC BY-SA 4.0), Sony Music Entertainment (CC BY 4.0), all via Wikimedia Commons\n\n#daftpunk #discovery #frenchtouch #electronic #musichistory",
     "assets": [
      {
@@ -758,7 +768,8 @@
       "title": "Daft Punk got their name from a bad review"
      }
     }
-   }
+   },
+   "bufferId": "6adb630e7af932dee4e0e42c"
   },
   {
    "id": "ig-st-blackstar",
@@ -767,7 +778,7 @@
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-25T16:18:00+02:00",
+    "dueAt": "2026-10-26T20:28:00+02:00",
     "text": "he released his last album two days before he died\n.\n.\n.\nDavid Bowie had been treated for cancer for about 18 months, and kept it almost completely private. His album Blackstar came out on 8 January 2016, his 69th birthday. Fans heard it as a bold new chapter.\n\nHe died two days later. Songs like Lazarus suddenly sounded like a goodbye, and producer Tony Visconti called the album his parting gift. His first big hit, Space Oddity, came out days before the Apollo 11 launch, and the BBC played it during its moon-landing coverage.\n\nWhich Bowie era is the best? Follow @vinylduel for a music story every day.\n\nphotos: Boris Yaro (CC BY 4.0), Tony Barnard / Los Angeles Times (CC BY 4.0), ABC Television (public domain), LuisFer Dominguez Serra (CC BY-SA 4.0), all via Wikimedia Commons\n\n#davidbowie #blackstar #ziggystardust #musichistory #bowie",
     "assets": [
      {
@@ -825,7 +836,8 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6adb630f91ffb6bdb08732cc"
   },
   {
    "id": "yt-tt-b2-infinity",
@@ -834,7 +846,7 @@
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-25T16:31:00+02:00",
+    "dueAt": "2026-10-26T19:29:00+02:00",
     "text": "thnks fr th mmrs is only 8th on infinity on high. the carpal tunnel of love is #1, fame < infamy second, this ain't a scene 6th.\n\nphotos: Drew de F Fawkes (CC BY 2.0), Stefan Brending (2eight) (CC BY-SA 3.0), Fernando Loz (CC BY-SA 2.0), all via Wikimedia Commons\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#falloutboy #infinityonhigh #emo #2000s #albumranking #shorts",
     "assets": [
      {
@@ -861,7 +873,7 @@
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-25T18:19:00+02:00",
+    "dueAt": "2026-10-27T20:19:00+02:00",
     "text": "watch till the end 👀 5 old songs that tv and tiktok brought back. running up that hill, master of puppets, dreams… which song needs a comeback?\n\nphotos: Kreepin Deth (CC BY-SA 4.0), Columbia Records (public domain), aresauburn (CC BY-SA 2.0), Warner Bros. Records (public domain), Carl Lender (CC BY-SA 3.0), Saad Faruque (CC BY 2.0), all via Wikimedia Commons\n\n#strangerthings #tiktok #musicfacts #katebush #metallica #fyp",
     "assets": [
      {
@@ -885,7 +897,7 @@
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-25T18:52:00+02:00",
+    "dueAt": "2026-10-26T14:06:00+02:00",
     "text": "5 old songs that tv and tiktok brought back 🎧\n\n1. Running Up That Hill: Stranger Things made the 1985 song a UK #1 in 2022.\n2. Master of Puppets: Eddie's guitar solo in Stranger Things sent the 1986 song onto the Billboard Hot 100 for the first time.\n3. Dreams: A 2020 TikTok of a man skateboarding with a bottle of cranberry juice sent Dreams back onto the charts, 43 years later.\n4. Bohemian Rhapsody: The head-banging car scene in Wayne's World (1992) took it back up the US charts, to #2.\n5. Saltburn: Sophie Ellis-Bextor's 2001 hit returned to the charts after the film's final scene.\n\nWhich song needs a comeback? Follow @vinylduel for a music story every day.\n\nphotos: Kreepin Deth (CC BY-SA 4.0), Columbia Records (public domain), Saad Faruque (CC BY 2.0), Warner Bros. Records (public domain), Carl Lender (CC BY-SA 3.0), 4TheWynne (CC BY-SA 4.0), all via Wikimedia Commons\n\n#strangerthings #tiktok #musicfacts #katebush #metallica #reels",
     "assets": [
      {
@@ -910,7 +922,7 @@
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-25T20:18:00+02:00",
+    "dueAt": "2026-10-27T13:40:00+02:00",
     "text": "pick one: 1989 edition. blank space or style, shake it off or bad blood, wildest dreams or out of the woods… comment your picks\n\nphotos: Paolo V (CC BY 2.0), Ronald Woan (CC BY-SA 2.0), all via Wikimedia Commons\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#taylorswift #1989taylorsversion #swifties #thisorthat #pop #shorts",
     "assets": [
      {
@@ -937,7 +949,7 @@
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-25T20:44:00+02:00",
+    "dueAt": "2026-10-26T18:55:00+02:00",
     "text": "nevermind, 35 years later. our verdict: 9.0/10, the record that kicked the door in. nevermind or in utero?\n\nphotos: David Lee (CC BY-SA 2.0), DoD News Features (CC BY 2.0), all via Wikimedia Commons\n\n#nirvana #nevermind #grunge #albumreview #90s",
     "assets": [
      {
@@ -1004,7 +1016,7 @@
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-25T20:58:00+02:00",
+    "dueAt": "2026-10-27T12:17:00+02:00",
     "text": "you can only pick one\n.\n.\n.\nOn VinylDuel you rank an album by picking between two songs, again and again, until the whole order is worked out. Most duels are easy. These ones aren't.\n\nThe community can barely separate Money and Time on The Dark Side of the Moon. Runaway and Power are exactly tied on My Beautiful Dark Twisted Fantasy, and so are R U Mine? and Why'd You Only Call Me When You're High? on AM. Let It Happen just beats New Person, Same Old Mistakes, and Just just beats Fake Plastic Trees.\n\nComment your picks, slide by slide. Then settle it on the VinylDuel app, link in bio.\n\nphotos: Live at Pompeii press kit (public domain), unknown photographer (public domain), David Shankbone (public domain), Christhian Ferenc (CC BY 2.0), Raph_PH (CC BY 2.0), Alterna2 (CC BY 2.0), all via Wikimedia Commons\n\n#albumranking #thisorthat #pinkfloyd #kanyewest #arcticmonkeys",
     "assets": [
      {
@@ -1080,7 +1092,7 @@
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-25T22:40:00+02:00",
+    "dueAt": "2026-10-27T12:19:00+02:00",
     "text": "we printed the receipt for lonerism 🧾. what would you return?\n\n#tameimpala #lonerism #kevinparker #psychedelic #albumranking",
     "assets": [
      {
@@ -1123,7 +1135,7 @@
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-26T09:29:00+02:00",
+    "dueAt": "2026-10-27T19:46:00+02:00",
     "text": "her first song was uploaded for a dance class. her brother finneas wrote ocean eyes for his band. in 2015 billie sang it and they put it on soundcloud so her dance teacher could choreograph to it. what's her best song?\n\nphotos: Justin Higuchi (CC BY 2.0), crommelincklars (CC BY 2.0), all via Wikimedia Commons\n\nFollow @vinylduel for a music story every day.\n\n#billieeilish #finneas #oceaneyes #pop #musichistory #shorts",
     "assets": [
      {
@@ -1149,7 +1161,7 @@
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-26T10:13:00+02:00",
+    "dueAt": "2026-10-27T18:51:00+02:00",
     "text": "to pimp a butterfly: rap's great jazz record 🎧\n\nOur take. Jazz, funk and spoken word, with Thundercat, Kamasi Washington and George Clinton. A dense album about race, fame and self-worth. Alright became a protest anthem, and King Kunta still knocks. It's long and demanding: an album you study, not one you put on in the background.\n\nVerdict: 9.5/10. A modern classic.\n\nBest Kendrick album? Follow @vinylduel for a music story every day.\n\nphotos: Jon Elbaz (CC BY 2.0), Kenny Sun (CC BY 2.0), Zfigueroa (CC BY-SA 3.0), all via Wikimedia Commons\n\n#kendricklamar #topimpabutterfly #albumreview #hiphop #jazz #reels",
     "assets": [
      {
@@ -1173,7 +1185,7 @@
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-26T10:41:00+02:00",
+    "dueAt": "2026-10-28T19:24:00+02:00",
     "text": "where 5 famous band names came from. radiohead, pink floyd, lead balloon… best band name ever?\n\nphotos: Alterna2 (CC BY 2.0), Live at Pompeii press kit (public domain), Raph_PH (CC BY 2.0), Kreepin Deth (CC BY-SA 4.0), Mint13green (CC BY-SA 4.0), all via Wikimedia Commons\n\n#bandnames #radiohead #pinkfloyd #metallica #musicfacts",
     "assets": [
      {
@@ -1247,7 +1259,7 @@
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-26T11:30:00+02:00",
+    "dueAt": "2026-10-28T12:59:00+02:00",
     "text": "5 old songs that tv and tiktok brought back. running up that hill, master of puppets, dreams… which song needs a comeback?\n\nphotos: Kreepin Deth (CC BY-SA 4.0), Columbia Records (public domain), aresauburn (CC BY-SA 2.0), Warner Bros. Records (public domain), Carl Lender (CC BY-SA 3.0), Saad Faruque (CC BY 2.0), all via Wikimedia Commons\n\nFollow @vinylduel for a music story every day.\n\n#strangerthings #tiktok #musicfacts #katebush #metallica #shorts",
     "assets": [
      {
@@ -1273,7 +1285,7 @@
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-26T12:49:00+02:00",
+    "dueAt": "2026-10-28T14:00:00+02:00",
     "text": "watch till the end 👀 to pimp a butterfly: rap's great jazz record. our verdict: 9.5/10, a modern classic. best kendrick album?\n\nphotos: Jon Elbaz (CC BY 2.0), Kenny Sun (CC BY 2.0), Connie Lodge (CC BY-SA 2.0), Eli Watson (CC BY 2.0), all via Wikimedia Commons\n\n#kendricklamar #topimpabutterfly #albumreview #hiphop #jazz #fyp",
     "assets": [
      {
@@ -1296,7 +1308,7 @@
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-26T13:31:00+02:00",
+    "dueAt": "2026-10-28T19:44:00+02:00",
     "text": "the black parade turns 20\n.\n.\n.\nOur take. A concept album about a dying man called The Patient, framed as a marching band's parade. Huge, theatrical, and unlike anything around it. Welcome to the Black Parade is still a perfect rock song, and Famous Last Words is still the ending everyone screams along to. The story gets lost in the middle, and a couple of songs feel more like costume than feeling.\n\nVerdict: 9.0/10. Still the best emo album ever made.\n\nWhat would you give it? Follow @vinylduel for a music story every day.\n\nphotos: Mint13green (CC BY-SA 4.0), Michael Spencer (CC BY 2.0), all via Wikimedia Commons\n\n#mychemicalromance #theblackparade #emo #albumreview #mcr",
     "assets": [
      {
@@ -1363,7 +1375,7 @@
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-26T14:44:00+02:00",
+    "dueAt": "2026-10-29T13:12:00+02:00",
     "text": "folklore tier list but you make it. screenshot the empty tier list and comment your S tier\n\n#taylorswift #folklore #swifties #tierlist #albumranking",
     "assets": [
      {
@@ -1405,7 +1417,7 @@
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-26T14:52:00+02:00",
+    "dueAt": "2026-10-28T14:05:00+02:00",
     "text": "the demon days receipt 🎧\n\nDemon Days (2005) by Gorillaz, every song in the order VinylDuel users ranked it. El Mañana is the #1 pick, just ahead of Feel Good Inc., and Kids with Guns is the most divisive line.\n\nWhat would you return? Rank it yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\n#gorillaz #demondays #feelgoodinc #damonalbarn #albumranking #reels",
     "assets": [
      {
@@ -1429,7 +1441,7 @@
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-26T15:21:00+02:00",
+    "dueAt": "2026-10-28T18:31:00+02:00",
     "text": "the stories behind 5 songs on am. and how vinylduel ranks the whole album.\n\nphotos: Steven Anthony (CC BY 2.0), Raph_PH (CC BY 2.0), Christhian Ferenc (CC BY 2.0), Jeremy Perez Photos (CC BY-SA 2.0), all via Wikimedia Commons\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#arcticmonkeys #am #alexturner #indierock #musicfacts #shorts",
     "assets": [
      {
@@ -1455,7 +1467,7 @@
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-26T17:31:00+02:00",
+    "dueAt": "2026-10-29T14:05:00+02:00",
     "text": "hit me hard and soft tier list. go. screenshot the empty tier list and comment your S tier\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#billieeilish #hitmehardandsoft #birdsofafeather #tierlist #albumranking #shorts",
     "assets": [
      {
@@ -1481,7 +1493,7 @@
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-26T18:13:00+02:00",
+    "dueAt": "2026-10-29T18:19:00+02:00",
     "text": "watch till the end 👀 the receipt for demon days 🧾. what would you return?\n\n#gorillaz #demondays #feelgoodinc #damonalbarn #albumranking #fyp",
     "assets": [
      {
@@ -1504,7 +1516,7 @@
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-26T20:16:00+02:00",
+    "dueAt": "2026-10-29T14:13:00+02:00",
     "text": "do you agree with the community list?\n.\n.\n.\nOK Computer is the album people point to when they call Radiohead the most important band of the 90s. On VinylDuel, Paranoid Android is #1, Exit Music (For a Film) is second and No Surprises third. Karma Police, the one everyone knows, is only 5th.\n\nAnd Fitter Happier, the robotic spoken-word track in the middle, is last in every single ranking.\n\nRank it yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\nphotos: Alterna2 (CC BY 2.0), Raph_PH (CC BY 4.0), Raph_PH (CC BY 2.0), all via Wikimedia Commons\n\n#radiohead #okcomputer #thomyorke #90smusic #albumranking",
     "assets": [
      {
@@ -1571,7 +1583,7 @@
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-26T20:16:00+02:00",
+    "dueAt": "2026-10-29T21:10:00+02:00",
     "text": "short n' sweet tier list. espresso is ___ tier. screenshot the empty tier list and comment your S tier\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#sabrinacarpenter #shortnsweet #espresso #tierlist #albumranking #shorts",
     "assets": [
      {
@@ -1597,7 +1609,7 @@
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-26T22:33:00+02:00",
+    "dueAt": "2026-10-30T21:18:00+02:00",
     "text": "the stories behind 5 songs on the dark side of the moon. and how vinylduel ranks the whole album.\n\nphotos: unknown photographer (public domain), Live at Pompeii press kit (public domain), Hit Parader magazine (public domain), Capitol Records (public domain), all via Wikimedia Commons\n\n#pinkfloyd #darksideofthemoon #davidgilmour #classicrock #musicfacts",
     "assets": [
      {
@@ -1679,7 +1691,7 @@
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-26T22:42:00+02:00",
+    "dueAt": "2026-10-30T19:07:00+02:00",
     "text": "not my rankings! what do u think!?\n.\n.\n.\nBlonde is ten years old and still the album people argue about most. Ivy is #1, near the top for almost everyone, with Nikes second and Nights third.\n\nSelf Control got more #1 votes than any other song and still sits 4th: it splits people more than anything else on the record. Be Yourself, the voicemail interlude, is last.\n\nRank it yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\nphotos: RJ photos UK (CC BY 2.0), Andras Ladocsi (CC BY-SA 4.0), Dave Gold (CC BY-SA 2.0), all via Wikimedia Commons\n\n#frankocean #blonde #blond #rnb #albumranking",
     "assets": [
      {
@@ -1754,7 +1766,7 @@
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-27T09:01:00+02:00",
+    "dueAt": "2026-10-30T14:07:00+02:00",
     "text": "watch till the end 👀 5 songs you didn't know were covers. hurt, prince wrote it, dolly wrote it first… which one surprised you?\n\nphotos: CBS Television (public domain), PH1 GARY RICE, USN (public domain), Self Scanned (public domain), all via Wikimedia Commons\n\n#coversongs #johnnycash #whitneyhouston #aretha #musicfacts #fyp",
     "assets": [
      {
@@ -1777,7 +1789,7 @@
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-27T09:41:00+02:00",
+    "dueAt": "2026-10-31T13:16:00+02:00",
     "text": "the beatles part 1 !\n.\n.\n.\nAbbey Road was the last album the Beatles recorded together. On VinylDuel, Come Together is #1, Oh! Darling second and Something third. Here Comes the Sun, their most streamed song, is 4th.\n\nThe medley on side two falls apart once its songs have to fight one by one: every part of it lands in the bottom half. Her Majesty, all 23 seconds of it, is last.\n\nRank it yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\nphotos: Dezo Hoffmann / Capitol Records (public domain), Harry Pot for Anefo (CC0), all via Wikimedia Commons\n\n#thebeatles #abbeyroad #beatles #classicrock #albumranking",
     "assets": [
      {
@@ -1852,7 +1864,7 @@
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-27T12:15:00+02:00",
+    "dueAt": "2026-10-30T11:35:00+02:00",
     "text": "to pimp a butterfly: rap's great jazz record. our verdict: 9.5/10, a modern classic. best kendrick album?\n\nphotos: Jon Elbaz (CC BY 2.0), Kenny Sun (CC BY 2.0), Connie Lodge (CC BY-SA 2.0), Eli Watson (CC BY 2.0), all via Wikimedia Commons\n\nFollow @vinylduel for a music story every day.\n\n#kendricklamar #topimpabutterfly #albumreview #hiphop #jazz #shorts",
     "assets": [
      {
@@ -1878,7 +1890,7 @@
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-27T13:36:00+02:00",
+    "dueAt": "2026-11-01T21:28:00+02:00",
     "text": "jigsaw supremacy\n.\n.\n.\nRadiohead has three albums with enough rankings on VinylDuel to call a winner. On The Bends it's Just, with most people putting it first, ahead of Fake Plastic Trees. On OK Computer, Paranoid Android edges out Exit Music (For a Film). On In Rainbows, Jigsaw Falling Into Place beats Weird Fishes for the top spot.\n\nKid A is next. Rank it on the VinylDuel app and we'll post the results. Link in bio.\n\nphotos: Alterna2 (CC BY 2.0), Raph_PH (CC BY 2.0), Raph_PH (CC BY 4.0), all via Wikimedia Commons\n\n#radiohead #thomyorke #inrainbows #okcomputer #thebends",
     "assets": [
      {
@@ -1937,7 +1949,7 @@
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-27T13:56:00+02:00",
+    "dueAt": "2026-10-31T11:52:00+02:00",
     "text": "under pressure came out of one jam session. bowie dropped by while queen were recording at mountain studios in montreux, and they started jamming together. best duet of all time?\n\nphotos: Carl Lender (CC BY 2.0), Carl Lender (CC BY-SA 3.0), all via Wikimedia Commons\n\n#queen #davidbowie #underpressure #freddiemercury #songmeaning",
     "assets": [
      {
@@ -2003,7 +2015,7 @@
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-27T15:42:00+02:00",
+    "dueAt": "2026-10-29T21:03:00+02:00",
     "text": "5 songs you didn't know were covers 🎧\n\n1. Hurt: Johnny Cash's most famous late song was first recorded by Nine Inch Nails in 1994.\n2. Nothing Compares 2 U: Sinéad O'Connor's 1990 hit was written by Prince years earlier, for a side project.\n3. I Will Always Love You: Whitney Houston's 1992 smash was written and first recorded by Dolly Parton in the 1970s.\n4. Respect: Otis Redding released Respect in 1965. Aretha Franklin's 1967 version made it an anthem.\n5. Tainted Love: Soft Cell's 1981 hit was a cover of a 1964 soul song by Gloria Jones.\n\nWhich one surprised you? Follow @vinylduel for a music story every day.\n\nphotos: Self Scanned (public domain), PH1 GARY RICE, USN (public domain), CBS Television (public domain), all via Wikimedia Commons\n\n#coversongs #johnnycash #whitneyhouston #aretha #musicfacts #reels",
     "assets": [
      {
@@ -2027,7 +2039,7 @@
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-27T15:52:00+02:00",
+    "dueAt": "2026-10-31T20:56:00+02:00",
     "text": "watch till the end 👀 pick one: 1989 edition. blank space or style, shake it off or bad blood, wildest dreams or out of the woods… comment your picks\n\nphotos: Paolo V (CC BY 2.0), Ronald Woan (CC BY-SA 2.0), all via Wikimedia Commons\n\n#taylorswift #1989taylorsversion #swifties #thisorthat #pop #fyp",
     "assets": [
      {
@@ -2050,7 +2062,7 @@
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-27T16:06:00+02:00",
+    "dueAt": "2026-10-30T21:15:00+02:00",
     "text": "my songs know what you did in the dark (light em up) is only 6th on save rock and roll. where did the party go is #1, rat a tat second, the phoenix 7th.\n\nphotos: Drew de F Fawkes (CC BY 2.0), Fernando Loz (CC BY-SA 2.0), Arturo Pardavila III (CC BY 2.0), Stefan Brending (2eight) (CC BY-SA 3.0), all via Wikimedia Commons\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n#falloutboy #saverockandroll #lightemup #poppunk #albumranking #shorts",
     "assets": [
      {
@@ -2076,7 +2088,7 @@
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-27T18:37:00+02:00",
+    "dueAt": "2026-10-31T12:23:00+02:00",
     "text": "thriller: still the greatest pop album?. our verdict: 9.5/10, pop doesn't get better. thriller or off the wall?\n\nphotos: Matthew Rolston / Epic Records (public domain), Goldin (public domain), White House Photographic Office (public domain), Larry Davis / Los Angeles Times (CC BY 4.0), all via Wikimedia Commons\n\nFollow @vinylduel for a music story every day.\n\n#michaeljackson #thriller #albumreview #pop #80s #shorts",
     "assets": [
      {
@@ -2102,7 +2114,7 @@
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-27T19:01:00+02:00",
+    "dueAt": "2026-11-01T21:06:00+02:00",
     "text": "i don't care is only 9th on folie à deux. 27 is #1, headfirst slide into cooperstown on a bad bet second, america's suitehearts 7th. tiffany blews is last.\n\nphotos: Drew de F Fawkes (CC BY 2.0), Arturo Pardavila III (CC BY 2.0), Stefan Brending (2eight) (CC BY-SA 3.0), Fernando Loz (CC BY-SA 2.0), all via Wikimedia Commons\n\n#falloutboy #folieadeux #emo #2000s #albumranking",
     "assets": [
      {
@@ -2176,7 +2188,7 @@
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-27T19:38:00+02:00",
+    "dueAt": "2026-11-02T14:08:00+02:00",
     "text": "5 hits that other artists turned down\n.\n.\n.\n1. Hit 01: Her team passed. Rihanna's 2007 version spent ten weeks at #1 in the UK.\n2. Hit 02: Kylie said no. Britney Spears recorded it and won her first Grammy for it.\n3. Hit 03: His label passed, so Pharrell recorded it himself. It became one of the biggest songs of 2014.\n4. Hit 04: TLC passed. It became Britney Spears' debut single and a #1 around the world.\n5. Hit 05: His label felt it wasn't right for him. Leona Lewis made it a worldwide #1.\n\nWhich one would you have kept? Follow @vinylduel for a music story every day.\n\n#musicfacts #rihanna #britneyspears #pharrell #popmusic",
     "assets": [
      {
@@ -2251,7 +2263,7 @@
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-27T19:58:00+02:00",
+    "dueAt": "2026-10-31T19:39:00+02:00",
     "text": "the 10-minute song that went to #1. all too well first appeared on red in 2012. it was never a single, but fans called it her best song. original or 10-minute version?\n\nphotos: Paolo V (CC BY 2.0), Ronald Woan (CC BY-SA 2.0), all via Wikimedia Commons\n\nFollow @vinylduel for a music story every day.\n\n#taylorswift #alltoowell #red #swifties #songmeaning #shorts",
     "assets": [
      {
@@ -2277,7 +2289,7 @@
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-27T21:58:00+02:00",
+    "dueAt": "2026-11-02T12:59:00+02:00",
     "text": "2.5 million people tried to see oasis in one weekend. in august 1996 oasis played two nights at knebworth park, to about 125,000 people each night. wonderwall or don't look back in anger?\n\nphotos: Roger Woolman (CC BY 3.0), Anirudh Koul (CC BY 2.0), GiacomoSonweed (CC BY-SA 4.0), Freddyballo (CC BY-SA 4.0), all via Wikimedia Commons\n\n#oasis #knebworth #britpop #liamgallagher #noelgallagher",
     "assets": [
      {
@@ -2343,7 +2355,7 @@
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-27T22:21:00+02:00",
+    "dueAt": "2026-10-30T14:14:00+02:00",
     "text": "pick one: 1989 edition 🎧\n\nFive duels from 1989:\nBlank Space or Style?\nShake It Off or Bad Blood?\nWildest Dreams or Out Of The Woods?\nClean or New Romantics?\nIs It Over Now? or Say Don't Go?\n\nThis is how VinylDuel works: two songs, pick the one you like more, until your whole ranking is done. Comment your five picks, then rank the full album on the VinylDuel app, free on iPhone and Android. Link in bio.\n\nphotos: Paolo V (CC BY 2.0), Ronald Woan (CC BY-SA 2.0), all via Wikimedia Commons\n\n#taylorswift #1989taylorsversion #swifties #thisorthat #pop #reels",
     "assets": [
      {
@@ -2367,7 +2379,7 @@
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-27T22:57:00+02:00",
+    "dueAt": "2026-11-01T12:24:00+02:00",
     "text": "stadiums chant a riff that isn't played on a bass. jack white came up with the riff during a soundcheck in melbourne, australia. best stadium song?\n\nphotos: Masao Nakagami (CC BY-SA 2.0), Michael Morel (CC BY 2.0), Fabio Venni (CC BY-SA 2.0), all via Wikimedia Commons\n\nFollow @vinylduel for a music story every day.\n\n#thewhitestripes #sevennationarmy #jackwhite #rock #songmeaning #shorts",
     "assets": [
      {
@@ -2393,7 +2405,7 @@
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-28T10:14:00+02:00",
+    "dueAt": "2026-11-02T20:07:00+02:00",
     "text": "billie jean won without a single first place??\n.\n.\n.\nThriller is still the best-selling album of all time, and nine songs is not a lot of room to hide. Billie Jean comes out #1 without a single first-place vote: P.Y.T. got the most of those, but Billie Jean was near the top of every list. Beat It is third, the title track only 6th.\n\nThe Girl Is Mine, the duet with Paul McCartney, is second to last, just above The Lady in My Life.\n\nRank it yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\nphotos: Matthew Rolston / Epic Records (public domain), Larry Davis / Los Angeles Times (CC BY 4.0), Epic Records (public domain), all via Wikimedia Commons\n\n#michaeljackson #thriller #billiejean #80smusic #albumranking",
     "assets": [
      {
@@ -2460,7 +2472,7 @@
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-28T10:19:00+02:00",
+    "dueAt": "2026-11-01T14:12:00+02:00",
     "text": "watch till the end 👀 tell that mick he just made my list of things to do today is #1 on take this to your grave. the patron saint of liars and fakes second, grand theft autumn 5th, dead on arrival 10th.\n\nphotos: Drew de F Fawkes (CC BY 2.0), Fernando Loz (CC BY-SA 2.0), all via Wikimedia Commons\n\n#falloutboy #takethistoyourgrave #emo #poppunk #albumranking #fyp",
     "assets": [
      {
@@ -2483,7 +2495,7 @@
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-28T11:40:00+02:00",
+    "dueAt": "2026-11-03T19:46:00+02:00",
     "text": "kevin parker cooked on this one\n.\n.\n.\nCurrents is where Kevin Parker swapped guitars for synths and made a breakup album you can dance to. On VinylDuel, the almost eight-minute opener Let It Happen is #1, New Person, Same Old Mistakes second, and The Less I Know the Better, by far the most streamed song on it, third.\n\nDisciples is last.\n\nRank it yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\nphotos: Abby Gillardi (CC BY 2.0), all via Wikimedia Commons\n\n#tameimpala #currents #kevinparker #psychedelic #albumranking",
     "assets": [
      {
@@ -2558,7 +2570,7 @@
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-28T13:21:00+02:00",
+    "dueAt": "2026-11-03T18:37:00+02:00",
     "text": "killing in the name is B tier?? on rage's debut. what would you move?\n\n#rageagainstthemachine #ratm #killinginthename #90smusic #tierlist",
     "assets": [
      {
@@ -2608,7 +2620,7 @@
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-28T13:35:00+02:00",
+    "dueAt": "2026-10-31T19:02:00+02:00",
     "text": "every song on take this to your grave, ranked by you 🎧\n\nTake This to Your Grave (2003) is where Fall Out Boy started. On VinylDuel, Tell That Mick He Just Made My List of Things to Do Today is #1, and The Patron Saint of Liars and Fakes is second. Grand Theft Autumn / Where Is Your Boy lands 5th, Dead on Arrival 10th, and Homesick at Space Camp comes last.\n\nWhere would you put them? Rank it yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\nphotos: Drew de F Fawkes (CC BY 2.0), Fernando Loz (CC BY-SA 2.0), all via Wikimedia Commons\n\n#falloutboy #takethistoyourgrave #emo #poppunk #albumranking #reels",
     "assets": [
      {
@@ -2632,7 +2644,7 @@
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-28T15:07:00+02:00",
+    "dueAt": "2026-11-03T13:47:00+02:00",
     "text": "the stories behind 5 songs on thriller. and how vinylduel ranks the whole album.\n\nphotos: Larry Davis / Los Angeles Times (CC BY 4.0), United Press International (public domain), Goldin (public domain), White House Photographic Office (public domain), Matthew Rolston / Epic Records (public domain), Epic Records (public domain), all via Wikimedia Commons\n\n#michaeljackson #thriller #billiejean #80smusic #musicfacts",
     "assets": [
      {
@@ -2714,7 +2726,7 @@
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-28T15:58:00+02:00",
+    "dueAt": "2026-11-03T12:30:00+02:00",
     "text": "homecoming supremacy or nah?\n.\n.\n.\nGraduation is the album where Kanye went stadium-sized, and its biggest single was built on Daft Punk. On VinylDuel, Stronger misses the top 3. Homecoming is #1 and got the most first-place votes, I Wonder is second and Flashing Lights third.\n\nBarry Bonds is last.\n\nRank it yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\nphotos: Jason Lander (CC BY 2.0), Will (CC BY-SA 2.0), Alan Waite (CC BY-SA 2.0), all via Wikimedia Commons\n\n#kanyewest #graduation #ye #hiphop #albumranking",
     "assets": [
      {
@@ -2789,7 +2801,7 @@
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-28T17:01:00+02:00",
+    "dueAt": "2026-11-02T21:01:00+02:00",
     "text": "watch till the end 👀 royal blood's debut, as a tier list. what would you move?\n\n#royalblood #rock #mikekerr #britishrock #tierlist #fyp",
     "assets": [
      {
@@ -2812,7 +2824,7 @@
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-28T22:59:00+02:00",
+    "dueAt": "2026-11-04T13:16:00+02:00",
     "text": "heart-shaped box is the #1 song on in utero. all apologies second, pennyroyal tea third, rape me 6th. tourette's is last.\n\nphotos: Alice Wheeler (public domain), David Lee (CC BY-SA 2.0), DoD News Features (CC BY 2.0), all via Wikimedia Commons\n\n#nirvana #inutero #kurtcobain #grunge #albumranking",
     "assets": [
      {
@@ -2878,7 +2890,7 @@
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "notification",
     "mode": "customScheduled",
-    "dueAt": "2026-10-28T23:14:00+02:00",
+    "dueAt": "2026-11-01T13:42:00+02:00",
     "text": "royal blood: the tier list 🎧\n\nRoyal Blood's 2014 debut is two people, bass and drums, and a lot of noise. Cut from the VinylDuel community ranking: Little Monster and Figure It Out are S tier.\n\nWhat would you move? Rank it yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\n#royalblood #rock #mikekerr #britishrock #tierlist #reels",
     "assets": [
      {
