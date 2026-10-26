@@ -7,8 +7,15 @@ from zoneinfo import ZoneInfo
 TZ = ZoneInfo('Asia/Jerusalem'); BASE = 'https://cbsa100.github.io/vinylduel-social/'
 IG, TT, YT = '6adb5ec6778b240e2f9d4ea5', '6adb5f07778b240e2f9d51b0', '6adb5f1d778b240e2f9d52af'
 ORDER = ["Drake", "The Beatles", "Alice in Chains", "Taylor Swift", "Eminem", "Arctic Monkeys", "Lady Gaga", "Linkin Park", "The Weeknd",
-         "Olivia Rodrigo", "Kendrick Lamar", "Queen", "Billie Eilish"]
-TAGS = {"Drake": "#drake #ovo #rap", "The Beatles": "#thebeatles #beatles #classicrock",
+         "Olivia Rodrigo", "Kendrick Lamar", "Queen", "Billie Eilish",
+         "Michael Jackson", "Rihanna", "Nirvana", "Ariana Grande", "Metallica", "Coldplay", "Bruno Mars",
+         "Lana Del Rey", "Red Hot Chili Peppers", "Green Day"]
+TAGS = {"Michael Jackson": "#michaeljackson #mj #kingofpop", "Rihanna": "#rihanna #navy #pop",
+        "Nirvana": "#nirvana #kurtcobain #grunge", "Ariana Grande": "#arianagrande #arianators #pop",
+        "Metallica": "#metallica #metal #heavymetal", "Coldplay": "#coldplay #chrismartin #britpop",
+        "Bruno Mars": "#brunomars #pop #funk", "Lana Del Rey": "#lanadelrey #lana #alternative",
+        "Red Hot Chili Peppers": "#redhotchilipeppers #rhcp #rock", "Green Day": "#greenday #poppunk #punk",
+        "Drake": "#drake #ovo #rap", "The Beatles": "#thebeatles #beatles #classicrock",
         "Alice in Chains": "#aliceinchains #grunge #90smusic", "Taylor Swift": "#taylorswift #swifties #pop", "Olivia Rodrigo": "#oliviarodrigo #guts #sour",
         "Linkin Park": "#linkinpark #numetal #rock", "Eminem": "#eminem #slimshady #rap",
         "Kendrick Lamar": "#kendricklamar #hiphop #rap", "Arctic Monkeys": "#arcticmonkeys #indierock #alexturner",

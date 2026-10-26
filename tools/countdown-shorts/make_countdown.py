@@ -260,6 +260,11 @@ def render_segment(cfg, idx, overlays, out):
     if a_idx is None:
         cmd += ["-f", "lavfi", "-t", str(T), "-i", "anullsrc=r=44100:cl=stereo"]
         a_idx = n_in
+    # optional spoken title over the first song: the music dips while the voice talks
+    voice = cfg.get("_voice_file") if idx == 0 else None
+    if voice:
+        cmd += ["-i", voice]
+        v_idx = len([c for c in cmd if c == "-i"]) - 1
 
     if outro:
         fc = (f"{bg},split[bgA][bgB];"
@@ -278,7 +283,13 @@ def render_segment(cfg, idx, overlays, out):
         afade_out = f"afade=out:st={D - 0.2}:d=0.2"
     fc += (f"[{a_idx}:a]aformat=channel_layouts=stereo,"
            f"loudnorm=I=-14:TP=-1.5:LRA=11,aresample=44100,"   # even out song volumes
-           f"afade=in:st=0:d=0.12,{afade_out},apad[a]")
+           f"afade=in:st=0:d=0.12,{afade_out},apad" + ("[m0];" if voice else "[a]"))
+    if voice:
+        vlen = float(run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", voice]).strip())
+        duck = vlen + 0.6
+        fc += (f"[m0]volume='if(lt(t,{duck:.2f}),0.22,if(lt(t,{duck + 0.6:.2f}),0.22+0.78*(t-{duck:.2f})/0.6,1))':eval=frame[m1];"
+               f"[{v_idx}:a]aformat=sample_rates=44100:channel_layouts=stereo,adelay=300|300,volume=1.8,apad[vo];"
+               f"[m1][vo]amix=inputs=2:duration=first:normalize=0[a]")
     cmd += ["-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-t", str(T),
             "-r", str(FPS), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
             "-maxrate", "8M", "-bufsize", "16M",
@@ -328,6 +339,11 @@ def main():
             print(f"{it['name']}: using {it.get('start', 0)}s", flush=True)
     with tempfile.TemporaryDirectory() as tmp:
         overlays = build_overlays(cfg, tmp)
+        if cfg.get("voice"):                    # {"text": ..., "name": "Samantha"}: macOS `say`
+            aiff = os.path.join(tmp, "voice.aiff")
+            subprocess.run(["say", "-v", cfg["voice"].get("name", "Samantha"), "-r", "175", "-o", aiff,
+                            cfg["voice"]["text"]], check=True)
+            cfg["_voice_file"] = aiff
         if cfg.get("outro"):
             o = cfg["outro"]
             if o.get("icon") and not os.path.isabs(o["icon"]):

@@ -100,6 +100,11 @@ def main():
     ap.add_argument("--songs", nargs="+", help="your own 10 songs, #10 first")
     ap.add_argument("--title", default="10 Songs That Defined")
     ap.add_argument("--out")
+    ap.add_argument("--voice", help="speak the title at the start with this macOS voice, e.g. Samantha")
+    ap.add_argument("--drop-top", action="store_true", help="leave out the most-watched song (the expected #1)")
+    ap.add_argument("--top-at", type=int, help="put the most-watched song at this place instead of #1")
+    ap.add_argument("--eleventh-first", action="store_true",
+                    help="leave out the most-watched song, keep #2-#10 in order and put the 11th at #1")
     a = ap.parse_args()
 
     slug = norm(a.artist) or "artist"
@@ -114,7 +119,23 @@ def main():
                 sys.exit(f"No video found for {s!r}")
             vids.append(dict(r, song=s))
     else:
-        vids = top_videos(a.artist)
+        # variants.json next to this script can set a variant per artist (read on every run)
+        vf = os.path.join(HERE, "variants.json")
+        v = json.load(open(vf)).get(a.artist) if os.path.exists(vf) else None
+        if v == "eleventh-first": a.eleventh_first, a.drop_top = True, False
+        if a.eleventh_first:
+            ranked = list(reversed(top_videos(a.artist, 11)))     # most-watched first
+            vids = list(reversed([ranked[-1]] + ranked[1:-1]))    # #11 on top, #2-#10 below, no #1
+        else:
+            vids = None
+    if vids is None:
+        vids = top_videos(a.artist, 11 if a.drop_top else 10)   # least-watched first
+        if a.drop_top:
+            vids = vids[:-1]                                     # no expected #1 at all
+        elif a.top_at:
+            ranked = list(reversed(vids))                        # #1 first
+            ranked.insert(a.top_at - 1, ranked.pop(0))           # the expected #1 drops to --top-at
+            vids = list(reversed(ranked))
     if len(vids) < 3:
         sys.exit("Found too few official videos; pass --songs to choose them.")
 
@@ -136,6 +157,8 @@ def main():
                      "highlight": f"Rank {a.artist} yourself",
                      "icon": os.path.join(HERE, "brand", "vinylduel-icon.png"), "brand": "VinylDuel",
                      "tagline": "Rank any album or playlist, song by song", "url": "vinylduel.app"}}
+    if a.voice:
+        cfg["voice"] = {"name": a.voice, "text": f"{a.title.replace('10', 'ten')} {a.artist}."}
     cfg_path = os.path.join(clipdir, "config.json")
     with open(cfg_path, "w") as f:
         json.dump(cfg, f, indent=2, ensure_ascii=False)
