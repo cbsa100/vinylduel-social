@@ -24892,6 +24892,79 @@
      }
     }
    }
+  },
+  {
+   "id": "yt-reel-cd-drake",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "automatic",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-27T00:03:00+02:00",
+    "text": "The 10 best songs by Drake, ranked 🎧\n\n10. Best I Ever Had\n9. Headlines\n8. Marvins Room\n7. Started From the Bottom\n6. Hold On, We're Going Home\n5. Laugh Now Cry Later\n4. In My Feelings\n3. Nice For What\n2. Hotline Bling\n1. God's Plan\n\nDisagree with this order? Rank Drake yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\nClips from the official music videos.\n\n#drake #ovo #rap #top10 #musicranking #reels",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/cd-drake.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "reel",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-ttv-cd-drake",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "automatic",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-27T00:03:00+02:00",
+    "text": "the 10 best songs by drake. god's plan at #1, best i ever had at #10. what's your #1? 👇\n\n#drake #ovo #rap #top10 #musicranking #fyp",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/cd-drake.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "The 10 best songs by Drake"
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-cd-drake",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "automatic",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-27T00:03:00+02:00",
+    "text": "Drake's 10 best songs, from #10 to #1. what's your #1?\n\n10. Best I Ever Had\n9. Headlines\n8. Marvins Room\n7. Started From the Bottom\n6. Hold On, We're Going Home\n5. Laugh Now Cry Later\n4. In My Feelings\n3. Nice For What\n2. Hotline Bling\n1. God's Plan\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\nClips from the official music videos.\n\n#drake #ovo #rap #top10 #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/cd-drake.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "The 10 Best Songs by Drake, Ranked",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
   }
  ]
 }
