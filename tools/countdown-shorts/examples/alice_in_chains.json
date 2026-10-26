@@ -1,0 +1,66 @@
+{
+  "title": "10 Songs That Defined",
+  "highlight": "Alice in Chains",
+  "seconds_per_item": 6,
+  "items": [
+    {
+      "name": "Check My Brain",
+      "clip": "/Users/sharon/Desktop/test-vids/Alice In Chains - Check My Brain (official music video).mp4",
+      "start": 51.3
+    },
+    {
+      "name": "Heaven Beside You",
+      "clip": "/Users/sharon/Desktop/test-vids/Alice In Chains - Heaven Beside You (Official HD Video).mp4",
+      "start": 44
+    },
+    {
+      "name": "Angry Chair",
+      "clip": "/Users/sharon/Desktop/test-vids/Alice In Chains - Angry Chair (Official HD Video).mp4",
+      "start": 94.8
+    },
+    {
+      "name": "No Excuses",
+      "clip": "/Users/sharon/Desktop/test-vids/Alice In Chains - No Excuses (Official Video).mp4",
+      "start": 56.7
+    },
+    {
+      "name": "Them Bones",
+      "clip": "/Users/sharon/Desktop/test-vids/Alice In Chains - Them Bones.mp4",
+      "start": 76.3
+    },
+    {
+      "name": "Down in a Hole",
+      "clip": "/Users/sharon/Desktop/test-vids/Alice In Chains - Down In A Hole (Official HD Video).mp4",
+      "start": 59.3
+    },
+    {
+      "name": "Nutshell",
+      "clip": "/Users/sharon/Desktop/test-vids/Alice In Chains - Nutshell (MTV Unplugged - HD Video).mp4",
+      "start": 52.6
+    },
+    {
+      "name": "Rooster",
+      "clip": "/Users/sharon/Desktop/test-vids/Alice In Chains - Rooster (Official HD Video).mp4",
+      "start": 173.4
+    },
+    {
+      "name": "Man in the Box",
+      "clip": "/Users/sharon/Desktop/test-vids/Alice In Chains - Man in the Box (Official Video).mp4",
+      "start": 66.4
+    },
+    {
+      "name": "Would?",
+      "clip": "/Users/sharon/Desktop/test-vids/Alice In Chains - Would_ (Official HD Video).mp4",
+      "start": 48
+    }
+  ],
+  "outro": {
+    "seconds": 5,
+    "headline": "Disagree with this order?",
+    "highlight": "Rank Alice in Chains yourself",
+    "icon": "../brand/vinylduel-icon.png",
+    "brand": "VinylDuel",
+    "tagline": "Rank any album or playlist, song by song",
+    "url": "vinylduel.app"
+  }
+}

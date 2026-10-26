@@ -1,0 +1,372 @@
+{
+ "_about": "Big opening line for each video. 'verdict' plays before the first slide (rankings, tier lists, receipts); 'fact' plays right after the title slide (stories, reviews). Written 2026-10-27 from YouTube retention: viewers swipe at second 1-4 unless something lands.",
+ "abbeyroad": {
+  "verdict": "Here Comes the Sun is only 4th on Abbey Road"
+ },
+ "am": {
+  "verdict": "Do I Wanna Know? isn't the #1 song on AM"
+ },
+ "billiejean": {
+  "verdict": "Billie Jean is #1 on Thriller, and nobody ranked it first"
+ },
+ "blonde": {
+  "verdict": "The song with the most #1 votes on Blonde is only 4th"
+ },
+ "currents": {
+  "verdict": "The Less I Know the Better is only 3rd on Currents"
+ },
+ "deadbeat": {
+  "verdict": "The #1 song on Deadbeat is Loser"
+ },
+ "fitter": {
+  "verdict": "Every single person ranked this song last"
+ },
+ "mbdtf": {
+  "verdict": "Runaway and Power are tied for #1"
+ },
+ "stronger": {
+  "verdict": "Stronger isn't even top 3 on Graduation"
+ },
+ "teenspirit": {
+  "verdict": "Smells Like Teen Spirit is only 6th on Nevermind"
+ },
+ "tt-b2-blurryface": {
+  "verdict": "Stressed Out is only 9th on Blurryface"
+ },
+ "tt-b2-damn": {
+  "verdict": "HUMBLE. is only 9th on DAMN."
+ },
+ "tt-b2-duel-1989": {
+  "verdict": "Pick one. Then see what everyone else picked",
+  "duel": [
+   "Taylor Swift",
+   "1989 (Taylor's Version)"
+  ]
+ },
+ "tt-b2-duel-blackparade": {
+  "verdict": "Pick one. Then see what everyone else picked",
+  "duel": [
+   "My Chemical Romance",
+   "The Black Parade"
+  ]
+ },
+ "tt-b2-duel-gkmc": {
+  "verdict": "Pick one. Then see what everyone else picked",
+  "duel": [
+   "Kendrick Lamar",
+   "good kid, m.A.A.d city"
+  ]
+ },
+ "tt-b2-duel-gutsduel": {
+  "verdict": "Pick one. Then see what everyone else picked",
+  "duel": [
+   "Olivia Rodrigo",
+   "GUTS"
+  ]
+ },
+ "tt-b2-duel-meteora2": {
+  "verdict": "Pick one. Then see what everyone else picked",
+  "duel": [
+   "Linkin Park",
+   "Meteora"
+  ]
+ },
+ "tt-b2-duel-nfr": {
+  "verdict": "5 impossible choices on Norman F*****g Rockwell!"
+ },
+ "tt-b2-duel-starboy": {
+  "verdict": "5 impossible choices on Starboy"
+ },
+ "tt-b2-flair": {
+  "verdict": "The #1 song on A Flair for the Dramatic is Drella"
+ },
+ "tt-b2-folie": {
+  "verdict": "I Don't Care is only 9th on Folie à Deux"
+ },
+ "tt-b2-grave": {
+  "verdict": "The song with the longest title is #1"
+ },
+ "tt-b2-inutero": {
+  "verdict": "Heart-Shaped Box is #1 on In Utero"
+ },
+ "tt-b2-puppets": {
+  "verdict": "Battery is only 3rd on Master of Puppets"
+ },
+ "tt-b2-rcpt-discovery": {
+  "verdict": "Discovery has no #1 yet. Pick it"
+ },
+ "tt-b2-rcpt-isthisit": {
+  "verdict": "Is This It has no #1 yet. Pick it"
+ },
+ "tt-b2-rcpt-melodrama": {
+  "verdict": "Melodrama has no #1 yet. Pick it"
+ },
+ "tt-b2-rcpt-morningglory": {
+  "verdict": "Morning Glory has no #1 yet. Pick it"
+ },
+ "tt-b2-rcpt-tpab": {
+  "verdict": "Alright is #1 on To Pimp a Butterfly. King Kunta isn't"
+ },
+ "tt-b2-rcpt-wywh": {
+  "verdict": "A 13-minute song is #1 on Wish You Were Here"
+ },
+ "tt-b2-saverock": {
+  "verdict": "Light Em Up is only 6th on Save Rock and Roll"
+ },
+ "tt-b2-songs-afterhours": {
+  "verdict": "Blinding Lights spent a record 90 weeks on the Hot 100"
+ },
+ "tt-b2-songs-blonde": {
+  "verdict": "Ivy is #1 on Blonde. Self Control is only 4th"
+ },
+ "tt-b2-songs-borntodie": {
+  "verdict": "Lana edited the Video Games video herself"
+ },
+ "tt-b2-songs-dsotm": {
+  "verdict": "Money is #1 on The Dark Side of the Moon"
+ },
+ "tt-b2-songs-folklore2": {
+  "verdict": "A folklore co-writer was a secret for months"
+ },
+ "tt-b2-songs-mbdtf": {
+  "verdict": "Runaway beat Power on My Beautiful Dark Twisted Fantasy"
+ },
+ "tt-b2-songs-ram": {
+  "verdict": "Get Lucky isn't #1 on Random Access Memories"
+ },
+ "tt-b2-songs-rumours": {
+  "verdict": "The Chain beat Dreams on Rumours"
+ },
+ "tt-b2-songs-sos2": {
+  "verdict": "Good Days came out two years before SOS"
+ },
+ "tt-b2-songs-sour": {
+  "verdict": "Taylor Swift got a writing credit on SOUR"
+ },
+ "tt-b2-songs-thriller": {
+  "verdict": "Eddie Van Halen played the Beat It solo for free"
+ },
+ "tt-b2-songs-wwafa": {
+  "verdict": "bad guy ended Old Town Road's run at #1"
+ },
+ "tt-b2-tier-clancy": {
+  "verdict": "Overcompensate is S tier on Clancy"
+ },
+ "tt-b2-tier-ratm": {
+  "verdict": "Killing in the Name is only B tier"
+ },
+ "tt-b2-tier-royalblood": {
+  "verdict": "Little Monster beat Out of the Black"
+ },
+ "tt-b2-tier-trench": {
+  "verdict": "Chlorine is S tier on Trench. Fight me"
+ },
+ "tt-b2-tiermake-folklore": {
+  "verdict": "Your folklore tier list. Go"
+ },
+ "tt-b2-weezer": {
+  "verdict": "Buddy Holly isn't the #1 song on the Blue Album"
+ },
+ "tt-closest": {
+  "verdict": "The 5 closest duels on VinylDuel. Pick one",
+  "duel": "closest"
+ },
+ "tt-compare": {
+  "verdict": "This is where you and your friend will fight"
+ },
+ "tt-deadlast": {
+  "verdict": "The song everyone ranks last, on 6 classic albums"
+ },
+ "tt-divisive": {
+  "verdict": "These songs split people more than anything else"
+ },
+ "tt-hits": {
+  "verdict": "The biggest hits keep losing to deep cuts"
+ },
+ "tt-howitworks": {
+  "verdict": "Stop giving albums stars. Make the songs fight"
+ },
+ "tt-mcr": {
+  "verdict": "No Helena. No I'm Not Okay. Here's MCR's real #1s"
+ },
+ "tt-radiohead": {
+  "verdict": "The #1 song on three Radiohead albums"
+ },
+ "tt-rcpt-bullets": {
+  "verdict": "Demolition Lovers is #1 on MCR's first album"
+ },
+ "tt-rcpt-darkside": {
+  "verdict": "Money is #1 on The Dark Side of the Moon"
+ },
+ "tt-rcpt-lonerism": {
+  "verdict": "Apocalypse Dreams beat Feels Like We Only Go Backwards"
+ },
+ "tt-st-alltoowell": {
+  "fact": "It was never a single. It still went to #1"
+ },
+ "tt-st-amreview": {
+  "fact": "The first three songs are close to perfect. The rest?"
+ },
+ "tt-st-antarctica": {
+  "fact": "They played a show in Antarctica"
+ },
+ "tt-st-bandnames": {
+  "fact": "Led Zeppelin is named after a joke about a lead balloon"
+ },
+ "tt-st-beatlesfacts": {
+  "fact": "A record label turned down the Beatles"
+ },
+ "tt-st-blackstar": {
+  "fact": "He kept his cancer secret for 18 months"
+ },
+ "tt-st-bohemian": {
+  "fact": "It never repeats a chorus. Not once"
+ },
+ "tt-st-bornusa": {
+  "fact": "The verses are about a Vietnam veteran coming home"
+ },
+ "tt-st-covers": {
+  "fact": "The Abbey Road photo took about 10 minutes"
+ },
+ "tt-st-coversongs": {
+  "fact": "Johnny Cash's Hurt is a Nine Inch Nails song"
+ },
+ "tt-st-creep": {
+  "fact": "Those loud guitar crunches were meant to wreck it"
+ },
+ "tt-st-daftname": {
+  "fact": "A critic called their old band a 'daft punky thrash'"
+ },
+ "tt-st-driverslicense": {
+  "fact": "She was on a Disney show before her first single"
+ },
+ "tt-st-endless": {
+  "fact": "Endless got him out of his deal. Blonde came out a day later"
+ },
+ "tt-st-erastour": {
+  "fact": "Every album got its own section, set and costumes"
+ },
+ "tt-st-everybreath": {
+  "fact": "Sting called it sinister"
+ },
+ "tt-st-fakefacts": {
+  "fact": "Yesterday was first called Scrambled Eggs"
+ },
+ "tt-st-folsom": {
+  "fact": "He wrote it after watching a 1951 prison movie"
+ },
+ "tt-st-gorillaz": {
+  "fact": "Two flatmates invented a fake band watching MTV"
+ },
+ "tt-st-grammys": {
+  "fact": "Beyoncé has 35 Grammys"
+ },
+ "tt-st-heyjude": {
+  "fact": "Paul wrote it to comfort a 5-year-old"
+ },
+ "tt-st-hurt": {
+  "fact": "Johnny Cash wasn't the first to record it"
+ },
+ "tt-st-iwannabeyours": {
+  "fact": "The lyrics come from a punk poet"
+ },
+ "tt-st-kendrick": {
+  "fact": "The first rap album ever to win a Pulitzer"
+ },
+ "tt-st-knebworth": {
+  "fact": "2.5 million people tried to get tickets"
+ },
+ "tt-st-myspace": {
+  "fact": "They gave their demos away for free at gigs"
+ },
+ "tt-st-pattie": {
+  "fact": "George Harrison and Eric Clapton wrote love songs for the same woman"
+ },
+ "tt-st-r-blackparade": {
+  "fact": "Our verdict: 9.0/10. Still the best emo album ever made"
+ },
+ "tt-st-r-blonde": {
+  "fact": "Our verdict: 9.5/10. Better now than in 2016"
+ },
+ "tt-st-r-currents": {
+  "fact": "Our verdict: 8.5/10. Pop disguised as psych rock"
+ },
+ "tt-st-r-folklore": {
+  "fact": "Our verdict: 9.0/10. Her best writing"
+ },
+ "tt-st-r-isthisit": {
+  "fact": "Our verdict: 9.0/10. Short, sharp, still cool"
+ },
+ "tt-st-r-nevermind": {
+  "fact": "Our verdict: 9.0/10. The record that kicked the door in"
+ },
+ "tt-st-r-okc": {
+  "fact": "Our verdict: 9.5/10. The hype is earned"
+ },
+ "tt-st-r-rumours": {
+  "fact": "Our verdict: 10/10"
+ },
+ "tt-st-r-thriller": {
+  "fact": "Our verdict: 9.5/10. Pop doesn't get better"
+ },
+ "tt-st-r-tpab": {
+  "fact": "Our verdict: 9.5/10. A modern classic"
+ },
+ "tt-st-records": {
+  "fact": "The Beatles once held all of the top 5 at the same time"
+ },
+ "tt-st-rooftop": {
+  "fact": "They hadn't played a show in over two years"
+ },
+ "tt-st-runningup": {
+  "fact": "Stranger Things sent it to #1, 37 years late"
+ },
+ "tt-st-sevennation": {
+  "fact": "That riff is a guitar, not a bass"
+ },
+ "tt-st-stan": {
+  "fact": "A song title became a word in the dictionary"
+ },
+ "tt-st-syd": {
+  "fact": "Nobody recognised him at first"
+ },
+ "tt-st-teenspirit": {
+  "fact": "Teen Spirit was a deodorant"
+ },
+ "tt-st-thrillervideo": {
+  "fact": "Michael hired a horror-movie director"
+ },
+ "tt-st-throughwire": {
+  "fact": "He rapped it two weeks after a near-fatal car crash"
+ },
+ "tt-st-turneddown": {
+  "fact": "Umbrella was written for Britney Spears"
+ },
+ "tt-st-underpressure": {
+  "fact": "Bowie just dropped by the studio"
+ },
+ "tt-tbt-inrainbows": {
+  "verdict": "Jigsaw Falling Into Place is #1 on In Rainbows"
+ },
+ "tt-tbt-ten": {
+  "verdict": "Black is #1 on Ten. It was never a single"
+ },
+ "tt-tbt-thebends": {
+  "verdict": "Just beat Fake Plastic Trees on The Bends"
+ },
+ "tt-tbt-threecheers": {
+  "verdict": "Helena isn't #1 on Three Cheers"
+ },
+ "tt-tier-americanidiot": {
+  "verdict": "American Idiot is only B tier on its own album"
+ },
+ "tt-tier-dangerdays": {
+  "verdict": "Sing is only C tier on Danger Days"
+ },
+ "tt-tier-hybridtheory": {
+  "verdict": "In the End isn't S tier"
+ },
+ "tt-toxicity": {
+  "verdict": "Chop Suey! is only 3rd on Toxicity"
+ }
+}

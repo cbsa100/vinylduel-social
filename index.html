@@ -180,7 +180,7 @@ footer a{color:var(--violet)}
       if (seen.has(id)) continue;
       const base = baseOf(id), src = byPack.get(base); if (!src) continue;
       const app = id.startsWith('yt-reel-') ? 'instagram' : id.startsWith('yt-ttv-') ? 'tiktok' : id.startsWith('yt-') ? 'youtube' : src.platform.toLowerCase();
-      const isVideo = id !== base, vid = isVideo && videos.has(base) ? `video/${base}-v2.mp4` : null;
+      const isVideo = id !== base, vid = isVideo ? ((pack.videoFiles || {})[base] || null) : null;
       out.push({ id, app, at: new Date(at), posted: true, text: app === 'youtube' ? (src.ytDesc || src.caption) : src.caption,
         title: app === 'youtube' ? src.ytTitle : app === 'tiktok' ? src.ttTitle : null,
         kind: app === 'youtube' ? 'Short' : isVideo ? (app === 'instagram' ? 'Reel' : 'Video') : (app === 'instagram' ? 'Carousel' : 'Slideshow'),
