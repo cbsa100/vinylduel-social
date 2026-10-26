@@ -172,7 +172,7 @@ footer a{color:var(--violet)}
       const media = (p.assets || []).map(a => a.video ? { video: a.video.url } : a.image?.url).filter(Boolean);
       out.push({ id: it.id, app, at: new Date(p.dueAt), inBuffer: !!it.scheduled, error: it.error, text: p.text, title: meta.title,
         kind: app === 'youtube' ? 'Short' : media[0]?.video ? (app === 'instagram' ? 'Reel' : 'Video') : (app === 'instagram' ? 'Carousel' : 'Slideshow'),
-        media, hook: src?.hook, coll: src?.section, tt: app !== 'instagram' || !!media[0]?.video });
+        media, hook: src?.hook, coll: src?.section, auto: p.schedulingType === 'automatic', tt: app !== 'instagram' || !!media[0]?.video });
       seen.add(it.id);
     }
     // Posted before Buffer took over (only in the Post Pack's own record).
@@ -202,7 +202,7 @@ footer a{color:var(--violet)}
     const vids = e.media.filter(u => u.video);
     const side = el('div', { class: 'side' },
       el('span', { text: `${fmtDay(e.at)}, ${fmtTime(e.at)} Israel time` }),
-      el('span', { text: vids.length ? '1 video' : `${e.media.length} slides` }),
+      el('span', { text: (vids.length ? '1 video' : `${e.media.length} slides`) + (e.auto ? ' · publishes automatically' : ' · Buffer pings you to post') }),
       el('span', { class: 'mono', text: e.id }),
       e.error ? el('span', { class: 'err', text: 'Last top-up failed: ' + e.error }) : null,
       ...vids.map(u => el('a', { href: u.video, download: '', text: 'Download the video' })));
@@ -211,7 +211,7 @@ footer a{color:var(--violet)}
         el('div', { class: 'meta' },
           el('span', { class: 'chip ' + e.app, text: APPS[e.app]?.name || e.app }),
           el('span', { class: 'chip kind', text: e.kind }),
-          e.coll ? el('span', { class: 'chip coll', text: e.coll === 'stories' ? 'Music story' : 'VinylDuel post' }) : null,
+          e.coll ? el('span', { class: 'chip coll', text: { stories: 'Music story', countdown: 'Countdown' }[e.coll] || 'VinylDuel post' }) : null,
           el('span', { class: 'chip ' + ST[st][0], text: ST[st][1] }),
           el('span', { class: 'time', text: fmtTime(e.at) }))),
       strip, el('div', { class: 'cols' }, cap, side));
@@ -233,7 +233,7 @@ footer a{color:var(--violet)}
     const sc = tally(E.filter(e => okApp(e) && okColl(e)), e => statusOf(e, now)); sc.upcoming = (sc.buffer || 0) + (sc.waiting || 0);
     filterRow(document.getElementById('f1'), [{ key: 'upcoming', name: 'Coming up' }, { key: 'buffer', name: 'In Buffer' }, { key: 'waiting', name: 'Waiting' }, { key: 'posted', name: 'Posted' }, { key: 'all', name: 'All' }], f.status, sc, k => f.status = k);
     filterRow(document.getElementById('f2'), [{ key: 'all', name: 'All apps' }, ...Object.entries(APPS).map(([k, v]) => ({ key: k, name: v.name }))], f.app, tally(E.filter(e => okSt(e) && okColl(e)), e => e.app), k => f.app = k);
-    filterRow(document.getElementById('f3'), [{ key: 'all', name: 'Both collections' }, { key: 'main', name: 'VinylDuel posts' }, { key: 'stories', name: 'Music stories' }], f.coll, tally(E.filter(e => okSt(e) && okApp(e)), e => e.coll), k => f.coll = k);
+    filterRow(document.getElementById('f3'), [{ key: 'all', name: 'All collections' }, { key: 'main', name: 'VinylDuel posts' }, { key: 'stories', name: 'Music stories' }, { key: 'countdown', name: 'Countdowns' }], f.coll, tally(E.filter(e => okSt(e) && okApp(e)), e => e.coll), k => f.coll = k);
 
     const all = tally(E, e => statusOf(e, now));
     const next = E.filter(e => statusOf(e, now) !== 'posted').sort((a, b) => a.at - b.at)[0];

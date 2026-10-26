@@ -1,5 +1,5 @@
 {
- "about": "VinylDuel Buffer backlog. Each item is a Buffer create_post payload (schedulingType must stay 'notification'). 'scheduled': true once it is in Buffer.",
+ "about": "VinylDuel Buffer backlog. Each item is a Buffer create_post payload. 'scheduled': true once it is in Buffer. schedulingType is 'notification' (Buffer pings the phone so audio can be added) for every post except the 'cd-' countdown videos, which are 'automatic' because they already have their audio.",
  "items": [
   {
    "id": "yt-tt-st-heroes",
@@ -24667,6 +24667,225 @@
     "metadata": {
      "youtube": {
       "title": "The stories behind 5 songs on Rumours",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-reel-cd-eminem",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "automatic",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-28T16:19:00+02:00",
+    "text": "The 10 best songs by Eminem, ranked 🎧\n\n10. Godzilla\n9. Stan\n8. Venom\n7. The Monster\n6. When I'm Gone\n5. The Real Slim Shady\n4. Rap God\n3. Mockingbird\n2. Not Afraid\n1. Without Me\n\nDisagree with this order? Rank Eminem yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\nClips from the official music videos.\n\n#eminem #slimshady #rap #top10 #musicranking #reels",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/cd-eminem.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "reel",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-ttv-cd-eminem",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "automatic",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-28T16:39:00+02:00",
+    "text": "the 10 best songs by eminem. without me at #1, godzilla at #10. what's your #1? 👇\n\n#eminem #slimshady #rap #top10 #musicranking #fyp",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/cd-eminem.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "The 10 best songs by Eminem"
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-cd-eminem",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "automatic",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-28T16:59:00+02:00",
+    "text": "Eminem's 10 best songs, from #10 to #1. what's your #1?\n\n10. Godzilla\n9. Stan\n8. Venom\n7. The Monster\n6. When I'm Gone\n5. The Real Slim Shady\n4. Rap God\n3. Mockingbird\n2. Not Afraid\n1. Without Me\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\nClips from the official music videos.\n\n#eminem #slimshady #rap #top10 #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/cd-eminem.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "The 10 Best Songs by Eminem, Ranked",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-reel-cd-linkinpark",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "automatic",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-30T15:49:00+02:00",
+    "text": "The 10 best songs by Linkin Park, ranked 🎧\n\n10. Breaking the Habit\n9. BURN IT DOWN\n8. Crawling\n7. Somewhere I Belong\n6. Faint\n5. CASTLE OF GLASS\n4. New Divide\n3. What I've Done\n2. In The End\n1. Numb\n\nDisagree with this order? Rank Linkin Park yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\nClips from the official music videos.\n\n#linkinpark #numetal #rock #top10 #musicranking #reels",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/cd-linkinpark.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "reel",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-ttv-cd-linkinpark",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "automatic",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-30T16:09:00+02:00",
+    "text": "the 10 best songs by linkin park. numb at #1, breaking the habit at #10. what's your #1? 👇\n\n#linkinpark #numetal #rock #top10 #musicranking #fyp",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/cd-linkinpark.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "The 10 best songs by Linkin Park"
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-cd-linkinpark",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "automatic",
+    "mode": "customScheduled",
+    "dueAt": "2026-10-30T16:29:00+02:00",
+    "text": "Linkin Park's 10 best songs, from #10 to #1. what's your #1?\n\n10. Breaking the Habit\n9. BURN IT DOWN\n8. Crawling\n7. Somewhere I Belong\n6. Faint\n5. CASTLE OF GLASS\n4. New Divide\n3. What I've Done\n2. In The End\n1. Numb\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\nClips from the official music videos.\n\n#linkinpark #numetal #rock #top10 #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/cd-linkinpark.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "The 10 Best Songs by Linkin Park, Ranked",
+      "categoryId": "10",
+      "privacy": "public",
+      "madeForKids": false
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-reel-cd-oliviarodrigo",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5ec6778b240e2f9d4ea5",
+    "schedulingType": "automatic",
+    "mode": "customScheduled",
+    "dueAt": "2026-11-01T15:31:00+02:00",
+    "text": "The 10 best songs by Olivia Rodrigo, ranked 🎧\n\n10. Can’t Catch Me Now\n9. bad idea right?\n8. get him back!\n7. brutal\n6. drop dead\n5. vampire\n4. traitor\n3. good 4 u\n2. drivers license\n1. deja vu\n\nDisagree with this order? Rank Olivia Rodrigo yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\nClips from the official music videos.\n\n#oliviarodrigo #guts #sour #top10 #musicranking #reels",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/cd-oliviarodrigo.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "instagram": {
+      "type": "reel",
+      "shouldShareToFeed": true
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-ttv-cd-oliviarodrigo",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f07778b240e2f9d51b0",
+    "schedulingType": "automatic",
+    "mode": "customScheduled",
+    "dueAt": "2026-11-01T15:51:00+02:00",
+    "text": "the 10 best songs by olivia rodrigo. deja vu at #1, can’t catch me now at #10. what's your #1? 👇\n\n#oliviarodrigo #guts #sour #top10 #musicranking #fyp",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/cd-oliviarodrigo.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "tiktok": {
+      "title": "The 10 best songs by Olivia Rodrigo"
+     }
+    }
+   }
+  },
+  {
+   "id": "yt-cd-oliviarodrigo",
+   "scheduled": false,
+   "post": {
+    "channelId": "6adb5f1d778b240e2f9d52af",
+    "schedulingType": "automatic",
+    "mode": "customScheduled",
+    "dueAt": "2026-11-01T16:11:00+02:00",
+    "text": "Olivia Rodrigo's 10 best songs, from #10 to #1. what's your #1?\n\n10. Can’t Catch Me Now\n9. bad idea right?\n8. get him back!\n7. brutal\n6. drop dead\n5. vampire\n4. traitor\n3. good 4 u\n2. drivers license\n1. deja vu\n\nRank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\nClips from the official music videos.\n\n#oliviarodrigo #guts #sour #top10 #shorts",
+    "assets": [
+     {
+      "video": {
+       "url": "https://cbsa100.github.io/vinylduel-social/video/cd-oliviarodrigo.mp4"
+      }
+     }
+    ],
+    "metadata": {
+     "youtube": {
+      "title": "The 10 Best Songs by Olivia Rodrigo, Ranked",
       "categoryId": "10",
       "privacy": "public",
       "madeForKids": false
