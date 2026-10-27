@@ -51,29 +51,30 @@ for artist in ORDER:
         continue                                                   # not rendered yet, or already in
     cfg = json.load(open(f'countdown/countdown-shorts/clips/{slug}/config.json'))
     songs = [it['name'] for it in cfg['items']]                 # #10 first
-    ranked = '\n'.join(f'{10 - i}. {s}' for i, s in enumerate(songs))
+    n = len(songs)                                               # 10, or fewer (Tool has 8 videos)
+    ranked = '\n'.join(f'{n - i}. {s}' for i, s in enumerate(songs))
     top, tags = songs[-1], TAGS[artist]
     pid = f'cd-{slug}'
     video = [{'video': {'url': f'{BASE}video/{pid}.mp4'}}]
-    ig_text = (f"The 10 best songs by {artist}, ranked 🎧\n\n{ranked}\n\n"
+    ig_text = (f"The {n} best songs by {artist}, ranked 🎧\n\n{ranked}\n\n"
                f"Disagree with this order? Rank {artist} yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\n"
                f"Clips from the official music videos.\n\n{tags} #top10 #musicranking #reels")
-    tt_text = (f"the 10 best songs by {artist.lower()}. {top.lower()} at #1, {songs[0].lower()} at #10. what's your #1? 👇\n\n"
+    tt_text = (f"the {n} best songs by {artist.lower()}. {top.lower()} at #1, {songs[0].lower()} at #{n}. what's your #1? 👇\n\n"
                f"{tags} #top10 #musicranking #fyp")
-    yt_title = f"The 10 Best Songs by {artist}, Ranked"
+    yt_title = f"The {n} Best Songs by {artist}, Ranked"
     poss = artist + ("'" if artist.endswith("s") else "'s")
-    yt_text = (f"{poss} 10 best songs, from #10 to #1. what's your #1?\n\n{ranked}\n\n"
+    yt_text = (f"{poss} {n} best songs, from #{n} to #1. what's your #1?\n\n{ranked}\n\n"
                f"Rank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n"
                f"Clips from the official music videos.\n\n{tags} #top10 #shorts")
     if not any(p['id'] == pid for p in pk['posts']):
-        pk['posts'].append({'id': pid, 'platform': 'Video', 'section': 'countdown', 'hook': f'The 10 Best Songs by {artist}',
-                            'caption': ig_text, 'ttTitle': f'The 10 best songs by {artist}', 'ytTitle': yt_title, 'ytDesc': yt_text,
+        pk['posts'].append({'id': pid, 'platform': 'Video', 'section': 'countdown', 'hook': f'The {n} Best Songs by {artist}',
+                            'caption': ig_text, 'ttTitle': f'The {n} best songs by {artist}', 'ytTitle': yt_title, 'ytDesc': yt_text,
                             'slides': [], 'video': f'video/{pid}.mp4'})
     day = next_day; next_day += dt.timedelta(days=1)
     m = rnd.randint(15 * 60 + 30, 17 * 60)                      # mid-afternoon, between the regular two slots
     for k, (ch, iid, text, meta) in enumerate([
             (IG, 'yt-reel-' + pid, ig_text, {'instagram': {'type': 'reel', 'shouldShareToFeed': True}}),
-            (TT, 'yt-ttv-' + pid, tt_text, {'tiktok': {'title': f'The 10 best songs by {artist}'}}),
+            (TT, 'yt-ttv-' + pid, tt_text, {'tiktok': {'title': f'The {n} best songs by {artist}'}}),
             (YT, 'yt-' + pid, yt_text, {'youtube': {'title': yt_title, 'categoryId': '10', 'privacy': 'public', 'madeForKids': False}})]):
         if iid in have: continue
         mm = m + 20 * k

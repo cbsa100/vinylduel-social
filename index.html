@@ -73,6 +73,7 @@ button:focus-visible,a:focus-visible,video:focus-visible{outline:2px solid var(-
 .strip img.ig{width:236px;aspect-ratio:4/5;height:auto}
 .strip img.tt{width:190px;aspect-ratio:9/16;height:auto}
 .strip video{width:220px;aspect-ratio:9/16;background:#08070f}
+.strip .gone{width:220px;aspect-ratio:9/16;border-radius:8px;background:var(--line);display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;font-size:13px;color:var(--muted, #888)}
 .cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,250px);gap:16px}
 @media (max-width:720px){.cols{grid-template-columns:minmax(0,1fr)}}
 .capbar{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px}
@@ -163,7 +164,11 @@ footer a{color:var(--violet)}
   // One entry per post per app. Ids: "<pack id>" = the carousel/slideshow, "yt-<id>" = YouTube Short,
   // "yt-reel-<id>" = Instagram Reel, "yt-ttv-<id>" = TikTok video (all made from the same pack post).
   function baseOf(id) { for (const pre of ['yt-reel-', 'yt-ttv-', 'yt-']) if (id.startsWith(pre)) return id.slice(pre.length); return id; }
+  // Videos taken off the site once published (pack.removedVideos), to stay under GitHub Pages' 1 GB.
+  let GONE = new Set();
+  const isGone = u => !!u.video && GONE.has(u.video.split('/').pop());
   function build(backlog, pack) {
+    GONE = new Set(pack.removedVideos || []);
     const byPack = new Map(pack.posts.map(p => [p.id, p])), videos = new Set(pack.videos || []);
     const out = [], seen = new Set();
     for (const it of backlog.items || []) {
@@ -193,7 +198,9 @@ footer a{color:var(--violet)}
 
   function card(e, now) {
     const st = statusOf(e, now);
-    const strip = el('div', { class: 'strip' }, e.media.map((u, i) => u.video
+    const strip = el('div', { class: 'strip' }, e.media.map((u, i) => isGone(u)
+      ? el('figure', {}, el('div', { class: 'gone', text: 'Published. The video file was removed from this site to save space.' }), el('figcaption', { text: 'video' }))
+      : u.video
       ? el('figure', {}, el('video', { src: u.video, controls: true, preload: 'none', playsinline: true, muted: true, 'aria-label': 'Video: ' + (e.hook || e.title || '') }), el('figcaption', { text: 'video' }))
       : el('figure', {}, el('img', { src: u, alt: `Slide ${i + 1}: ${e.hook || ''}`, loading: 'lazy', decoding: 'async', class: e.tt ? 'tt' : 'ig' }), el('figcaption', { text: String(i + 1).padStart(2, '0') }))));
     const cap = el('div', {});
@@ -205,7 +212,7 @@ footer a{color:var(--violet)}
       el('span', { text: (vids.length ? '1 video' : `${e.media.length} slides`) + (e.auto ? ' · publishes automatically' : ' · Buffer pings you to post') }),
       el('span', { class: 'mono', text: e.id }),
       e.error ? el('span', { class: 'err', text: 'Last top-up failed: ' + e.error }) : null,
-      ...vids.map(u => el('a', { href: u.video, download: '', text: 'Download the video' })));
+      ...vids.filter(u => !isGone(u)).map(u => el('a', { href: u.video, download: '', text: 'Download the video' })));
     return el('article', { class: 'post' + (st === 'posted' ? ' posted' : '') },
       el('header', {}, el('h3', { text: e.app === 'youtube' && e.title ? e.title : (e.hook || e.title || e.text.split('\n')[0]) }),
         el('div', { class: 'meta' },
