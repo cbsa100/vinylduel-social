@@ -1,5 +1,5 @@
 # Adds the "10 Best Songs" countdown videos to the Post Pack (pack.json) and the schedule (backlog.json):
-# one countdown every 2 days, posted to Instagram (Reel), TikTok and YouTube (Short) the same afternoon,
+# one countdown a day, posted to Instagram (Reel), TikTok and YouTube (Short) the same afternoon,
 # on top of the regular 2 posts a day. They publish automatically (their audio is already in the video).
 # Run from the scratchpad after the videos are in social/video/cd-<slug>.mp4.
 import json, random, datetime as dt, re
@@ -35,8 +35,8 @@ have = {i['id'] for i in b['items']}
 rnd = random.Random(2810)
 import os, sys
 ONLY = sys.argv[1:]          # optional: only these artists
-slots_used = sum(1 for i in b['items'] if i['id'].startswith('yt-reel-cd-')   # countdown slots already taken
-                 and dt.date.fromisoformat(i['post']['dueAt'][:10]) >= START)
+cd_days = [dt.date.fromisoformat(i['post']['dueAt'][:10]) for i in b['items'] if '-cd-' in i['id']]
+next_day = max([START] + [d + dt.timedelta(days=1) for d in cd_days])   # the day after the last countdown
 for artist in ORDER:
     slug = norm(artist)
     if ONLY and artist not in ONLY: continue
@@ -62,7 +62,7 @@ for artist in ORDER:
         pk['posts'].append({'id': pid, 'platform': 'Video', 'section': 'countdown', 'hook': f'The 10 Best Songs by {artist}',
                             'caption': ig_text, 'ttTitle': f'The 10 best songs by {artist}', 'ytTitle': yt_title, 'ytDesc': yt_text,
                             'slides': [], 'video': f'video/{pid}.mp4'})
-    day = START + dt.timedelta(days=2 * slots_used); slots_used += 1
+    day = next_day; next_day += dt.timedelta(days=1)
     m = rnd.randint(15 * 60 + 30, 17 * 60)                      # mid-afternoon, between the regular two slots
     for k, (ch, iid, text, meta) in enumerate([
             (IG, 'yt-reel-' + pid, ig_text, {'instagram': {'type': 'reel', 'shouldShareToFeed': True}}),
