@@ -9,8 +9,14 @@ IG, TT, YT = '6adb5ec6778b240e2f9d4ea5', '6adb5f07778b240e2f9d51b0', '6adb5f1d77
 ORDER = ["Drake", "The Beatles", "Alice in Chains", "Taylor Swift", "Eminem", "Arctic Monkeys", "Lady Gaga", "Linkin Park", "The Weeknd",
          "Olivia Rodrigo", "Kendrick Lamar", "Queen", "Billie Eilish",
          "Michael Jackson", "Rihanna", "Nirvana", "Ariana Grande", "Metallica", "Coldplay", "Bruno Mars",
-         "Lana Del Rey", "Red Hot Chili Peppers", "Green Day"]
-TAGS = {"Michael Jackson": "#michaeljackson #mj #kingofpop", "Rihanna": "#rihanna #navy #pop",
+         "Lana Del Rey", "Red Hot Chili Peppers", "Green Day",
+         "Beyoncé", "Ed Sheeran", "Dua Lipa", "Harry Styles", "Justin Bieber", "Post Malone", "SZA", "Travis Scott",
+         "Imagine Dragons", "Paramore"]
+TAGS = {"Beyoncé": "#beyonce #beyhive #rnb", "Ed Sheeran": "#edsheeran #pop #sheerios",
+        "Dua Lipa": "#dualipa #pop #dance", "Harry Styles": "#harrystyles #harries #pop", "Justin Bieber": "#justinbieber #beliebers #pop",
+        "Post Malone": "#postmalone #posty #hiphop", "SZA": "#sza #rnb #sos", "Travis Scott": "#travisscott #utopia #rap",
+        "Imagine Dragons": "#imaginedragons #rock #alternative", "Paramore": "#paramore #hayleywilliams #poppunk",
+        "Michael Jackson": "#michaeljackson #mj #kingofpop", "Rihanna": "#rihanna #navy #pop",
         "Nirvana": "#nirvana #kurtcobain #grunge", "Ariana Grande": "#arianagrande #arianators #pop",
         "Metallica": "#metallica #metal #heavymetal", "Coldplay": "#coldplay #chrismartin #britpop",
         "Bruno Mars": "#brunomars #pop #funk", "Lana Del Rey": "#lanadelrey #lana #alternative",

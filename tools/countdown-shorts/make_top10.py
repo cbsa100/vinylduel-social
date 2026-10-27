@@ -17,8 +17,13 @@ import argparse, json, os, re, subprocess, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 
+# Optional cookies file (Netscape format) from a signed-out browser profile, if YouTube asks to "confirm
+# you're not a bot". Never point this at a signed-in profile.
+COOKIES = ["--cookies", os.environ["YT_COOKIES"]] if os.environ.get("YT_COOKIES") else []
+
+
 def ytdlp(*args):
-    r = subprocess.run(["yt-dlp", "--no-warnings", *args], capture_output=True, text=True)
+    r = subprocess.run(["yt-dlp", "--no-warnings", *COOKIES, *args], capture_output=True, text=True)
     return r.stdout
 
 
@@ -66,6 +71,7 @@ def song_name(title, artist):
     while len(parts) > 1 and norm(artist) in norm(parts[-1]):
         parts.pop()                                   # " - <artist>" suffix
     t = " - ".join(parts)
+    t = re.sub(r"^" + re.escape(artist) + r"\s*:\s*", "", t, flags=re.I)   # "Metallica: One"
     t = re.sub(r"\s*[\(\[][^\)\]]*[\)\]]", "", t)      # every (...) and [...]
     t = re.split(r"\s(?:ft\.?|feat\.?|featuring)\s", t, flags=re.I)[0]
     return t.strip(" -–—|:\"'").strip()
@@ -100,6 +106,7 @@ def main():
     ap.add_argument("--songs", nargs="+", help="your own 10 songs, #10 first")
     ap.add_argument("--title", default="10 Songs That Defined")
     ap.add_argument("--out")
+    ap.add_argument("--download-only", action="store_true", help="fetch the clips and write the config, don't render")
     ap.add_argument("--voice", help="speak the title at the start with this macOS voice, e.g. Samantha")
     ap.add_argument("--drop-top", action="store_true", help="leave out the most-watched song (the expected #1)")
     ap.add_argument("--top-at", type=int, help="put the most-watched song at this place instead of #1")
@@ -144,7 +151,7 @@ def main():
         path = os.path.join(clipdir, r["id"] + ".mp4")
         print(f"#{len(vids) - i}: {r['song']}  <- {r['title']} ({r['channel']})", flush=True)
         if not os.path.exists(path):
-            subprocess.run(["yt-dlp", "--no-warnings", "-q", "-f",
+            subprocess.run(["yt-dlp", "--no-warnings", *COOKIES, "-q", "-f",
                             "bv*[height<=1080][ext=mp4]+ba[ext=m4a]/b[ext=mp4]/b",
                             "--merge-output-format", "mp4", "--sleep-requests", "1.5",
                             "--sleep-interval", "15", "--max-sleep-interval", "40",   # go easy on YouTube
@@ -162,6 +169,8 @@ def main():
     cfg_path = os.path.join(clipdir, "config.json")
     with open(cfg_path, "w") as f:
         json.dump(cfg, f, indent=2, ensure_ascii=False)
+    if a.download_only:
+        print("downloaded", a.artist, cfg_path); return
     out = a.out or os.path.join(HERE, f"{slug}_top10_vinylduel.mp4")
     subprocess.run([sys.executable, os.path.join(HERE, "make_countdown.py"), cfg_path, out], check=True)
 
