@@ -59,7 +59,7 @@ def is_artist_channel(channel, artist, title=""):
 def looks_like_video(r):
     t = r["title"].lower()
     bad = ("lyric", "audio", "visualizer", "visualiser", "live", "reaction", "cover", "karaoke",
-           "instrumental", "8d", "slowed", "nsfw", "behind the scenes", "teaser", "trailer")
+           "instrumental", "8d", "slowed", "acoustic", "remix", "fortnite", "nsfw", "behind the scenes", "teaser", "trailer")
     return 90 <= r["duration"] <= 600 and not any(b in t for b in bad)
 
 
@@ -71,9 +71,10 @@ def song_name(title, artist):
     while len(parts) > 1 and norm(artist) in norm(parts[-1]):
         parts.pop()                                   # " - <artist>" suffix
     t = " - ".join(parts)
-    t = re.sub(r"^" + re.escape(artist) + r"\s*:\s*", "", t, flags=re.I)   # "Metallica: One"
+    t = re.sub(r"^" + re.escape(artist) + r"\s*[:\-–—]\s*", "", t, flags=re.I)   # "Metallica: One", "SZA- Saturn"
     t = re.sub(r"\s*[\(\[][^\)\]]*[\)\]]", "", t)      # every (...) and [...]
     t = re.split(r"\s(?:ft\.?|feat\.?|featuring)\s", t, flags=re.I)[0]
+    t = re.sub(r"[\(\)\[\]]", "", t)                 # leftovers of nested brackets: "Intentions)"
     return t.strip(" -–—|:\"'").strip()
 
 
@@ -97,6 +98,13 @@ def top_videos(artist, k=10):
                 continue
             seen.add(norm(name)); picked.append(dict(r, song=name))
     picked.sort(key=lambda r: r["views"], reverse=True)
+    # one video per song: drop versions of a song already in ("Perfect Symphony" next to "Perfect")
+    keep = []
+    for r in picked:
+        n = norm(r["song"])
+        if not any(n.startswith(norm(k["song"])) or norm(k["song"]).startswith(n) for k in keep):
+            keep.append(r)
+    picked = keep
     return list(reversed(picked[:k]))       # countdown plays #10 first
 
 

@@ -11,8 +11,15 @@ ORDER = ["Drake", "The Beatles", "Alice in Chains", "Taylor Swift", "Eminem", "A
          "Michael Jackson", "Rihanna", "Nirvana", "Ariana Grande", "Metallica", "Coldplay", "Bruno Mars",
          "Lana Del Rey", "Red Hot Chili Peppers", "Green Day",
          "Beyoncé", "Ed Sheeran", "Dua Lipa", "Harry Styles", "Justin Bieber", "Post Malone", "SZA", "Travis Scott",
-         "Imagine Dragons", "Paramore"]
-TAGS = {"Beyoncé": "#beyonce #beyhive #rnb", "Ed Sheeran": "#edsheeran #pop #sheerios",
+         "Imagine Dragons", "Paramore",
+         "Soundgarden", "Pearl Jam", "System of a Down", "Foo Fighters", "Deftones", "The Smashing Pumpkins",
+         "Rage Against the Machine", "Tool", "Stone Temple Pilots", "Radiohead"]
+TAGS = {"Soundgarden": "#soundgarden #chriscornell #grunge", "Pearl Jam": "#pearljam #eddievedder #grunge",
+        "System of a Down": "#systemofadown #soad #metal", "Foo Fighters": "#foofighters #davegrohl #rock",
+        "Deftones": "#deftones #chinomoreno #alternative", "The Smashing Pumpkins": "#smashingpumpkins #billycorgan #90smusic",
+        "Rage Against the Machine": "#rageagainstthemachine #ratm #rock", "Tool": "#tool #maynardjameskeenan #progmetal",
+        "Stone Temple Pilots": "#stonetemplepilots #scottweiland #grunge", "Radiohead": "#radiohead #thomyorke #alternative",
+        "Beyoncé": "#beyonce #beyhive #rnb", "Ed Sheeran": "#edsheeran #pop #sheerios",
         "Dua Lipa": "#dualipa #pop #dance", "Harry Styles": "#harrystyles #harries #pop", "Justin Bieber": "#justinbieber #beliebers #pop",
         "Post Malone": "#postmalone #posty #hiphop", "SZA": "#sza #rnb #sos", "Travis Scott": "#travisscott #utopia #rap",
         "Imagine Dragons": "#imaginedragons #rock #alternative", "Paramore": "#paramore #hayleywilliams #poppunk",
