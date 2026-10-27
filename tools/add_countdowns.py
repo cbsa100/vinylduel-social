@@ -27,7 +27,7 @@ TAGS = {"Beyoncé": "#beyonce #beyhive #rnb", "Ed Sheeran": "#edsheeran #pop #sh
         "Kendrick Lamar": "#kendricklamar #hiphop #rap", "Arctic Monkeys": "#arcticmonkeys #indierock #alexturner",
         "Billie Eilish": "#billieeilish #finneas #pop", "The Weeknd": "#theweeknd #xo #rnb",
         "Lady Gaga": "#ladygaga #littlemonsters #pop", "Queen": "#queen #freddiemercury #classicrock"}
-START = dt.date(2026, 10, 28)
+START = dt.date(2026, 10, 27)
 norm = lambda s: re.sub(r'[^a-z0-9]+', '', s.lower())
 
 pk = json.load(open('social/pack.json')); b = json.load(open('social/backlog.json'))
