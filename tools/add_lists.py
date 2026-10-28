@@ -32,10 +32,10 @@ for key in ORDER:
     tags = s['tags']
     video = [{'video': {'url': f'{RAW}list-{key}.mp4'}}]
     ig_text = (f"{title} 🎧\n\n{ranked}\n\nDisagree with this order? Rank your own favourites on the VinylDuel app, "
-               f"free on iPhone and Android. Link in bio.\n\nClips from the official music videos.\n\n{tags} #top10 #musicranking #reels")
-    tt_text = f"{title.lower()}. {top[1].lower()} at #1. what would you put there? 👇\n\n{tags} #top10 #fyp"
+               f"free on iPhone and Android. Link in bio.\n\nClips from the official music videos.\n\n{tags} #top10 #musicranking")
+    tt_text = f"{title.lower()}. {top[1].lower()} at No. 1. what would you put there? 👇\n\n{tags} #top10"
     yt_title = title if title.startswith('Great Artists') else f"{title}, Ranked"
-    yt_text = (f"{title}, from #10 to #1. what would you put at #1?\n\n{ranked}\n\n"
+    yt_text = (f"{title}, from No. 10 to No. 1. what would you put at No. 1?\n\n{ranked}\n\n"
                f"Rank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n"
                f"Clips from the official music videos.\n\n{tags} #top10 #shorts")
     if not any(p['id'] == pid for p in pk['posts']):

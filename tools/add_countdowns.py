@@ -58,12 +58,12 @@ for artist in ORDER:
     video = [{'video': {'url': f'{BASE}video/{pid}.mp4'}}]
     ig_text = (f"The {n} best songs by {artist}, ranked 🎧\n\n{ranked}\n\n"
                f"Disagree with this order? Rank {artist} yourself on the VinylDuel app, free on iPhone and Android. Link in bio.\n\n"
-               f"Clips from the official music videos.\n\n{tags} #top10 #musicranking #reels")
-    tt_text = (f"the {n} best songs by {artist.lower()}. {top.lower()} at #1, {songs[0].lower()} at #{n}. what's your #1? 👇\n\n"
-               f"{tags} #top10 #musicranking #fyp")
+               f"Clips from the official music videos.\n\n{tags} #top10 #musicranking")
+    tt_text = (f"the {n} best songs by {artist.lower()}. {top.lower()} at No. 1, {songs[0].lower()} at No. {n}. what's your No. 1? 👇\n\n"
+               f"{tags} #top10 #musicranking")
     yt_title = f"The {n} Best Songs by {artist}, Ranked"
     poss = artist + ("'" if artist.endswith("s") else "'s")
-    yt_text = (f"{poss} {n} best songs, from #{n} to #1. what's your #1?\n\n{ranked}\n\n"
+    yt_text = (f"{poss} {n} best songs, from No. {n} to No. 1. what's your No. 1?\n\n{ranked}\n\n"
                f"Rank any album, two songs at a time: vinylduel.app (free on iPhone and Android)\n\n"
                f"Clips from the official music videos.\n\n{tags} #top10 #shorts")
     if not any(p['id'] == pid for p in pk['posts']):
