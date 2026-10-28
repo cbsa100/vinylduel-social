@@ -1,0 +1,275 @@
+{
+ "_about": "Multi-artist countdowns (make_list.py). items: 'Artist | Song', #10 first, #1 last.",
+ "worst-80s": {
+  "title": "The 10 Worst Songs of the",
+  "highlight": "80s",
+  "tags": "#80s #80smusic #worstsongs",
+  "items": [
+   "Kajagoogoo | Too Shy",
+   "Corey Hart | Sunglasses at Night",
+   "Wang Chung | Everybody Have Fun Tonight",
+   "Milli Vanilli | Girl You Know It's True",
+   "Starship | Nothing's Gonna Stop Us Now",
+   "Chris de Burgh | The Lady in Red",
+   "Bobby McFerrin | Don't Worry, Be Happy",
+   "Billy Joel | We Didn't Start the Fire",
+   "Eddie Murphy | Party All the Time",
+   "Starship | We Built This City"
+  ]
+ },
+ "defined-80s": {
+  "title": "10 Songs That Defined the",
+  "highlight": "80s",
+  "tags": "#80s #80smusic #throwback",
+  "items": [
+   "Toto | Africa",
+   "Tears for Fears | Everybody Wants to Rule the World",
+   "Journey | Don't Stop Believin'",
+   "Cyndi Lauper | Girls Just Want to Have Fun",
+   "Bon Jovi | Livin' on a Prayer",
+   "Whitney Houston | I Wanna Dance with Somebody",
+   "Prince | When Doves Cry",
+   "a-ha | Take On Me",
+   "Madonna | Like a Virgin",
+   "Michael Jackson | Billie Jean"
+  ]
+ },
+ "worst-90s": {
+  "title": "The 10 Worst Songs of the",
+  "highlight": "90s",
+  "tags": "#90s #90smusic #worstsongs",
+  "items": [
+   "Chumbawamba | Tubthumping",
+   "4 Non Blondes | What's Up",
+   "Right Said Fred | I'm Too Sexy",
+   "Rednex | Cotton Eye Joe",
+   "Hanson | MMMBop",
+   "Lou Bega | Mambo No. 5",
+   "Aqua | Barbie Girl",
+   "Los del Río | Macarena",
+   "Vanilla Ice | Ice Ice Baby",
+   "Billy Ray Cyrus | Achy Breaky Heart"
+  ]
+ },
+ "defined-90s": {
+  "title": "10 Songs That Defined the",
+  "highlight": "90s",
+  "tags": "#90s #90smusic #throwback",
+  "items": [
+   "Alanis Morissette | Ironic",
+   "TLC | Waterfalls",
+   "R.E.M. | Losing My Religion",
+   "2Pac | California Love",
+   "Backstreet Boys | I Want It That Way",
+   "Coolio | Gangsta's Paradise",
+   "Whitney Houston | I Will Always Love You",
+   "Oasis | Wonderwall",
+   "Britney Spears | ...Baby One More Time",
+   "Nirvana | Smells Like Teen Spirit"
+  ]
+ },
+ "worst-2000s": {
+  "title": "The 10 Worst Songs of the",
+  "highlight": "2000s",
+  "tags": "#2000s #2000smusic #worstsongs",
+  "items": [
+   "The Cheeky Girls | Cheeky Song",
+   "Las Ketchup | The Ketchup Song",
+   "Hoobastank | The Reason",
+   "Creed | With Arms Wide Open",
+   "Daniel Powter | Bad Day",
+   "James Blunt | You're Beautiful",
+   "Crazy Frog | Axel F",
+   "Baha Men | Who Let the Dogs Out",
+   "Black Eyed Peas | My Humps",
+   "Nickelback | Photograph"
+  ]
+ },
+ "defined-2000s": {
+  "title": "10 Songs That Defined the",
+  "highlight": "2000s",
+  "tags": "#2000s #2000smusic #throwback",
+  "items": [
+   "Amy Winehouse | Rehab",
+   "Justin Timberlake | SexyBack",
+   "Kelly Clarkson | Since U Been Gone",
+   "Usher | Yeah!",
+   "50 Cent | In da Club",
+   "Gnarls Barkley | Crazy",
+   "Britney Spears | Toxic",
+   "Eminem | Lose Yourself",
+   "The Killers | Mr. Brightside",
+   "OutKast | Hey Ya!"
+  ]
+ },
+ "worst-2010s": {
+  "title": "The 10 Worst Songs of the",
+  "highlight": "2010s",
+  "tags": "#2010s #2010smusic #worstsongs",
+  "items": [
+   "Nickelback | When We Stand Together",
+   "Florida Georgia Line | Cruise",
+   "Black Eyed Peas | The Time (Dirty Bit)",
+   "Iggy Azalea | Fancy",
+   "Jason Derulo | Wiggle",
+   "Silentó | Watch Me (Whip/Nae Nae)",
+   "Lil Pump | Gucci Gang",
+   "Ylvis | The Fox",
+   "LMFAO | Sexy and I Know It",
+   "Robin Thicke | Blurred Lines"
+  ]
+ },
+ "defined-2010s": {
+  "title": "10 Songs That Defined the",
+  "highlight": "2010s",
+  "tags": "#2010s #2010smusic #throwback",
+  "items": [
+   "Cardi B | Bodak Yellow",
+   "Childish Gambino | This Is America",
+   "LMFAO | Party Rock Anthem",
+   "Katy Perry | Roar",
+   "Avicii | Wake Me Up",
+   "Lorde | Royals",
+   "Taylor Swift | Shake It Off",
+   "Gotye | Somebody That I Used to Know",
+   "Mark Ronson | Uptown Funk",
+   "Adele | Rolling in the Deep"
+  ]
+ },
+ "most-annoying": {
+  "title": "The 10 Most Annoying",
+  "highlight": "Songs Ever",
+  "tags": "#annoyingsongs #earworm #worstsongs",
+  "items": [
+   "Rick Astley | Never Gonna Give You Up",
+   "Men Without Hats | The Safety Dance",
+   "Haddaway | What Is Love",
+   "Toni Basil | Mickey",
+   "O-Zone | Dragostea Din Tei",
+   "Carly Rae Jepsen | Call Me Maybe",
+   "Soulja Boy | Crank That",
+   "Eiffel 65 | Blue (Da Ba Dee)",
+   "PSY | Gangnam Style",
+   "Pinkfong | Baby Shark"
+  ]
+ },
+ "worst-duets": {
+  "title": "The 10 Worst",
+  "highlight": "Duets Ever",
+  "tags": "#duets #worstsongs #pop",
+  "items": [
+   "Maroon 5 & Cardi B | Girls Like You",
+   "Kid Rock & Sheryl Crow | Picture",
+   "Jay-Z & Linkin Park | Numb/Encore",
+   "Paul McCartney & Michael Jackson | Say Say Say | McCartney & Michael Jackson",
+   "Nelly & Tim McGraw | Over and Over",
+   "Elton John & RuPaul | Don't Go Breaking My Heart | Elton John & RuPaul",
+   "Britney Spears & Madonna | Me Against the Music | Britney & Madonna",
+   "Paul McCartney & Stevie Wonder | Ebony and Ivory | McCartney & Stevie Wonder",
+   "Taylor Swift & Brendon Urie | ME!",
+   "David Bowie & Mick Jagger | Dancing in the Street | Bowie & Jagger"
+  ]
+ },
+ "cringiest": {
+  "title": "The 10 Cringiest",
+  "highlight": "Songs Ever",
+  "tags": "#cringe #worstsongs #celebrities",
+  "items": [
+   "Brokencyde | Freaxxx",
+   "Kreayshawn | Gucci Gucci",
+   "Bruce Willis | Respect Yourself",
+   "Shaquille O'Neal | (I Know I Got) Skillz",
+   "Marky Mark | Good Vibrations",
+   "Paris Hilton | Stars Are Blind",
+   "Lindsay Lohan | Rumors",
+   "Don Johnson | Heartbeat",
+   "David Hasselhoff | Looking for Freedom",
+   "Jake Paul | It's Everyday Bro"
+  ]
+ },
+ "great-artists-terrible-songs": {
+  "title": "Great Artists,",
+  "highlight": "Terrible Songs",
+  "tags": "#worstsongs #rock #musicdebate",
+  "items": [
+   "Prince | Batdance",
+   "Avril Lavigne | Hello Kitty",
+   "Madonna | American Life",
+   "U2 | Get On Your Boots",
+   "Genesis | Illegal Alien",
+   "R.E.M. | Shiny Happy People",
+   "Queen | Body Language",
+   "Lou Reed & Metallica | The View",
+   "Garth Brooks as Chris Gaines | Lost in You",
+   "Metallica | St. Anger"
+  ]
+ },
+ "changed-pop": {
+  "title": "10 Songs That",
+  "highlight": "Changed Pop",
+  "tags": "#pop #popmusic #iconic",
+  "items": [
+   "Sia | Chandelier",
+   "Leona Lewis | Bleeding Love",
+   "Shakira | Hips Don't Lie",
+   "Kylie Minogue | Can't Get You Out of My Head",
+   "NSYNC | Bye Bye Bye",
+   "Christina Aguilera | Genie in a Bottle",
+   "Eurythmics | Sweet Dreams",
+   "George Michael | Faith",
+   "Madonna | Vogue",
+   "Madonna | Like a Prayer"
+  ]
+ },
+ "changed-rock": {
+  "title": "10 Songs That",
+  "highlight": "Changed Rock",
+  "tags": "#rock #classicrock #iconic",
+  "items": [
+   "My Chemical Romance | Welcome to the Black Parade",
+   "The White Stripes | Seven Nation Army",
+   "The Verve | Bitter Sweet Symphony",
+   "Blur | Song 2",
+   "Guns N' Roses | November Rain",
+   "U2 | With or Without You",
+   "The Police | Every Breath You Take",
+   "Van Halen | Jump",
+   "AC/DC | Back in Black",
+   "Guns N' Roses | Sweet Child o' Mine"
+  ]
+ },
+ "changed-hiphop": {
+  "title": "10 Songs That",
+  "highlight": "Changed Hip-Hop",
+  "tags": "#hiphop #rap #iconic",
+  "items": [
+   "Wu-Tang Clan | C.R.E.A.M.",
+   "Kendrick Lamar | Alright",
+   "Kanye West | Gold Digger",
+   "Jay-Z | 99 Problems",
+   "Missy Elliott | Get Ur Freak On",
+   "The Notorious B.I.G. | Juicy",
+   "Dr. Dre | Nuthin' but a \"G\" Thang",
+   "N.W.A | Straight Outta Compton",
+   "Public Enemy | Fight the Power",
+   "Grandmaster Flash | The Message"
+  ]
+ },
+ "one-hit-wonders": {
+  "title": "The 10 Greatest",
+  "highlight": "One-Hit Wonders",
+  "tags": "#onehitwonder #throwback #iconic",
+  "items": [
+   "Passenger | Let Her Go",
+   "Far East Movement | Like a G6",
+   "Plain White T's | Hey There Delilah",
+   "Vanessa Carlton | A Thousand Miles",
+   "Sixpence None the Richer | Kiss Me",
+   "Natalie Imbruglia | Torn",
+   "Deee-Lite | Groove Is in the Heart",
+   "Nena | 99 Luftballons",
+   "Soft Cell | Tainted Love",
+   "Dexys Midnight Runners | Come On Eileen"
+  ]
+ }
+}

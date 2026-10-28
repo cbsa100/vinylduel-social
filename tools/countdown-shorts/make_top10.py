@@ -71,11 +71,12 @@ def song_name(title, artist):
     while len(parts) > 1 and norm(artist) in norm(parts[-1]):
         parts.pop()                                   # " - <artist>" suffix
     t = " - ".join(parts)
-    t = re.sub(r"^" + re.escape(artist) + r"\s*[:\-–—]\s*", "", t, flags=re.I)   # "Metallica: One", "SZA- Saturn"
+    for name in {artist, re.sub(r"^the\s+", "", artist, flags=re.I)}:   # "Metallica: One", "SZA- Saturn", "Smashing Pumpkins - Disarm"
+        t = re.sub(r"^" + re.escape(name) + r"\s*[:\-–—.]\s*", "", t, flags=re.I)
     t = re.sub(r"\s*[\(\[][^\)\]]*[\)\]]", "", t)      # every (...) and [...]
     t = re.split(r"\s(?:ft\.?|feat\.?|featuring)\s", t, flags=re.I)[0]
     t = re.sub(r"[\(\)\[\]]", "", t)                 # leftovers of nested brackets: "Intentions)"
-    return t.strip(" -–—|:\"'").strip()
+    return t.strip(" -–—|:/.\"'").strip()
 
 
 def best_video(artist, song):

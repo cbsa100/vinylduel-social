@@ -98,14 +98,32 @@ def header_layer(cfg):
     return img
 
 
-def row_layer(rank, row, name):
-    """One list row. name=None -> number only (empty slot)."""
+def row_layer(rank, row, name, artist=None):
+    """One list row. name=None -> number only (empty slot). artist: shown smaller and dimmer after the song
+    (multi-artist lists); it shrinks first, then gets trimmed, so the song name stays big."""
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     y = LIST_TOP + row * ROW_H
     nf = ImageFont.truetype(LIST_FONT, 62)
     styled_text(img, (NUM_RIGHT, y), f"{rank}.", nf, WHITE, "rm", stroke=5, shadow=(4, 5),
                 features=["tnum"])
-    if name:
+    if name and artist:
+        gap = 18
+        sf = fit_font(LIST_FONT, 58, name, MAX_TEXT_W * 0.72)
+        song_w = sf.getlength(name)
+        if song_w > MAX_TEXT_W * 0.72:        # very long song title: trim it
+            while sf.getlength(name + "…") > MAX_TEXT_W * 0.72 and len(name) > 4:
+                name = name[:-1]
+            name = name.rstrip() + "…"; song_w = sf.getlength(name)
+        room = MAX_TEXT_W - song_w - gap
+        af = fit_font(LIST_FONT, 40, artist, room)
+        if af.getlength(artist) > room:
+            af = ImageFont.truetype(LIST_FONT, 32)
+            while af.getlength(artist + "…") > room and len(artist) > 3:
+                artist = artist[:-1]
+            artist = artist.rstrip() + "…"
+        styled_text(img, (TEXT_X, y), name, sf, WHITE, "lm", stroke=5, shadow=(4, 5))
+        styled_text(img, (TEXT_X + song_w + gap, y + 4), artist, af, (255, 255, 255, 200), "lm", stroke=4, shadow=(3, 4))
+    elif name:
         tf = fit_font(LIST_FONT, 62, name, MAX_TEXT_W)
         if tf.size < 46:                      # too long: keep it readable, trim instead
             tf = ImageFont.truetype(LIST_FONT, 46)
@@ -120,7 +138,7 @@ def build_overlays(cfg, tmp):
     n = len(cfg["items"])
     header = header_layer(cfg)
     empties = [row_layer(n - i, i, None) for i in range(n)]
-    fulls = [row_layer(n - i, i, cfg["items"][i]["name"]) for i in range(n)]
+    fulls = [row_layer(n - i, i, cfg["items"][i]["name"], cfg["items"][i].get("artist")) for i in range(n)]
     paths = []
     for seg in range(n):
         base = header.copy()
