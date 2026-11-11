@@ -15,7 +15,13 @@ keep = set(args[args.index('--keep') + 1:]) if '--keep' in args else set()
 b = json.load(open('backlog.json')); pk = json.load(open('pack.json'))
 now = dt.datetime.now(dt.timezone.utc)
 last_use, published = {}, set()
+paused_files = set()
 for i in b['items']:
+    if i.get('paused'):                  # not scheduled now but may come back: keep its media
+        for a in i['post'].get('assets', []):
+            u = (a.get('video') or {}).get('url', '')
+            if '/video/' in u: paused_files.add(u.split('/video/')[1])
+        continue
     t = dt.datetime.fromisoformat(i['post']['dueAt'])
     for a in i['post'].get('assets', []):
         u = (a.get('video') or {}).get('url', '')
@@ -28,7 +34,7 @@ for base, path in (pk.get('videoFiles') or {}).items():          # posted before
 
 gone, freed = [], 0
 for f in sorted(os.listdir('video')):
-    if f in keep: continue
+    if f in keep or f in paused_files: continue
     if f in last_use: ok = last_use[f] < now - MARGIN
     else: ok = f in published                                     # never touch a file nothing points to
     if ok:
