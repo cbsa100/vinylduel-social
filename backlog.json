@@ -8010,7 +8010,7 @@
   },
   {
    "id": "yt-reel-cd-quiz-linkinpark",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "automatic",
@@ -8030,11 +8030,12 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6af6b3b4e1d8eff610a72030"
   },
   {
    "id": "yt-ttv-cd-quiz-linkinpark",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "automatic",
@@ -8053,11 +8054,12 @@
       "title": "How well do you know Linkin Park?"
      }
     }
-   }
+   },
+   "bufferId": "6af6b3b6fb90ccefdd240d02"
   },
   {
    "id": "yt-cd-quiz-linkinpark",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "automatic",
@@ -8079,7 +8081,8 @@
       "madeForKids": false
      }
     }
-   }
+   },
+   "bufferId": "6af6b3b8c1a0010a5b03ad06"
   },
   {
    "id": "ig-tbt-thebends",
@@ -8337,7 +8340,7 @@
   },
   {
    "id": "yt-reel-cd-sza",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "automatic",
@@ -8357,11 +8360,12 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6af6b3bae1d8eff610a72134"
   },
   {
    "id": "yt-ttv-cd-sza",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "automatic",
@@ -8380,11 +8384,12 @@
       "title": "The 10 best songs by SZA"
      }
     }
-   }
+   },
+   "bufferId": "6af6b3bc5ec1c9d5be659e69"
   },
   {
    "id": "yt-cd-sza",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "automatic",
@@ -8406,7 +8411,8 @@
       "madeForKids": false
      }
     }
-   }
+   },
+   "bufferId": "6af6b3beba218f3263835a7a"
   },
   {
    "id": "yt-tt-mcr",
