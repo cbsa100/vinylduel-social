@@ -8662,7 +8662,7 @@
   },
   {
    "id": "yt-reel-cd-list-defined-90s",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "automatic",
@@ -8682,11 +8682,12 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6af955d4b9a106584c91034d"
   },
   {
    "id": "yt-ttv-cd-list-defined-90s",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "automatic",
@@ -8705,11 +8706,12 @@
       "title": "10 Songs That Defined the 90s"
      }
     }
-   }
+   },
+   "bufferId": "6af955d6b9a106584c9103b0"
   },
   {
    "id": "yt-cd-list-defined-90s",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "automatic",
@@ -8731,7 +8733,8 @@
       "madeForKids": false
      }
     }
-   }
+   },
+   "bufferId": "6af955d976c23bf1c7629cca"
   },
   {
    "id": "ig-tier-hybridtheory",
@@ -8957,7 +8960,7 @@
   },
   {
    "id": "yt-reel-cd-battle-greenday",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "automatic",
@@ -8977,11 +8980,12 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6af955dbe86a5789a6f45d9c"
   },
   {
    "id": "yt-ttv-cd-battle-greenday",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "automatic",
@@ -9000,11 +9004,12 @@
       "title": "American Idiot vs Dookie: tracklist battle"
      }
     }
-   }
+   },
+   "bufferId": "6af955dc76c23bf1c7629d55"
   },
   {
    "id": "yt-cd-battle-greenday",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "automatic",
@@ -9026,7 +9031,8 @@
       "madeForKids": false
      }
     }
-   }
+   },
+   "bufferId": "6af955df76c23bf1c7629dad"
   },
   {
    "id": "yt-tt-closest",
