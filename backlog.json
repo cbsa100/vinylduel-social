@@ -9282,7 +9282,7 @@
   },
   {
    "id": "yt-reel-cd-quiz-taylorswift",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "automatic",
@@ -9302,11 +9302,12 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6afbf9329f28abc4561f1fec"
   },
   {
    "id": "yt-ttv-cd-quiz-taylorswift",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "automatic",
@@ -9325,11 +9326,12 @@
       "title": "How well do you know Taylor Swift?"
      }
     }
-   }
+   },
+   "bufferId": "6afbf93339b610d5918e52b4"
   },
   {
    "id": "yt-cd-quiz-taylorswift",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "automatic",
@@ -9351,7 +9353,8 @@
       "madeForKids": false
      }
     }
-   }
+   },
+   "bufferId": "6afbf93539b610d5918e53da"
   },
   {
    "id": "yt-tt-howitworks",
@@ -9577,7 +9580,7 @@
   },
   {
    "id": "yt-reel-cd-imaginedragons",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "automatic",
@@ -9597,11 +9600,12 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6afbf9381fd23f254447c5ec"
   },
   {
    "id": "yt-ttv-cd-imaginedragons",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "automatic",
@@ -9620,11 +9624,12 @@
       "title": "The 10 best songs by Imagine Dragons"
      }
     }
-   }
+   },
+   "bufferId": "6afbf93a82a2d4951bedb698"
   },
   {
    "id": "yt-cd-imaginedragons",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "automatic",
@@ -9646,7 +9651,8 @@
       "madeForKids": false
      }
     }
-   }
+   },
+   "bufferId": "6afbf93ca23f2007cb7aa891"
   },
   {
    "id": "yt-reel-tt-st-teenspirit",
