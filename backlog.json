@@ -9894,7 +9894,7 @@
   },
   {
    "id": "yt-reel-cd-paramore",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "automatic",
@@ -9914,11 +9914,12 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6afe9cc659eff0b616e8ac9c"
   },
   {
    "id": "yt-ttv-cd-paramore",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "automatic",
@@ -9937,11 +9938,12 @@
       "title": "The 10 best songs by Paramore"
      }
     }
-   }
+   },
+   "bufferId": "6afe9cc846636f319e947c15"
   },
   {
    "id": "yt-cd-paramore",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "automatic",
@@ -9963,7 +9965,8 @@
       "madeForKids": false
      }
     }
-   }
+   },
+   "bufferId": "6afe9cca3802f5b9fc74120d"
   },
   {
    "id": "ig-rcpt-bullets",
@@ -10181,7 +10184,7 @@
   },
   {
    "id": "yt-reel-cd-list-most-annoying",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "automatic",
@@ -10201,11 +10204,12 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6afe9ccd59eff0b616e8ae21"
   },
   {
    "id": "yt-ttv-cd-list-most-annoying",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "automatic",
@@ -10224,11 +10228,12 @@
       "title": "The 10 Most Annoying Songs Ever"
      }
     }
-   }
+   },
+   "bufferId": "6afe9ccf59eff0b616e8aec9"
   },
   {
    "id": "yt-cd-list-most-annoying",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "automatic",
@@ -10250,7 +10255,8 @@
       "madeForKids": false
      }
     }
-   }
+   },
+   "bufferId": "6afe9cd2f6b6aa0cd4aac08e"
   },
   {
    "id": "yt-tt-tbt-threecheers",
