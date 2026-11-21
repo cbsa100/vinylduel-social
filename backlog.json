@@ -8870,7 +8870,7 @@
   },
   {
    "id": "yt-reel-cd-travisscott",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "automatic",
@@ -8890,11 +8890,12 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6b013ed4510276624500acdc"
   },
   {
    "id": "yt-cd-travisscott",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "automatic",
@@ -8916,7 +8917,8 @@
       "madeForKids": false
      }
     }
-   }
+   },
+   "bufferId": "6b013edbdd205ed779c55054"
   },
   {
    "id": "yt-ttv-cd-list-defined-90s",
@@ -9139,7 +9141,7 @@
   },
   {
    "id": "yt-reel-cd-soundgarden",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "automatic",
@@ -9159,11 +9161,12 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6b013ed7510276624500ae1d"
   },
   {
    "id": "yt-cd-soundgarden",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "automatic",
@@ -9185,7 +9188,8 @@
       "madeForKids": false
      }
     }
-   }
+   },
+   "bufferId": "6b013ededd205ed779c5522e"
   },
   {
    "id": "yt-tt-st-r-isthisit",
@@ -9614,7 +9618,7 @@
   },
   {
    "id": "yt-reel-cd-pearljam",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "automatic",
@@ -9634,11 +9638,12 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6b013ed99ffbc8503c041aac"
   },
   {
    "id": "yt-cd-pearljam",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "automatic",
@@ -9660,7 +9665,8 @@
       "madeForKids": false
      }
     }
-   }
+   },
+   "bufferId": "6b013ee020a2d09a0adc59e0"
   },
   {
    "id": "yt-tt-howitworks",
@@ -10998,7 +11004,7 @@
   },
   {
    "id": "yt-ttv-cd-travisscott",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "automatic",
@@ -11017,7 +11023,8 @@
       "title": "The 10 best songs by Travis Scott"
      }
     }
-   }
+   },
+   "bufferId": "6b013ee2510276624500aff9"
   },
   {
    "id": "yt-reel-cd-thesmashingpumpkins",
@@ -11343,7 +11350,7 @@
   },
   {
    "id": "yt-ttv-cd-soundgarden",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "automatic",
@@ -11362,7 +11369,8 @@
       "title": "The 10 best songs by Soundgarden"
      }
     }
-   }
+   },
+   "bufferId": "6b013ee420a2d09a0adc5a91"
   },
   {
    "id": "yt-reel-cd-quiz-billieeilish",
