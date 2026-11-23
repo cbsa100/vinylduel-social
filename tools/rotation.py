@@ -97,17 +97,19 @@ def date_all(b, now=None, redate_buffer=False, keep=()):
             i["post"]["dueAt"] = fixed_at[base].isoformat()
         elif base not in queue[kind_of(base)]:
             queue[kind_of(base)].append(base)
-    last = [k for d, k in sorted(taken.items())] or [kind_of(base_of(i["id"])) for i in sorted(auto, key=due) if due(i) <= now]
-    turn = ORDER.index(last[-1]) + 1 if last else 0           # the format after the last one that keeps its time
+    past = [kind_of(base_of(i["id"])) for i in sorted(auto, key=due) if due(i) <= now and slot_of(due(i)) == "evening"]
+    prev = past[-1] if past else ORDER[-1]                     # each day takes the format after the day before's
     plan, day = [], tomorrow
     while any(queue.values()):
-        while day in taken: day += dt.timedelta(days=1)
+        if day in taken:
+            prev = taken[day]; day += dt.timedelta(days=1); continue
+        turn = ORDER.index(prev) + 1
         while not queue[ORDER[turn % len(ORDER)]]: turn += 1
-        base = queue[ORDER[turn % len(ORDER)]].pop(0); turn += 1
+        kind = ORDER[turn % len(ORDER)]; base = queue[kind].pop(0); prev = kind
         when = slot_time(day, "evening")
         for i in auto:
             if base_of(i["id"]) == base and not fixed(i): i["post"]["dueAt"] = when.isoformat()
-        plan.append((when, kind_of(base), base))
+        plan.append((when, kind, base))
         day += dt.timedelta(days=1)
     b["items"].sort(key=lambda i: i["post"]["dueAt"])
     return [f"{w.astimezone(ET):%a %d %b %H:%M} US Eastern = {w:%a %H:%M} Israel  {kind:9} {base}" for w, kind, base in plan]
