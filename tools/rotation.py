@@ -2,19 +2,14 @@
 """
 Dates every automatic video that isn't in Buffer yet (and, given a file, adds new battles and quizzes first).
 
-Instagram and YouTube: TWO videos a day (since 20 Nov 2026): an artist countdown plus one of the other formats
-(list video -> album battle -> music quiz, in turn), each at the same minute on both apps. One goes out in the
-US afternoon (15:30-16:10 US Eastern = 22:30-23:10 Israel) and one in the US evening (19:30-20:10 US Eastern =
-02:30-03:10 Israel the next day). Which of the two gets the evening alternates by day, so the numbers can tell
-the time of day and the format apart. When the countdowns or the other formats run out, the days carry on with
-one video, in the evening. Two is also the most Buffer accepts for YouTube on one calendar day ("maximum number
-of posts YouTube allows in a day (2)"); these two slots give two a day in Israel, UTC and US time alike, so
-don't add a third slot or move one across midnight.
+ONE video a day (since 23 Nov 2026), the same video at the same minute on Instagram, TikTok and YouTube, in the
+US evening (19:30-20:10 US Eastern = 02:30-03:10 Israel the next day). The types rotate: artist countdown ->
+list video -> album battle -> music quiz (a type that runs out drops out). Two a day (20-23 Nov) broke on
+YouTube: Buffer's free plan allows only 2 YouTube posts in any rolling 24 hours, and the US-evening post was
+always the third, so it failed ("The daily posting limit for this channel has been reached").
 
-TikTok: still ONE video a day, in the US evening, in the order the videos go out on the other two apps (its
-posts get next to no views, so it was left out of the doubling).
-
-Posts already in Buffer keep their time; paused posts are never touched. Running it twice changes nothing more.
+Posts already in Buffer keep their time (the apps that aren't in Buffer yet follow it); paused posts are never
+touched. Running it twice changes nothing more.
 
 Usage (repo root):  python3 tools/rotation.py [new_videos.json]
 new_videos.json: [{"kind": "battle"|"quiz", "slug": "...", "url": "https://...mp4", "title": "...",
@@ -25,18 +20,14 @@ from zoneinfo import ZoneInfo
 
 TZ, ET = ZoneInfo("Asia/Jerusalem"), ZoneInfo("America/New_York")
 IG, TT, YT = "6adb5ec6778b240e2f9d4ea5", "6adb5f07778b240e2f9d51b0", "6adb5f1d778b240e2f9d52af"
-OTHERS = ["list", "battle", "quiz"]
+ORDER = ["countdown", "list", "battle", "quiz"]
 SLOTS = {"afternoon": (15 * 60 + 30, 16 * 60 + 10), "evening": (19 * 60 + 30, 20 * 60 + 10)}   # US Eastern
-FIRST_DAY = dt.date(2026, 11, 20)                              # the first two-a-day date (US Eastern)
 
 
 def kind_of(base):
     return "list" if base.startswith("cd-list-") else "battle" if base.startswith("cd-battle-") else \
            "quiz" if base.startswith("cd-quiz-") else "countdown"
 
-
-def group_of(base):
-    return "countdown" if kind_of(base) == "countdown" else "other"
 
 
 def base_of(iid):
@@ -63,12 +54,6 @@ def slot_time(day, slot):
     return dt.datetime.combine(day, dt.time(m // 60, m % 60), ET).astimezone(TZ)
 
 
-def slot_for(group, day):
-    """The countdown has the afternoon on FIRST_DAY, the evening the day after, and so on; the other format
-    has whichever is left."""
-    countdown = "afternoon" if (day - FIRST_DAY).days % 2 == 0 else "evening"
-    return countdown if group == "countdown" else ("evening" if countdown == "afternoon" else "afternoon")
-
 
 def automatic(b):
     return [i for i in b["items"] if i["post"].get("schedulingType") == "automatic" and not i.get("paused")]
@@ -90,73 +75,42 @@ def add_new(b, pk, new):
                                 "ttTitle": v["title"], "ytTitle": v["yt_title"], "ytDesc": v["yt"], "slides": [], "video": v["url"]})
 
 
-def date_all(b, now=None):
-    """Gives every automatic post that isn't in Buffer its time. Returns the plan lines."""
+def date_all(b, now=None, redate_buffer=False, keep=()):
+    """Gives every automatic post that isn't in Buffer its time: one video a day, the same minute on all three
+    apps, in the US evening. With redate_buffer, posts already in Buffer that haven't gone out yet are re-dated
+    too (except the item ids in keep). Returns the plan lines."""
     now = now or dt.datetime.now(dt.timezone.utc)
     tomorrow = us_day(now) + dt.timedelta(days=1)
     auto = automatic(b)
-    main = [i for i in auto if i["post"]["channelId"] in (IG, YT)]
-    tiktok = [i for i in auto if i["post"]["channelId"] == TT]
-    plan = []
-
-    # --- Instagram + YouTube: a countdown and one other format a day ---
-    in_buffer = {}                                             # base -> its time in Buffer
-    for i in main:
-        if i.get("scheduled"): in_buffer[base_of(i["id"])] = due(i)
-    taken = {}                                                 # US date -> {slot: group}, from what Buffer holds
-    for base, when in in_buffer.items():
-        if when > now: taken.setdefault(us_day(when), {})[slot_of(when)] = group_of(base)
-    queue = {"countdown": [], "list": [], "battle": [], "quiz": []}
-    for i in sorted(main, key=due):
+    fixed = lambda i: i["id"] in keep or (i.get("scheduled") and (not redate_buffer or due(i) <= now))
+    fixed_at = {}                                              # base -> its time in Buffer (evening slot only)
+    taken = {}                                                 # US date -> kind, from what keeps its time
+    for i in auto:
+        if fixed(i) and slot_of(due(i)) == "evening":
+            fixed_at.setdefault(base_of(i["id"]), due(i))
+            if due(i) > now: taken[us_day(due(i))] = kind_of(base_of(i["id"]))
+    queue = {k: [] for k in ORDER}
+    for i in sorted(auto, key=due):
+        if fixed(i): continue
         base = base_of(i["id"])
-        if base in in_buffer:                                  # one app is in Buffer already: the other follows it
-            if not i.get("scheduled"): i["post"]["dueAt"] = in_buffer[base].isoformat()
+        if base in fixed_at:                                   # one app keeps its time: the others follow it
+            i["post"]["dueAt"] = fixed_at[base].isoformat()
         elif base not in queue[kind_of(base)]:
             queue[kind_of(base)].append(base)
-    sent_others = sorted((when, kind_of(base)) for base, when in in_buffer.items() if group_of(base) == "other")
-    turn = (OTHERS.index(sent_others[-1][1]) + 1) if sent_others else 0   # the format after the last one in Buffer
-
-    def waiting(group):
-        return bool(queue["countdown"]) if group == "countdown" else any(queue[k] for k in OTHERS)
-
-    def take(group):
-        nonlocal turn
-        if group == "countdown": return queue["countdown"].pop(0)
-        while not queue[OTHERS[turn % 3]]: turn += 1
-        turn += 1
-        return queue[OTHERS[(turn - 1) % 3]].pop(0)
-
-    day = tomorrow
-    while waiting("countdown") or waiting("other"):
-        have = dict(taken.get(day, {}))
-        todo = [g for g in ("countdown", "other") if g not in have.values() and waiting(g)]
-        alone = len(todo) + len(have) == 1                     # nothing to pair it with: the evening
-        for group in todo:
-            free = [s for s in ("evening", "afternoon") if s not in have]
-            if not free: break
-            want = "evening" if alone else slot_for(group, day)
-            slot = want if want in free else free[0]
-            base, when = take(group), slot_time(day, slot)
-            have[slot] = group
-            for i in main:
-                if base_of(i["id"]) == base: i["post"]["dueAt"] = when.isoformat()
-            plan.append((when, "IG+YT ", kind_of(base), base))
-        day += dt.timedelta(days=1)
-
-    # --- TikTok: one a day, US evening, in the order of the other two apps ---
-    order = {base_of(i["id"]): due(i) for i in main}
-    busy = {us_day(due(i)) for i in tiktok if i.get("scheduled") and due(i) > now}
-    day = tomorrow
-    for i in sorted((i for i in tiktok if not i.get("scheduled")), key=lambda i: order.get(base_of(i["id"]), due(i))):
-        while day in busy: day += dt.timedelta(days=1)
+    last = [k for d, k in sorted(taken.items())] or [kind_of(base_of(i["id"])) for i in sorted(auto, key=due) if due(i) <= now]
+    turn = ORDER.index(last[-1]) + 1 if last else 0           # the format after the last one that keeps its time
+    plan, day = [], tomorrow
+    while any(queue.values()):
+        while day in taken: day += dt.timedelta(days=1)
+        while not queue[ORDER[turn % len(ORDER)]]: turn += 1
+        base = queue[ORDER[turn % len(ORDER)]].pop(0); turn += 1
         when = slot_time(day, "evening")
-        i["post"]["dueAt"] = when.isoformat()
-        plan.append((when, "TikTok", kind_of(base_of(i["id"])), base_of(i["id"])))
+        for i in auto:
+            if base_of(i["id"]) == base and not fixed(i): i["post"]["dueAt"] = when.isoformat()
+        plan.append((when, kind_of(base), base))
         day += dt.timedelta(days=1)
-
     b["items"].sort(key=lambda i: i["post"]["dueAt"])
-    return [f"{w.astimezone(ET):%a %d %b %H:%M} US Eastern = {w:%a %H:%M} Israel  {app}  {kind:9} {base}"
-            for w, app, kind, base in sorted(plan, key=lambda p: (p[1], p[0]))]
+    return [f"{w.astimezone(ET):%a %d %b %H:%M} US Eastern = {w:%a %H:%M} Israel  {kind:9} {base}" for w, kind, base in plan]
 
 
 if __name__ == "__main__":
