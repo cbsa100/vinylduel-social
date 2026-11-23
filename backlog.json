@@ -10336,7 +10336,7 @@
   },
   {
    "id": "yt-reel-cd-battle-radiohead",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "automatic",
@@ -10356,11 +10356,12 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6b03e228c72676f5e991f68f"
   },
   {
    "id": "yt-cd-battle-radiohead",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "automatic",
@@ -10382,11 +10383,12 @@
       "madeForKids": false
      }
     }
-   }
+   },
+   "bufferId": "6b03e22acc364169c1b952e0"
   },
   {
    "id": "yt-ttv-cd-battle-radiohead",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "automatic",
@@ -10405,7 +10407,8 @@
       "title": "In Rainbows vs OK Computer: tracklist battle"
      }
     }
-   }
+   },
+   "bufferId": "6b03e22cd864a011052a574c"
   },
   {
    "id": "yt-tt-tbt-threecheers",
@@ -10647,7 +10650,7 @@
   },
   {
    "id": "yt-reel-cd-quiz-nirvana",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "automatic",
@@ -10667,11 +10670,12 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6b03e22ed5eabfb8cc10f9a6"
   },
   {
    "id": "yt-cd-quiz-nirvana",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "automatic",
@@ -10693,11 +10697,12 @@
       "madeForKids": false
      }
     }
-   }
+   },
+   "bufferId": "6b03e230a6de38de9ec653eb"
   },
   {
    "id": "yt-ttv-cd-quiz-nirvana",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "automatic",
@@ -10716,7 +10721,8 @@
       "title": "How well do you know Nirvana?"
      }
     }
-   }
+   },
+   "bufferId": "6b03e231d5eabfb8cc10faa6"
   },
   {
    "id": "yt-ttv-tt-st-r-blackparade",
@@ -11248,7 +11254,7 @@
   },
   {
    "id": "yt-reel-cd-list-worst-2000s",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "automatic",
@@ -11268,11 +11274,12 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6b03e234d864a011052a5a44"
   },
   {
    "id": "yt-cd-list-worst-2000s",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "automatic",
@@ -11294,7 +11301,8 @@
       "madeForKids": false
      }
     }
-   }
+   },
+   "bufferId": "6b03e237a6de38de9ec655ff"
   },
   {
    "id": "yt-ttv-cd-list-worst-2000s",
@@ -11559,7 +11567,7 @@
   },
   {
    "id": "yt-reel-cd-battle-blackparade-americanidiot",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "automatic",
@@ -11579,7 +11587,8 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6b03e23a846b0ee907edc4f0"
   },
   {
    "id": "yt-cd-battle-blackparade-americanidiot",
