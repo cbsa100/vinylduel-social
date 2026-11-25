@@ -11306,7 +11306,7 @@
   },
   {
    "id": "yt-ttv-cd-list-worst-2000s",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "automatic",
@@ -11325,7 +11325,8 @@
       "title": "The 10 Worst Songs of the 2000s"
      }
     }
-   }
+   },
+   "bufferId": "6b06854bb6204bca46d33aec"
   },
   {
    "id": "yt-ttv-tt-st-heyjude",
@@ -11592,7 +11593,7 @@
   },
   {
    "id": "yt-cd-battle-blackparade-americanidiot",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "automatic",
@@ -11614,11 +11615,12 @@
       "madeForKids": false
      }
     }
-   }
+   },
+   "bufferId": "6b06854fc68d7845a48b3995"
   },
   {
    "id": "yt-ttv-cd-battle-blackparade-americanidiot",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "automatic",
@@ -11637,7 +11639,8 @@
       "title": "The Black Parade vs American Idiot: tracklist battle"
      }
     }
-   }
+   },
+   "bufferId": "6b06854dd8874a038cfc7266"
   },
   {
    "id": "tt-hits",
@@ -11927,7 +11930,7 @@
   },
   {
    "id": "yt-cd-quiz-billieeilish",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "automatic",
@@ -11949,7 +11952,8 @@
       "madeForKids": false
      }
     }
-   }
+   },
+   "bufferId": "6b0685579cddd8483ab773f4"
   },
   {
    "id": "yt-ttv-cd-quiz-billieeilish",
