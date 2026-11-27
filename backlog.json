@@ -11906,7 +11906,7 @@
   },
   {
    "id": "yt-reel-cd-quiz-billieeilish",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "automatic",
@@ -11926,7 +11926,8 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6b092823776ce21276f28b01"
   },
   {
    "id": "yt-cd-quiz-billieeilish",
@@ -11957,7 +11958,7 @@
   },
   {
    "id": "yt-ttv-cd-quiz-billieeilish",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "automatic",
@@ -11976,7 +11977,8 @@
       "title": "How well do you know Billie Eilish?"
      }
     }
-   }
+   },
+   "bufferId": "6b092824776ce21276f28d67"
   },
   {
    "id": "ig-b2-tier-trench",
@@ -12262,7 +12264,7 @@
   },
   {
    "id": "yt-ttv-cd-pearljam",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "automatic",
@@ -12281,7 +12283,8 @@
       "title": "The 10 best songs by Pearl Jam"
      }
     }
-   }
+   },
+   "bufferId": "6b092826062ed764a8ef32b5"
   },
   {
    "id": "yt-tt-tier-americanidiot",
@@ -12539,7 +12542,7 @@
   },
   {
    "id": "yt-reel-cd-list-changed-pop",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "automatic",
@@ -12559,11 +12562,12 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6b092829776ce21276f28e67"
   },
   {
    "id": "yt-cd-list-changed-pop",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "automatic",
@@ -12585,11 +12589,12 @@
       "madeForKids": false
      }
     }
-   }
+   },
+   "bufferId": "6b09282c776ce21276f28f45"
   },
   {
    "id": "yt-ttv-cd-list-changed-pop",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "automatic",
@@ -12608,7 +12613,8 @@
       "title": "10 Songs That Changed Pop"
      }
     }
-   }
+   },
+   "bufferId": "6b09282d062ed764a8ef34ad"
   },
   {
    "id": "ig-b2-songs-thriller",
@@ -12866,7 +12872,7 @@
   },
   {
    "id": "yt-reel-cd-battle-ten-nevermind",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5ec6778b240e2f9d4ea5",
     "schedulingType": "automatic",
@@ -12886,11 +12892,12 @@
       "shouldShareToFeed": true
      }
     }
-   }
+   },
+   "bufferId": "6b092830658222306cec8ffc"
   },
   {
    "id": "yt-cd-battle-ten-nevermind",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f1d778b240e2f9d52af",
     "schedulingType": "automatic",
@@ -12912,11 +12919,12 @@
       "madeForKids": false
      }
     }
-   }
+   },
+   "bufferId": "6b0928321fd46e62e71dfc33"
   },
   {
    "id": "yt-ttv-cd-battle-ten-nevermind",
-   "scheduled": false,
+   "scheduled": true,
    "post": {
     "channelId": "6adb5f07778b240e2f9d51b0",
     "schedulingType": "automatic",
@@ -12935,7 +12943,8 @@
       "title": "Ten vs Nevermind: tracklist battle"
      }
     }
-   }
+   },
+   "bufferId": "6b0928331fd46e62e71dfcd3"
   },
   {
    "id": "yt-tt-tier-dangerdays",
